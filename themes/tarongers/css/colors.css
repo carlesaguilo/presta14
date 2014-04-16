@@ -320,3 +320,43 @@ nav#tmcategories .current a {
 /* ------------------------------------------ */
 /* !5 - RIGHT */
 /* !5.1 - Cart */
+/* line 287, ../compass/sass/colors.scss */
+#cart_block {
+  background-color: #978100;
+  position: relative;
+}
+/* line 290, ../compass/sass/colors.scss */
+#cart_block:after {
+  content: "\003c";
+  display: block;
+  text-indent: -999em;
+  height: 27px;
+  width: 11px;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  background: url("../img/oranges/icones.png") no-repeat -390px -187px transparent;
+}
+/* line 299, ../compass/sass/colors.scss */
+#cart_block h4 {
+  color: white;
+}
+/* line 301, ../compass/sass/colors.scss */
+#cart_block h4 a {
+  color: white;
+  text-decoration: none;
+}
+/* line 306, ../compass/sass/colors.scss */
+#cart_block .block_content {
+  color: #444444;
+}
+/* line 309, ../compass/sass/colors.scss */
+#cart_block #cart-buttons {
+  border-top: 1px solid #ead200;
+  color: #ead200;
+}
+/* line 312, ../compass/sass/colors.scss */
+#cart_block #cart-buttons a {
+  color: #ead200;
+  text-decoration: none;
+}

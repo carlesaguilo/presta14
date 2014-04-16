@@ -284,6 +284,14 @@
 			img {
 				width: 100%; height: auto;
 			}
+			.availability {
+				float: left;
+				display: block;
+			}
+			.compare {
+				float: right;
+				display: block;
+			}
 		}
 	}
 
@@ -319,3 +327,18 @@
 		width: (200px / 867px) * 100%;
 	}
 /* !5.1 - Cart */
+	#cart_block {
+		width: (190px / 200px) * 100%;
+		float: right;
+		padding: 30px 5% 15px 5%;
+		h4, #cart_block_summary {
+			text-align: center;
+		}
+		.cart_block_list {
+			text-align: left;
+		}
+		#cart-buttons {
+			text-align: center;
+			padding-top: 10px; margin-top: 10px;
+		}
+	}

@@ -348,21 +348,31 @@ nav#tmcategories li:first-child {
   width: 100%;
   height: auto;
 }
+/* line 287, ../compass/sass/layout.scss */
+#product_list li .availability {
+  float: left;
+  display: block;
+}
+/* line 291, ../compass/sass/layout.scss */
+#product_list li .compare {
+  float: right;
+  display: block;
+}
 
 /* ------------------------------------------ */
 /* !4 - FOOTER */
-/* line 292, ../compass/sass/layout.scss */
+/* line 300, ../compass/sass/layout.scss */
 #footer {
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
 }
-/* line 296, ../compass/sass/layout.scss */
+/* line 304, ../compass/sass/layout.scss */
 #footer #footer_links, #footer .extraLinks {
   width: 68.91667%;
   margin: 0 auto;
 }
-/* line 300, ../compass/sass/layout.scss */
+/* line 308, ../compass/sass/layout.scss */
 #footer #footer_links li, #footer .extraLinks li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -373,22 +383,42 @@ nav#tmcategories li:first-child {
   padding-left: 16px;
   margin-left: 16px;
 }
-/* line 304, ../compass/sass/layout.scss */
+/* line 312, ../compass/sass/layout.scss */
 #footer #footer_links li:first-child, #footer .extraLinks li:first-child {
   margin-left: 0px;
   padding-left: 0px;
 }
-/* line 310, ../compass/sass/layout.scss */
+/* line 318, ../compass/sass/layout.scss */
 #footer .extraLinks {
   margin-top: 20px;
 }
 
 /* ------------------------------------------ */
 /* !5 - RIGHT */
-/* line 317, ../compass/sass/layout.scss */
+/* line 325, ../compass/sass/layout.scss */
 #right_column {
   float: left;
   width: 23.06805%;
 }
 
 /* !5.1 - Cart */
+/* line 330, ../compass/sass/layout.scss */
+#cart_block {
+  width: 95%;
+  float: right;
+  padding: 30px 5% 15px 5%;
+}
+/* line 334, ../compass/sass/layout.scss */
+#cart_block h4, #cart_block #cart_block_summary {
+  text-align: center;
+}
+/* line 337, ../compass/sass/layout.scss */
+#cart_block .cart_block_list {
+  text-align: left;
+}
+/* line 340, ../compass/sass/layout.scss */
+#cart_block #cart-buttons {
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 10px;
+}

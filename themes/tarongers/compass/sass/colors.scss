@@ -284,3 +284,34 @@
 /* ------------------------------------------ */
 /* !5 - RIGHT */
 /* !5.1 - Cart */
+	#cart_block {
+		background-color: $colOcre;
+		position: relative;
+		&:after {
+			content: "\003c";
+			display: block;
+			text-indent: -999em;
+			height: 27px;width: 11px;
+			position: absolute;
+			left: -10px; top: 50%;
+			background: url('../img/oranges/icones.png') no-repeat -390px -187px transparent;
+		}
+		h4 {
+			color: $colBlanc;
+			a {
+				color: $colBlanc;
+				text-decoration: none;
+			}
+		}
+		.block_content {
+			color: $colNegre;
+		}
+		#cart-buttons {
+			border-top: 1px solid $colGroc;
+			color: $colGroc;
+			a {
+				color: $colGroc;
+				text-decoration: none;
+			}
+		}
+	}

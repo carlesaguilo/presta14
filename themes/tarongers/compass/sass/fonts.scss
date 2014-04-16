@@ -161,7 +161,7 @@
 		h3 {
 			@include lletra (normal, normal, 1.6, 1.2em);
 		}
-		.availability {
+		.availability, .compare {
 			@include lletra (normal, normal, 1.1, 1.5em);
 			text-transform: uppercase;
 		}
@@ -178,3 +178,15 @@
 /* ------------------------------------------ */
 /* !5 - RIGHT */
 /* !5.1 - Cart */
+	#cart_block {
+		h4 {
+			@include lletra (normal, normal, 2.5, 1.2em);
+		}
+		.block_content {
+			@include lletra (normal, normal, 1.2, 1.2em);
+		}
+		.cart_block_list {
+			@include lletra (normal, normal, 1.2, 1.2em);
+			font-family: $fntQSBold;
+		}
+	}

@@ -12,11 +12,13 @@ var removingLinkText = '{l s='remove this product from my cart' mod='blockcart' 
 <div id="cart_block" class="block exclusive">
 	<h4>
 		<a href="{$link->getPageLink("$order_process.php", true)}">{l s='Cart' mod='blockcart'}</a>
+	</h4>
+	<div>
 		{if $ajax_allowed}
 		<span id="block_cart_expand" {if isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded' || !isset($colapseExpandStatus)}class="hidden"{/if}>&nbsp;</span>
 		<span id="block_cart_collapse" {if isset($colapseExpandStatus) && $colapseExpandStatus eq 'collapsed'}class="hidden"{/if}>&nbsp;</span>
 		{/if}
-	</h4>
+	</div>
 	<div class="block_content">
 	<!-- block summary -->
 	<div id="cart_block_summary" class="{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded' || !$ajax_allowed || !isset($colapseExpandStatus)}collapsed{else}expanded{/if}">
