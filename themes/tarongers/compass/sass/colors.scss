@@ -1,0 +1,250 @@
+/* SASS Document */
+/* !TOC COLORS */
+/*-------------------------------------------
+	1 - BODY
+		1.1 - Home
+	2 - HEADER
+		2.1 - Menú Principal
+		2.2 - User
+		2.3 - Carret
+		2.4 - Search
+		2.5 - Languages
+	3 - CONTENTAREA
+		3.1 - breadcrumbs
+		3.2 - Catalogue
+	4 - FOOTER
+---------------------------------------------- */
+
+/* !COLORS */
+	$colGrisClar: #F4F4F4;
+	$colOcre: #978100;
+	$colGroc: #EAD200;
+	$colBlanc: #FFFFFF;
+	$colNegre: #444444;
+	$colGris: #999999;
+	$colGrisRatlla: #aaaaaa;
+	
+	@import "compass/css3";
+
+/* !MIXINS  */
+	a {
+		@include transition(color .25s ease-in);
+	}
+
+/* ------------------------------------------ */
+/* !1 - BODY */
+	body {
+		background: url('../img/oranges/fons-paper.png') repeat 0px 0px $colBlanc;
+		color: $colNegre;
+	}
+/* !1.1 - Home */
+	body#index {
+		@include background-image (url('../img/oranges/fons-home.jpg'), url('../img/oranges/fons-paper.png'));
+		@include background-size(100%, 100px 100px);
+	    background-repeat: no-repeat, repeat;
+	    background-position: center center, 0px 0px;
+	   	#header {
+		   	background: none;
+	   	}
+	}
+
+/* ------------------------------------------ */
+/* !2 - HEADER */
+	#header {
+		background: url('../img/oranges/fons-header_01.png') left top no-repeat, url('../img/oranges/fons-header_03.png') right top no-repeat;
+	}
+/* !2.1 - Menú Principal */
+	nav#tmcategories {
+		background-color: $colOcre;
+		a {
+			text-decoration: none;
+			color: $colGroc;
+			&:hover {
+				color: $colBlanc;
+			}
+		}
+		.current {
+			position: relative;
+			&:before {
+				content: "\003c";
+				position: absolute;
+				bottom: -20px; left: 50%;
+				display: block;
+				background: url('../img/oranges/icones.png') no-repeat center -389px transparent;
+				width: 27px; height: 11px;
+				margin-left: -13px;
+				text-indent: -9999em;
+			}
+			a {
+				color: $colBlanc;
+			}
+		}
+	}
+/* !2.2 - User */
+	.headerTop {
+		#header_user {
+			li {
+				border-left: 1px solid $colNegre;
+				&:first-child {
+					border-left: 0px;
+				}
+			}
+			a {
+				color: $colOcre;
+				text-decoration: none;
+				&:hover {
+					color: $colNegre;
+				}
+			}
+		}
+	}
+/* !2.3 - Carret */
+	#shopping_cart {
+		background: url('../img/oranges/icones.png') no-repeat -382px top transparent;
+		a {
+			color: $colOcre;
+			text-decoration: none;
+			&:hover {
+				color: $colNegre;
+			}
+		}
+	}
+/* !2.4 - Search */
+	#search_block_top {
+		form {
+			background-color: $colBlanc;
+			border: 1px solid lighten($colGris, 20%);
+			#search_query_top {
+				border: none;
+				background-color: $colBlanc;
+				color: $colNegre;
+			}
+			.button {
+				background: url(../img/oranges/icones.png) no-repeat left top $colBlanc;
+			}
+		}
+	}
+/* !2.5 - Languages */
+	#tmlanguages {
+		color: $colNegre;
+		li {
+			opacity: 1 !important;
+		}
+		a {
+			color: $colOcre;
+			&:hover {
+				color: lighten($colOcre,16%);
+			}
+		}
+	}
+		
+/* ------------------------------------------ */
+/* !3 - CONTENTAREA */
+	.cms4 {
+		#page {
+			background: url('../img/oranges/fons-fum_02.jpg') no-repeat left bottom transparent;
+		}
+	} 
+	.cms2 {
+		#page {
+			@include background-image (url('../img/oranges/fons-fum_04.jpg'), url('../img/oranges/fons-fum_03.jpg'));
+			background-repeat: no-repeat;
+			background-position: left 500px, right 250px;
+			background-color: transparent;
+		}
+	}
+	#page {
+		h1 {
+			color: $colOcre;
+		}
+		.rte {
+			color: $colNegre;
+			p {
+				
+			}
+			ul {
+				list-style-type: circle;
+			}
+			ol {
+				list-style-type: decimal;
+			}
+			a {
+				color: $colOcre;
+				&:hover {
+					color: lighten($colOcre, 10%);
+				}
+			}
+		}
+	}
+/* !3.1 - breadcrumbs */
+	.breadcrumb {
+		color: $colNegre;
+		a {
+			text-decoration: none;
+			color: $colOcre;
+			&:hover {
+				color: $colNegre;
+				text-decoration: underline;
+			}
+		}
+	}
+/* !3.2 - Catalogue */
+	#category {
+		#page {
+			@include background-image (url('../img/oranges/fons-fum_01.jpg'), url('../img/oranges/fons-fum_08.jpg'), url('../img/oranges/fons-fum_10.jpg'));
+			background-repeat: no-repeat;
+			background-position: left 250px, center center, left bottom;
+			background-color: transparent;
+		}
+		.catIntro {
+			background: url('../img/oranges/barritas.jpg') no-repeat center top transparent;
+		}
+	}
+	#product_list {
+		border-top: 1px solid $colGris;
+		li {
+			.product_img_link {
+				@include box-shadow(3px 3px 20px $colGris);
+				border: 1px solid lighten($colGris,10%);
+			}
+			h3 {
+				color: $colNegre;
+				a {
+					color: $colNegre;
+					text-decoration: none;
+					&:hover {
+						color: lighten($colOcre, 20%);
+					}
+				}
+			}
+		}
+	}
+	
+/* ------------------------------------------ */
+/* !4 - FOOTER */
+	#footer {
+		#footer_links {
+			li {
+				border-left: 1px solid $colOcre;
+				&:first-child {
+					border-left: 0;
+				}
+			}
+			a {
+				color: $colOcre;
+				text-decoration: none;
+				&:hover {
+					color: $colNegre;
+				}
+			}
+		}
+		.extraLinks {
+			a {
+				color: $colOcre;
+				text-decoration: none;
+				&:hover {
+					color: $colNegre;
+				}
+			}
+		}
+	}

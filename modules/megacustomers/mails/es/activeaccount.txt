@@ -1,0 +1,10 @@
+Hola {firstname} {lastname},
+
+Gracias por crear tu cuenta en {shop_name}.
+
+Activacion de cuenta:
+
+Para activar su cuenta, gracias pegar este URL en su navegador e ingrese.
+{activation_link}
+
+{shop_url} desarrollado por PrestaShop®

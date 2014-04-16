@@ -1,0 +1,10 @@
+Hi {firstname} {lastname},
+
+Thank you for creating your account at {shop_name}.
+
+
+To activate your account, thank you paste this url into your browser and enter.
+{activation_link}
+
+
+{shop_url} powered by PrestaShop™

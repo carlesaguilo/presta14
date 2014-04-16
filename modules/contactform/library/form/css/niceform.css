@@ -1,0 +1,296 @@
+.cferror{
+
+border:1px solid #EC9B9B;
+
+padding:5px;
+
+margin:5px;
+
+background:#FAE2E3;
+
+color:#F36;
+
+line-height:2em;
+
+}
+
+
+
+form.formular {
+
+	font-family: tahoma, verdana, "sans-serif";
+
+	font-size: 12px;
+
+	padding: 20px;
+
+	border:solid 0px #b7ddf2;
+
+	width: 300px;
+
+	margin: 0 auto;
+
+	background:#FFFFFF;
+
+}
+
+
+
+.separator{
+
+font-size:14px;
+
+font-weight:bold;
+
+color:#666666;
+
+margin-bottom:20px;
+
+border-bottom:solid 0px #b7ddf2;
+
+padding-top:5px;
+
+padding-bottom:10px;
+
+}
+
+
+
+.formular fieldset {
+
+	margin-top: 20px;
+
+	padding: 15px;
+
+	border:solid 1px #878787;
+
+}
+
+
+
+.formular legend {
+
+	font-size: 12px;
+
+	color: #15428B;
+
+	font-weight: 900;
+
+}
+
+
+
+.formular fieldset label {
+
+	float: none;
+
+	text-align: inherit;
+
+	width: auto;
+
+}
+
+
+
+.formular label span {
+
+	color: #000;
+
+}
+
+
+
+.formular  span {
+
+	color: #000;
+
+}
+
+
+
+.formular input,.formular select,.formular textarea {
+
+	display: block;
+
+	margin-bottom: 5px;
+
+}
+
+
+
+.formular .text-input {
+
+	color: #555;
+
+	padding: 4px;
+
+	border:solid 1px #878787;
+
+	font-size: 14px;
+
+	margin-top: 4px;
+
+	background: #FFF repeat-x;
+
+}
+
+
+
+.formular .text-select {
+
+	color: #555;
+
+	padding: 4px;
+
+	border:solid 1px #878787;
+
+	font-size: 14px;
+
+	margin-top: 4px;
+
+	background: #FFF repeat-x;
+
+}
+
+
+
+
+
+.formular textarea {
+
+	width: 250px;
+
+	height: 70px;
+
+	color: #555;
+
+	padding: 4px;
+
+	border:solid 1px #878787;
+
+	font-size: 14px;
+
+	margin-top: 4px;
+
+	background: #FFF repeat-x;
+
+}
+
+
+
+.formular .infos {
+
+	background: #FFF;
+
+	color: #333;
+
+	font-size: 12px;
+
+	padding: 10px;
+
+	margin-bottom: 10px;
+
+}
+
+
+
+.formular span.checkbox,.formular .checkbox {
+
+	display: inline;
+
+	margin-right:5px;
+
+}
+
+
+
+.formular .submit {
+
+	
+
+	border: none;
+
+	padding: 4px;
+
+	margin-top: 20px;
+
+	float: right;
+
+	text-decoration: none;
+
+	cursor: pointer;
+
+	background:#EBF4FB url(img/bnormal.png) no-repeat;
+
+	font-weight:bold;
+
+	line-height:31px;
+
+	color:#FFFFFF;
+
+	font-size:11px;
+
+	font-weight:bold;
+
+	height:38px;
+
+	width:100px;
+
+}
+
+
+
+.formular .submit:hover {
+
+	background:#EBF4FB url(img/bhover.png) no-repeat;
+
+}
+
+
+
+.formular hr {
+
+	clear: both;
+
+	visibility: hidden;
+
+}
+
+
+
+.formular .fc-error {
+
+	width: 350px;
+
+	color: 555;
+
+	padding: 4px;
+
+	border: 1px solid #B5B8C8;
+
+	font-size: 12px;
+
+	margin-bottom: 15px;
+
+	background: #FFEAEA;
+
+}
+
+
+
+lor: 555;
+
+	padding: 4px;
+
+	border: 1px solid #B5B8C8;
+
+	font-size: 12px;
+
+	margin-bottom: 15px;
+
+	background: #FFEAEA;
+
+}
+
+
+

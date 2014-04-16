@@ -1,0 +1,96 @@
+"30 Oct 2012 17:20:30","C:\wamp\www\megacustomers\modules\megacustomers\mycustomers.php:
+      22","(Warning) in_array() expects parameter 2 to be array, integer given"
+"30 Oct 2012 17:21:29","C:\wamp\www\megacustomers\modules\megacustomers\mycustomers.php:
+      22","(Warning) in_array() expects parameter 2 to be array, integer given"
+"30 Oct 2012 17:22:59","C:\wamp\www\megacustomers\modules\megacustomers\mycustomers.php:
+      22","(Warning) in_array() expects parameter 2 to be array, integer given"
+"30 Oct 2012 22:25:49","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\blockcategories^_3_0_0^75971b8f394af87c44ea4ad626a6bc9edb5dd203.blockcategories.tpl.php"
+"30 Oct 2012 22:25:49","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\57ebf0482ea730ff0862e2359657ba5109d43f9c.blockviewed.tpl.php"
+"30 Oct 2012 22:25:49","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\57ebf0482ea730ff0862e2359657ba5109d43f9c.file.blockviewed.tpl.cache.php"
+"30 Oct 2012 22:25:50","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\57ebf0482ea730ff0862e2359657ba5109d43f9c.file.blockviewed.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:50","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\57ebf0482ea730ff0862e2359657ba5109d43f9c.blockviewed.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:50","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\f312c76c04a4cd370c461fef8155811e2dd8917d.blockmanufacturer.tpl.php"
+"30 Oct 2012 22:25:50","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\f312c76c04a4cd370c461fef8155811e2dd8917d.file.blockmanufacturer.tpl.cache.php"
+"30 Oct 2012 22:25:51","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\f312c76c04a4cd370c461fef8155811e2dd8917d.file.blockmanufacturer.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:51","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\f312c76c04a4cd370c461fef8155811e2dd8917d.blockmanufacturer.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:51","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\a0cb8695442cbfdaa0df4a1e0ec6c8f48e000495.blockcms.tpl.php"
+"30 Oct 2012 22:25:51","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\a0cb8695442cbfdaa0df4a1e0ec6c8f48e000495.file.blockcms.tpl.cache.php"
+"30 Oct 2012 22:25:52","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\a0cb8695442cbfdaa0df4a1e0ec6c8f48e000495.file.blockcms.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:52","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\a0cb8695442cbfdaa0df4a1e0ec6c8f48e000495.blockcms.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:52","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\a5748b466ed7a7cc30eaf2c57556dc65a1bc1719.blockadvertising.tpl.php"
+"30 Oct 2012 22:25:52","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\a5748b466ed7a7cc30eaf2c57556dc65a1bc1719.file.blockadvertising.tpl.cache.php"
+"30 Oct 2012 22:25:53","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\a5748b466ed7a7cc30eaf2c57556dc65a1bc1719.file.blockadvertising.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:53","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\a5748b466ed7a7cc30eaf2c57556dc65a1bc1719.blockadvertising.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:53","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\c43e750ed09cdf91f5f3e436a7068815a3cadc55.header.tpl.php"
+"30 Oct 2012 22:25:53","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\c43e750ed09cdf91f5f3e436a7068815a3cadc55.file.header.tpl.cache.php"
+"30 Oct 2012 22:25:54","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\c43e750ed09cdf91f5f3e436a7068815a3cadc55.file.header.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:54","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\c43e750ed09cdf91f5f3e436a7068815a3cadc55.header.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:54","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\7ca76261c82cd6342a1e0750a41234562f499dd4.blockcart.tpl.php"
+"30 Oct 2012 22:25:54","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\7ca76261c82cd6342a1e0750a41234562f499dd4.file.blockcart.tpl.cache.php"
+"30 Oct 2012 22:25:58","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\7ca76261c82cd6342a1e0750a41234562f499dd4.file.blockcart.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:58","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\7ca76261c82cd6342a1e0750a41234562f499dd4.blockcart.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:58","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\98eee8958238e57e6a4dbf27d4bb3d4ef7038178.blockbestsellers.tpl.php"
+"30 Oct 2012 22:25:58","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\98eee8958238e57e6a4dbf27d4bb3d4ef7038178.file.blockbestsellers.tpl.cache.php"
+"30 Oct 2012 22:25:59","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\98eee8958238e57e6a4dbf27d4bb3d4ef7038178.file.blockbestsellers.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:59","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\98eee8958238e57e6a4dbf27d4bb3d4ef7038178.blockbestsellers.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:25:59","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\78d8c3919c69d1d81945a606192699cfb2e55bb4.blockspecials.tpl.php"
+"30 Oct 2012 22:25:59","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\78d8c3919c69d1d81945a606192699cfb2e55bb4.file.blockspecials.tpl.cache.php"
+"30 Oct 2012 22:26:00","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\78d8c3919c69d1d81945a606192699cfb2e55bb4.file.blockspecials.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:26:00","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\78d8c3919c69d1d81945a606192699cfb2e55bb4.blockspecials.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:26:00","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\9b796afc85158fae9317fc6b0df63f02fcb00213.blockstore.tpl.php"
+"30 Oct 2012 22:26:00","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\9b796afc85158fae9317fc6b0df63f02fcb00213.file.blockstore.tpl.cache.php"
+"30 Oct 2012 22:26:01","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\9b796afc85158fae9317fc6b0df63f02fcb00213.file.blockstore.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:26:01","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\9b796afc85158fae9317fc6b0df63f02fcb00213.blockstore.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:26:01","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_cacheresource_file.php:
+      64","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/cache\cf6a1d2679559bbb5407c6a48157ad492e0b3d6b.footer.tpl.php"
+"30 Oct 2012 22:26:01","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\cf6a1d2679559bbb5407c6a48157ad492e0b3d6b.file.footer.tpl.cache.php"
+"30 Oct 2012 22:26:01","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\cf6a1d2679559bbb5407c6a48157ad492e0b3d6b.file.footer.tpl.cache.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"30 Oct 2012 22:26:01","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/cache\cf6a1d2679559bbb5407c6a48157ad492e0b3d6b.footer.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"07 Nov 2012 17:14:01","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\ce2484dd61246ffe0ac7475ba78c57a37d1a9c33.file.myaccountoptions.tpl.php"
+"07 Nov 2012 17:14:01","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\ce2484dd61246ffe0ac7475ba78c57a37d1a9c33.file.myaccountoptions.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"
+"12 Nov 2012 10:02:20","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_resource.php:
+      723","(Warning) filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for C:\wamp\www\megacustomers/tools/smarty/compile\7495bb905d34147b9bd49ea0f783589a08b20536.file.result.tpl.php"
+"12 Nov 2012 10:02:20","C:\wamp\www\megacustomers\tools\smarty\sysplugins\smarty_internal_write_file.php:
+      57","(Warning) unlink(C:\wamp\www\megacustomers/tools/smarty/compile\7495bb905d34147b9bd49ea0f783589a08b20536.file.result.tpl.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory"

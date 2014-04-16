@@ -1,0 +1,188 @@
+form.cfsh input {	
+
+font-size:12px;
+
+padding:4px 2px;
+
+border:solid 1px #aacfe4;
+
+margin:2px 0 20px 10px;
+
+}
+
+
+
+form.cfsh select {	
+
+font-size:12px;
+
+padding:4px 2px;
+
+border:solid 1px #aacfe4;
+
+margin:2px 0 20px 10px;
+
+}
+
+
+
+
+
+form.cfsh textarea {	
+
+font-size:12px;
+
+padding:4px 2px;
+
+border:solid 1px #aacfe4;
+
+margin:2px 0 20px 10px;
+
+width: 400px;
+
+
+
+}
+
+
+
+table.cfsh {
+
+width:500px;
+
+padding-left:10px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+	}
+
+
+
+table.cfsh td.right {
+
+width:35%;
+
+	}
+
+	
+
+form.cfsh fieldset {	
+
+width:550px;
+
+background:#FFF;
+
+}
+
+
+
+table.cfsh td.scaptcha{
+
+	padding:10px;
+
+}
+
+
+
+form.cfsh label.cferror, label.cferror {
+
+    background: none repeat scroll 0 0 transparent;
+
+    border: medium none;
+
+    color: red;
+
+    font-style: italic;
+
+    padding: 0;
+
+}
+
+
+
+table.cfsh td{
+
+	margin:0px;
+
+}
+
+
+
+form.cfsh .submit {
+
+	border: 1px solid #AAA;
+
+	padding: 4px;
+
+	margin-right: 20px;
+
+	float: right;
+
+	text-decoration: none;
+
+	cursor: pointer;
+
+	background:#ccc;
+
+	color:#F2F2E6;
+
+	font-weight:bold;
+
+	margin-bottom:10px;
+
+}
+
+
+
+
+
+form.cfsh .submit:hover {
+
+	border: 1px solid #AAA;
+
+	padding: 4px;
+
+	margin-right: 20px;
+
+	float: right;
+
+	text-decoration: none;
+
+	cursor: pointer;
+
+	background:#000;
+
+	color:#F2F2E6;
+
+	font-weight:bold;
+
+	margin-bottom:10px;
+
+}
+
+
+
+.separator{
+
+font-size:14px;
+
+font-weight:bold;
+
+font-style:italic;
+
+color:#666666;
+
+margin-bottom:20px;
+
+border-bottom:solid 1px #C9DCA6;
+
+padding-top:5px;
+
+padding-bottom:10px;
+
+}
+
+}
+

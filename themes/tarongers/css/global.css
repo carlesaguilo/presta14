@@ -1,0 +1,909 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* SASS Document */
+/* !TOC LAYOUT */
+/*-------------------------------------------
+	1 - BODY
+		1.1 - Home
+	2 - HEADER
+		2.1 - Menú Principal
+		2.2 - User
+		2.3 - Carret
+		2.4 - Search
+		2.5 - Languages
+	3 - CONTENTAREA
+		3.1 - breadcrumbs
+		3.2 - Catalogue
+	4 - FOOTER
+---------------------------------------------- */
+/* !VARIABLES */
+/* !MIXINS */
+/* line 27, ../compass/sass/layout.scss */
+.clearfix, nav#tmcategories, .headerTop, .headerTop #header_user, #page .rte, #product_list, #footer #footer_links, #footer .extraLinks {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+/* line 29, ../compass/sass/layout.scss */
+.clearfix:before, nav#tmcategories:before, .headerTop:before, .headerTop #header_user:before, #page .rte:before, #product_list:before, #footer #footer_links:before, #footer .extraLinks:before, .clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #product_list:after, #footer #footer_links:after, #footer .extraLinks:after {
+  content: "";
+  display: table;
+}
+/* line 33, ../compass/sass/layout.scss */
+.clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #product_list:after, #footer #footer_links:after, #footer .extraLinks:after {
+  clear: both;
+}
+
+/* ------------------------------------------ */
+/* !1 - BODY */
+/* !1.1 - Home */
+/* Center vertically */
+/* line 46, ../compass/sass/layout.scss */
+html {
+  height: 100%;
+}
+
+/* line 47, ../compass/sass/layout.scss */
+body#index {
+  height: 100%;
+}
+/* line 49, ../compass/sass/layout.scss */
+body#index #header {
+  height: auto;
+  width: auto;
+  position: static;
+}
+/* line 53, ../compass/sass/layout.scss */
+body#index #page {
+  position: relative;
+  height: 100%;
+}
+/* line 57, ../compass/sass/layout.scss */
+body#index #tmcategories {
+  height: 34px;
+  margin: -34px 0 0 0;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+}
+/* line 63, ../compass/sass/layout.scss */
+body#index #footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* ------------------------------------------ */
+/* !2 - HEADER */
+/* line 71, ../compass/sass/layout.scss */
+#header {
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+/* line 74, ../compass/sass/layout.scss */
+#header #header_logo {
+  display: block;
+  width: 175px;
+  height: 182px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -87.5px;
+}
+/* line 81, ../compass/sass/layout.scss */
+#header #header_right {
+  padding-top: 10px;
+}
+
+/* !2.1 - Menú Principal */
+/* line 86, ../compass/sass/layout.scss */
+nav#tmcategories {
+  text-align: center;
+  clear: both;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+/* line 93, ../compass/sass/layout.scss */
+nav#tmcategories ul#cat {
+  width: 68.91667%;
+  padding: 6px 0 9px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 99, ../compass/sass/layout.scss */
+nav#tmcategories li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-left: 3%;
+}
+/* line 102, ../compass/sass/layout.scss */
+nav#tmcategories li:first-child {
+  margin-left: 0px;
+}
+
+/* !2.2 - User */
+/* line 108, ../compass/sass/layout.scss */
+.headerTop {
+  width: 68.91667%;
+  margin: 0px auto;
+}
+/* line 112, ../compass/sass/layout.scss */
+.headerTop #header_user {
+  float: right;
+}
+/* line 115, ../compass/sass/layout.scss */
+.headerTop #header_user li {
+  float: left;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+/* line 119, ../compass/sass/layout.scss */
+.headerTop #header_user li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* !2.3 - Carret */
+/* line 126, ../compass/sass/layout.scss */
+#shopping_cart {
+  float: right;
+  clear: both;
+  margin-top: 5px;
+  padding: 3px 0px 5px 25px;
+}
+
+/* !2.4 - Search */
+/* line 133, ../compass/sass/layout.scss */
+#search_block_top {
+  width: 68.91667%;
+  margin: 10px auto 0 auto;
+}
+/* line 136, ../compass/sass/layout.scss */
+#search_block_top form {
+  float: right;
+  padding: 2px 1px 2px 3px;
+}
+/* line 140, ../compass/sass/layout.scss */
+#search_block_top input {
+  width: 160px;
+}
+/* line 143, ../compass/sass/layout.scss */
+#search_block_top .button {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: right;
+}
+
+/* !2.5 - Languages */
+/* line 151, ../compass/sass/layout.scss */
+#tmlanguages {
+  width: 68.91667%;
+  margin: 0 auto;
+}
+/* line 154, ../compass/sass/layout.scss */
+#tmlanguages #first-languages {
+  float: left;
+}
+/* line 156, ../compass/sass/layout.scss */
+#tmlanguages #first-languages li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+/* ------------------------------------------ */
+/* !3 - CONTENTAREA */
+/* line 164, ../compass/sass/layout.scss */
+#columns {
+  width: 64%;
+  margin: 0 auto 75px auto;
+}
+
+/* line 169, ../compass/sass/layout.scss */
+#page {
+  width: 100%;
+}
+/* line 171, ../compass/sass/layout.scss */
+#page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 177, ../compass/sass/layout.scss */
+#page .rte ul, #page .rte ol {
+  margin-left: 2em;
+  padding-left: 2em;
+  margin-bottom: .5em;
+}
+/* line 182, ../compass/sass/layout.scss */
+#page .rte li {
+  margin-bottom: .25em;
+}
+/* line 185, ../compass/sass/layout.scss */
+#page .rte p {
+  margin-bottom: .5em;
+}
+/* line 188, ../compass/sass/layout.scss */
+#page .rte p.bigImage img {
+  width: 100%;
+  height: auto;
+  max-width: 899px;
+}
+/* line 196, ../compass/sass/layout.scss */
+#page .rte .columnaEsq, #page .rte .columnaDreta {
+  width: 48.30729%;
+  margin-right: 3.25521%;
+  float: left;
+}
+/* line 201, ../compass/sass/layout.scss */
+#page .rte .columnaDreta {
+  margin-right: 0;
+}
+/* line 206, ../compass/sass/layout.scss */
+#page .intro {
+  width: 80.65296%;
+  margin: 0 auto;
+}
+
+/* !3.1 - breadcrumbs */
+/* line 212, ../compass/sass/layout.scss */
+.breadcrumb {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 215, ../compass/sass/layout.scss */
+.breadcrumb p {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 9999;
+}
+
+/* !3.2 - Catalogue */
+/* line 223, ../compass/sass/layout.scss */
+#category .catIntro {
+  padding-top: 340px;
+}
+
+/* line 227, ../compass/sass/layout.scss */
+.cat_desc {
+  text-align: center;
+}
+
+/* line 230, ../compass/sass/layout.scss */
+#product_list {
+  margin-top: 16px;
+  padding-top: 16px;
+}
+/* line 233, ../compass/sass/layout.scss */
+#product_list li {
+  display: block;
+  width: 22.37001%;
+  float: left;
+  margin-left: 4.59492%;
+  margin-bottom: 25px;
+}
+/* line 238, ../compass/sass/layout.scss */
+#product_list li.item {
+  margin-left: 0;
+  clear: left;
+}
+/* line 242, ../compass/sass/layout.scss */
+#product_list li .product_img_link {
+  display: block;
+  margin-bottom: 12px;
+}
+/* line 246, ../compass/sass/layout.scss */
+#product_list li img {
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------ */
+/* !4 - FOOTER */
+/* line 254, ../compass/sass/layout.scss */
+#footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* line 258, ../compass/sass/layout.scss */
+#footer #footer_links, #footer .extraLinks {
+  width: 68.91667%;
+  margin: 0 auto;
+}
+/* line 262, ../compass/sass/layout.scss */
+#footer #footer_links li, #footer .extraLinks li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding-left: 16px;
+  margin-left: 16px;
+}
+/* line 266, ../compass/sass/layout.scss */
+#footer #footer_links li:first-child, #footer .extraLinks li:first-child {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+/* line 272, ../compass/sass/layout.scss */
+#footer .extraLinks {
+  margin-top: 20px;
+}
+
+/* SASS Document */
+/* !TOC COLORS */
+/*-------------------------------------------
+	1 - BODY
+		1.1 - Home
+	2 - HEADER
+		2.1 - Menú Principal
+		2.2 - User
+		2.3 - Carret
+		2.4 - Search
+		2.5 - Languages
+	3 - CONTENTAREA
+		3.1 - breadcrumbs
+		3.2 - Catalogue
+	4 - FOOTER
+---------------------------------------------- */
+/* !COLORS */
+/* !MIXINS  */
+/* line 30, ../compass/sass/colors.scss */
+a {
+  -webkit-transition: color 0.25s ease-in;
+  -moz-transition: color 0.25s ease-in;
+  -o-transition: color 0.25s ease-in;
+  transition: color 0.25s ease-in;
+}
+
+/* ------------------------------------------ */
+/* !1 - BODY */
+/* line 36, ../compass/sass/colors.scss */
+body {
+  background: url("../img/oranges/fons-paper.png") repeat 0px 0px white;
+  color: #444444;
+}
+
+/* !1.1 - Home */
+/* line 41, ../compass/sass/colors.scss */
+body#index {
+  background-image: url("../img/oranges/fons-home.jpg"), url("../img/oranges/fons-paper.png");
+  -webkit-background-size: 100%, 100px 100px;
+  -moz-background-size: 100%, 100px 100px;
+  -o-background-size: 100%, 100px 100px;
+  background-size: 100%, 100px 100px;
+  background-repeat: no-repeat, repeat;
+  background-position: center center, 0px 0px;
+}
+/* line 46, ../compass/sass/colors.scss */
+body#index #header {
+  background: none;
+}
+
+/* ------------------------------------------ */
+/* !2 - HEADER */
+/* line 53, ../compass/sass/colors.scss */
+#header {
+  background: url("../img/oranges/fons-header_01.png") left top no-repeat, url("../img/oranges/fons-header_03.png") right top no-repeat;
+}
+
+/* !2.1 - Menú Principal */
+/* line 57, ../compass/sass/colors.scss */
+nav#tmcategories {
+  background-color: #978100;
+}
+/* line 59, ../compass/sass/colors.scss */
+nav#tmcategories a {
+  text-decoration: none;
+  color: #ead200;
+}
+/* line 62, ../compass/sass/colors.scss */
+nav#tmcategories a:hover {
+  color: white;
+}
+/* line 66, ../compass/sass/colors.scss */
+nav#tmcategories .current {
+  position: relative;
+}
+/* line 68, ../compass/sass/colors.scss */
+nav#tmcategories .current:before {
+  content: "\003c";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  display: block;
+  background: url("../img/oranges/icones.png") no-repeat center -389px transparent;
+  width: 27px;
+  height: 11px;
+  margin-left: -13px;
+  text-indent: -9999em;
+}
+/* line 78, ../compass/sass/colors.scss */
+nav#tmcategories .current a {
+  color: white;
+}
+
+/* !2.2 - User */
+/* line 86, ../compass/sass/colors.scss */
+.headerTop #header_user li {
+  border-left: 1px solid #444444;
+}
+/* line 88, ../compass/sass/colors.scss */
+.headerTop #header_user li:first-child {
+  border-left: 0px;
+}
+/* line 92, ../compass/sass/colors.scss */
+.headerTop #header_user a {
+  color: #978100;
+  text-decoration: none;
+}
+/* line 95, ../compass/sass/colors.scss */
+.headerTop #header_user a:hover {
+  color: #444444;
+}
+
+/* !2.3 - Carret */
+/* line 102, ../compass/sass/colors.scss */
+#shopping_cart {
+  background: url("../img/oranges/icones.png") no-repeat -382px top transparent;
+}
+/* line 104, ../compass/sass/colors.scss */
+#shopping_cart a {
+  color: #978100;
+  text-decoration: none;
+}
+/* line 107, ../compass/sass/colors.scss */
+#shopping_cart a:hover {
+  color: #444444;
+}
+
+/* !2.4 - Search */
+/* line 114, ../compass/sass/colors.scss */
+#search_block_top form {
+  background-color: white;
+  border: 1px solid #cccccc;
+}
+/* line 117, ../compass/sass/colors.scss */
+#search_block_top form #search_query_top {
+  border: none;
+  background-color: white;
+  color: #444444;
+}
+/* line 122, ../compass/sass/colors.scss */
+#search_block_top form .button {
+  background: url(../img/oranges/icones.png) no-repeat left top white;
+}
+
+/* !2.5 - Languages */
+/* line 128, ../compass/sass/colors.scss */
+#tmlanguages {
+  color: #444444;
+}
+/* line 130, ../compass/sass/colors.scss */
+#tmlanguages li {
+  opacity: 1 !important;
+}
+/* line 133, ../compass/sass/colors.scss */
+#tmlanguages a {
+  color: #978100;
+}
+/* line 135, ../compass/sass/colors.scss */
+#tmlanguages a:hover {
+  color: #e9c700;
+}
+
+/* ------------------------------------------ */
+/* !3 - CONTENTAREA */
+/* line 144, ../compass/sass/colors.scss */
+.cms4 #page {
+  background: url("../img/oranges/fons-fum_02.jpg") no-repeat left bottom transparent;
+}
+
+/* line 149, ../compass/sass/colors.scss */
+.cms2 #page {
+  background-image: url("../img/oranges/fons-fum_04.jpg"), url("../img/oranges/fons-fum_03.jpg");
+  background-repeat: no-repeat;
+  background-position: left 500px, right 250px;
+  background-color: transparent;
+}
+
+/* line 157, ../compass/sass/colors.scss */
+#page h1 {
+  color: #978100;
+}
+/* line 160, ../compass/sass/colors.scss */
+#page .rte {
+  color: #444444;
+}
+/* line 165, ../compass/sass/colors.scss */
+#page .rte ul {
+  list-style-type: circle;
+}
+/* line 168, ../compass/sass/colors.scss */
+#page .rte ol {
+  list-style-type: decimal;
+}
+/* line 171, ../compass/sass/colors.scss */
+#page .rte a {
+  color: #978100;
+}
+/* line 173, ../compass/sass/colors.scss */
+#page .rte a:hover {
+  color: #caad00;
+}
+
+/* !3.1 - breadcrumbs */
+/* line 180, ../compass/sass/colors.scss */
+.breadcrumb {
+  color: #444444;
+}
+/* line 182, ../compass/sass/colors.scss */
+.breadcrumb a {
+  text-decoration: none;
+  color: #978100;
+}
+/* line 185, ../compass/sass/colors.scss */
+.breadcrumb a:hover {
+  color: #444444;
+  text-decoration: underline;
+}
+
+/* !3.2 - Catalogue */
+/* line 193, ../compass/sass/colors.scss */
+#category #page {
+  background-image: url("../img/oranges/fons-fum_01.jpg"), url("../img/oranges/fons-fum_08.jpg"), url("../img/oranges/fons-fum_10.jpg");
+  background-repeat: no-repeat;
+  background-position: left 250px, center center, left bottom;
+  background-color: transparent;
+}
+/* line 199, ../compass/sass/colors.scss */
+#category .catIntro {
+  background: url("../img/oranges/barritas.jpg") no-repeat center top transparent;
+}
+
+/* line 203, ../compass/sass/colors.scss */
+#product_list {
+  border-top: 1px solid #999999;
+}
+/* line 206, ../compass/sass/colors.scss */
+#product_list li .product_img_link {
+  -webkit-box-shadow: 3px 3px 20px #999999;
+  -moz-box-shadow: 3px 3px 20px #999999;
+  box-shadow: 3px 3px 20px #999999;
+  border: 1px solid #b3b3b3;
+}
+/* line 210, ../compass/sass/colors.scss */
+#product_list li h3 {
+  color: #444444;
+}
+/* line 212, ../compass/sass/colors.scss */
+#product_list li h3 a {
+  color: #444444;
+  text-decoration: none;
+}
+/* line 215, ../compass/sass/colors.scss */
+#product_list li h3 a:hover {
+  color: #fdd800;
+}
+
+/* ------------------------------------------ */
+/* !4 - FOOTER */
+/* line 227, ../compass/sass/colors.scss */
+#footer #footer_links li {
+  border-left: 1px solid #978100;
+}
+/* line 229, ../compass/sass/colors.scss */
+#footer #footer_links li:first-child {
+  border-left: 0;
+}
+/* line 233, ../compass/sass/colors.scss */
+#footer #footer_links a {
+  color: #978100;
+  text-decoration: none;
+}
+/* line 236, ../compass/sass/colors.scss */
+#footer #footer_links a:hover {
+  color: #444444;
+}
+/* line 242, ../compass/sass/colors.scss */
+#footer .extraLinks a {
+  color: #978100;
+  text-decoration: none;
+}
+/* line 245, ../compass/sass/colors.scss */
+#footer .extraLinks a:hover {
+  color: #444444;
+}
+
+/* SASS Document */
+/* !TOC FONTS */
+/*-------------------------------------------
+	1 - BODY
+		1.1 - Home
+	2 - HEADER
+		2.1 - Menú Principal
+		2.2 - User
+		2.3 - Carret
+		2.4 - Search
+		2.5 - Languages
+	3 - CONTENTAREA
+		3.1 - breadcrumbs
+		3.2 - Catalogue
+	4 - FOOTER
+---------------------------------------------- */
+@font-face {
+  font-family: 'quicksandbold';
+  src: url("fonts/quicksand-bold-webfont.eot");
+  src: url("fonts/quicksand-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-bold-webfont.woff") format("woff"), url("fonts/quicksand-bold-webfont.ttf") format("truetype"), url("fonts/quicksand-bold-webfont.svg#quicksandbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quicksandlight';
+  src: url("fonts/quicksand-light-webfont.eot");
+  src: url("fonts/quicksand-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-light-webfont.woff") format("woff"), url("fonts/quicksand-light-webfont.ttf") format("truetype"), url("fonts/quicksand-light-webfont.svg#quicksandlight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quicksandregular';
+  src: url("fonts/quicksand-regular-webfont.eot");
+  src: url("fonts/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-regular-webfont.woff") format("woff"), url("fonts/quicksand-regular-webfont.ttf") format("truetype"), url("fonts/quicksand-regular-webfont.svg#quicksandregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* !VARIABLES */
+/* !MIXINS */
+/* ------------------------------------------ */
+/* !1 - BODY */
+/* line 70, ../compass/sass/fonts.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 73, ../compass/sass/fonts.scss */
+body {
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+}
+
+/* !1.1 - Home */
+/* ------------------------------------------ */
+/* !2 - HEADER */
+/* !2.1 - Menú Principal */
+/* line 83, ../compass/sass/fonts.scss */
+nav#tmcategories {
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+
+/* !2.2 - User */
+/* line 88, ../compass/sass/fonts.scss */
+.headerTop #header_user {
+  font-weight: normal;
+  font-size: 11px;
+  font-size: 1.1rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+
+/* !2.3 - Carret */
+/* line 94, ../compass/sass/fonts.scss */
+#shopping_cart strong {
+  font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
+}
+
+/* !2.4 - Search */
+/* line 100, ../compass/sass/fonts.scss */
+#search_block_top input {
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
+}
+/* line 104, ../compass/sass/fonts.scss */
+#search_block_top .button {
+  text-indent: -999em;
+}
+
+/* !2.5 - Languages */
+/* line 109, ../compass/sass/fonts.scss */
+#tmlanguages {
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
+}
+/* line 112, ../compass/sass/fonts.scss */
+#tmlanguages .selected_language {
+  font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
+}
+
+/* ------------------------------------------ */
+/* !3 - CONTENTAREA */
+/* line 120, ../compass/sass/fonts.scss */
+#page h1 {
+  font-weight: normal;
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+/* line 123, ../compass/sass/fonts.scss */
+#page .rte {
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+/* line 125, ../compass/sass/fonts.scss */
+#page .rte p, #page .rte ol, #page .rte ul {
+  text-align: justify;
+}
+/* line 128, ../compass/sass/fonts.scss */
+#page .rte p.bigImage {
+  text-align: center;
+}
+/* line 131, ../compass/sass/fonts.scss */
+#page .rte a, #page .rte strong {
+  font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
+}
+/* line 134, ../compass/sass/fonts.scss */
+#page .rte em {
+  font-family: "quicksandlight", Arial, "Helvetica Neue", sans-serif;
+}
+
+/* !3.1 - breadcrumbs */
+/* line 140, ../compass/sass/fonts.scss */
+.breadcrumb {
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+/* line 142, ../compass/sass/fonts.scss */
+.breadcrumb .navigation_page {
+  font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
+}
+
+/* !3.2 - Catalogue */
+/* line 147, ../compass/sass/fonts.scss */
+.cat_desc {
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+
+/* line 152, ../compass/sass/fonts.scss */
+#product_list h3 {
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+
+/* ------------------------------------------ */
+/* !4 - FOOTER */
+/* line 160, ../compass/sass/fonts.scss */
+#footer #footer_links, #footer .extraLinks {
+  font-weight: normal;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+
+/* PORQUERIA A BORRAR */
+/* line 12, ../compass/sass/global.scss */
+#jGrowl {
+  display: none !important;
+}
+
+/* line 15, ../compass/sass/global.scss */
+#cart_block {
+  display: none !important;
+}

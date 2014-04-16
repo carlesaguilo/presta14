@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>discount</name>
+	<displayName><![CDATA[Discount for new customers]]></displayName>
+	<version><![CDATA[1.4]]></version>
+	<description><![CDATA[The best way to offer Discounts.]]></description>
+	<author><![CDATA[]]></author>
+	<tab><![CDATA[Tools]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

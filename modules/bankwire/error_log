@@ -1,0 +1,6 @@
+[13-Jul-2012 18:04:41 UTC] PHP Fatal error:  Uncaught exception 'Swift_Message_MimeException' with message 'Something went wrong whilst trying to move some MIME parts during an attach(). The MIME component threw an exception:<br />Cannot remove child part identified by '5000633986905' as it does not exist. Consider using hasChild() to check.' in /home/lavalldi/public_html/incienso-incense.com/tools/swift/Swift/Message.php:542
+Stack trace:
+#0 /home/lavalldi/public_html/incienso-incense.com/classes/Mail.php(194): Swift_Message->attach(Object(Swift_Message_Part))
+#1 /home/lavalldi/public_html/incienso-incense.com/classes/OrderHistory.php(186): MailCore::Send(3, 'bankwire', 'En espera de pa...', Array, 'jaimepalau@gmai...', 'Jaime Palau Alt...')
+#2 /home/lavalldi/public_html/incienso-incense.com/classes/PaymentModule.php(445): OrderHistoryCore->addWithemail(true, Array)
+#3 /home/lavalldi/public_html/incienso-incense.com/modules/bankwire/validation.php(62): PaymentModuleCore->validateOrder(51, '10', 123.84, 'Trasferencia ba...', NULL, Array, 1, false, 'ceba2 in /home/lavalldi/public_html/incienso-incense.com/tools/swift/Swift/Message.php on line 542

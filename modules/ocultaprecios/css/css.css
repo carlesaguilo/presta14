@@ -1,0 +1,5 @@
+@charset "UTF-8";
+/* CSS Document */
+.price_container,.price,.our_price_display,#old_price_display,#reduction_percent,#old_price,.price-discount,#shopping_cart .ajax_cart_total,# product_list .price{display:none;text-indent: -9999px;}
+.registresehome,.registreselistado,.registreseproducto,.registresecarrito{color: #900;background-color: #F1F2F4;text-align: center;border: 1px solid #900;}
+.registresecarrito{font-size: 1.1em;padding: 5px;margin-top: 10px;margin-bottom: 10px;}

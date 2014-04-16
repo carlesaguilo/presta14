@@ -1,0 +1,14 @@
+﻿Tenemos el placer de ofrecerte un Cupón de Descuento  por un valor de {BRValue} por haberte registrado en  {shop_name}.
+
+El código de tu cupón es: 
+{BRCode}
+
+Disponible hasta: 
+{BRValidity}
+
+A partir de ahora mismo ya puedes usarlo en nuestra tienda online:
+{shop_url}
+
+
+
+{shop_url}

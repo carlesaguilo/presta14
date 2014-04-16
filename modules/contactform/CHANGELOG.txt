@@ -1,0 +1,164 @@
+CONTACTFORM
+
+version 1.8.6 (23-08-11)
+
+Correction des caractères spéciaux.
+
+Suppression du copyright par défaut pour le captcha
+
+
+
+
+
+version 1.8.4 (29-07-11)
+
+Réecriture du programme de captcha
+
+
+
+version 1.8.3 (06-07-11)
+
+Correction bug sur captcha
+
+
+
+Version 1.8.2 (26/05/2011)
+
+Correction du progrmme d'upload et d'envoi de pièce jointe.
+
+Mise à jour du manuel
+
+
+
+Version 1.8.1 (03/05/2011)
+
+Gestion de l'appel de l'éditeur de texte TinyMce en fonction de la version de Pretashop
+
+
+
+Version 1.8 (27/04/2011)
+
+Réecriture de la gestion multilangues
+
+Ajout de validation de formulaire côté client par jquery.
+
+Correction des bugs sur l'affichage des caractères spéciaux.
+
+Ajout d'un système de rafraichissement du captcha
+
+Gestion de la mise en page des mails
+
+
+
+
+
+Version 1.6.12 (18/03/2011)
+
+Gestion des caractères spéciaux dans certaines boîtes aux lettres comme yahoo
+
+Mise à jour des aides
+
+
+
+
+
+Version 1.6.11 (07/03/2011)
+
+Compatibilité avec la version 1.4 de prestashop
+
+
+
+Version 1.6.10 (22/02/2011)
+
+Correction du bug dans le système de clonage
+
+
+
+Version 1.6.8 (27/01/2011)
+
+Correction du bug dans la restauration de formalaire.
+
+Ajout de choix de mode de mail à utiliser
+
+
+
+
+
+
+
+Version 1.6.7 (12/01/2011)
+
+Ajout de la langue suédois.
+
+Ajout de separateur pour le nom de champs
+
+
+
+
+
+Version 1.6.6 (10/12/2010)
+
+Envoi de mails multiples
+
+
+
+Version 1.6 (O5/10/2010)
+
+Système de gestion de base de données
+
+Système de clonage de tables
+
+Correction du système de réorganisation des champs
+
+
+
+Version 1.5 (24/09/2010)
+
+Integration de toutes le traductions dans les fichiers fr.php, es.php, ...
+
+Suppression du fichier translation.tools.php 
+
+
+
+Version 1.5 (24/09/2010)
+
+
+
+Ajout du champ de type file pour l'upload de fichiers
+
+Correction de la gestion des données d'exemples
+
+Ajout d'un fichier README
+
+
+
+
+
+Version 1.3 (12/09/2010)
+
+
+
+Ajout de commentaires dans les champs de création de formulaire
+
+
+
+
+
+
+
+Version 1.2 (06/09/2010)
+
+
+
+Modification e l'entête du mail récu par le gestionnaire du site.
+
+Corréction de l'affichage des caractères spéciaux.
+
+Gestions des langues dans les exemples.
+
+
+
+
+
+
+

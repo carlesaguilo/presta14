@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>contactform</name>
+	<displayName><![CDATA[Form management]]></displayName>
+	<version><![CDATA[1.8.6]]></version>
+	<description><![CDATA[This allow you to manage your contact form]]></description>
+	<author><![CDATA[]]></author>
+	<tab><![CDATA[MODULES ARETMIC]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

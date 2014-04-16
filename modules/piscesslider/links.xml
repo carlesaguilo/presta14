@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<links>
+	<link>
+		<url>product.php?id_product=42</url>
+		<desc>    </desc>
+		<img>slides/slide_00.png</img>
+	</link>
+	<link>
+		<url>product.php?id_product=58</url>
+		<desc>   </desc>
+		<img>slides/slide_01.png</img>
+	</link>
+	<link>
+		<url>product.php?id_product=50</url>
+		<desc> </desc>
+		<img>slides/slide_02.png</img>
+	</link>
+</links>

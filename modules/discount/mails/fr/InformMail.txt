@@ -1,0 +1,14 @@
+﻿Nous avons le plaisir de vous offrir un bon de réduction de {BRValue} pour votre premier achat sur le site {shop_name}.
+
+Votre code de réduction: 
+{BRCode}
+
+valable jusqu'au: 
+{BRValidity}
+
+Vous pouvez dès à présent passer commande sur notre site Internet :
+{shop_url}
+
+
+
+{shop_url} réalisé par PrestaShop™

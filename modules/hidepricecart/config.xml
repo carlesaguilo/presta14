@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>hidepricecart</name>
+	<displayName><![CDATA[Hide price and cart button]]></displayName>
+	<version><![CDATA[1]]></version>
+	<description><![CDATA[HIde price and cart for non register users- www.catalogo-onlinersi.com.ar]]></description>
+	<author><![CDATA[RSI]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

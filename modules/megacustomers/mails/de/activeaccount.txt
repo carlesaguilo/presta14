@@ -1,0 +1,10 @@
+Hallo {firstname} {lastname},
+ 
+So aktivieren Sie Ihr Konto, danke fügen Sie diese URL in Ihren Browser und geben.
+{activation_link}
+
+ 
+Sie können nun Bestellungen auf unserer Webseite vornehmen: {shop_name}.
+ 
+{shop_name} powered with PrestaShop™ 
+

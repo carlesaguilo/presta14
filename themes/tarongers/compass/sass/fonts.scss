@@ -1,0 +1,163 @@
+/* SASS Document */
+/* !TOC FONTS */
+/*-------------------------------------------
+	1 - BODY
+		1.1 - Home
+	2 - HEADER
+		2.1 - Menú Principal
+		2.2 - User
+		2.3 - Carret
+		2.4 - Search
+		2.5 - Languages
+	3 - CONTENTAREA
+		3.1 - breadcrumbs
+		3.2 - Catalogue
+	4 - FOOTER
+---------------------------------------------- */
+
+	@font-face {
+	    font-family: 'quicksandbold';
+	    src: url('fonts/quicksand-bold-webfont.eot');
+	    src: url('fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/quicksand-bold-webfont.woff') format('woff'),
+	         url('fonts/quicksand-bold-webfont.ttf') format('truetype'),
+	         url('fonts/quicksand-bold-webfont.svg#quicksandbold') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'quicksandlight';
+	    src: url('fonts/quicksand-light-webfont.eot');
+	    src: url('fonts/quicksand-light-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/quicksand-light-webfont.woff') format('woff'),
+	         url('fonts/quicksand-light-webfont.ttf') format('truetype'),
+	         url('fonts/quicksand-light-webfont.svg#quicksandlight') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'quicksandregular';
+	    src: url('fonts/quicksand-regular-webfont.eot');
+	    src: url('fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/quicksand-regular-webfont.woff') format('woff'),
+	         url('fonts/quicksand-regular-webfont.ttf') format('truetype'),
+	         url('fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+/* !VARIABLES */
+	$fntQSBold: 'quicksandbold',Arial, 'Helvetica Neue',sans-serif;
+	$fntQSLight: 'quicksandlight',Arial, 'Helvetica Neue',sans-serif;
+	$fntQSRegular: 'quicksandregular',Arial, 'Helvetica Neue',sans-serif;
+	
+/* !MIXINS */
+	@mixin tipoMida($sizeValue) {
+	  font-size: ($sizeValue * 10) + px;
+	  font-size: $sizeValue + rem;
+		}
+	@mixin lletra($pes:normal, $estil:normal, $mida: 1.6, $linea: 1.5em) {
+		font-weight: $pes;
+		@include tipoMida($mida);
+		line-height: $linea;
+		font-family: $fntQSRegular;		
+		font-style: $estil;
+	}
+
+
+/* ------------------------------------------ */
+/* !1 - BODY */
+	html {
+		font-size: 62.5%;
+	}
+	body {
+		font-family: $fntQSRegular;
+		
+	}
+/* !1.1 - Home */
+
+/* ------------------------------------------ */
+/* !2 - HEADER */
+
+/* !2.1 - Menú Principal */
+	nav#tmcategories {
+		@include lletra (normal, normal, 1.5, 1.2em);
+	}
+/* !2.2 - User */
+	.headerTop {
+		#header_user {
+			@include lletra(normal, normal, 1.1, 1.2em);
+		}
+	}
+/* !2.3 - Carret */
+	#shopping_cart {
+		strong {
+			font-family: $fntQSBold;
+		}
+	}
+/* !2.4 - Search */
+	#search_block_top {
+		input {
+			@include lletra(normal, normal, 1.2, 1.2em);
+			font-family: $fntQSBold;
+		}
+		.button {
+			text-indent: -999em;
+		}
+	}
+/* !2.5 - Languages */
+	#tmlanguages {
+		@include lletra(normal, normal, 1.2, 1.2em);
+		font-family: $fntQSBold;
+		.selected_language {
+			font-family: $fntQSBold;
+		}
+	}
+	
+/* ------------------------------------------ */
+/* !3 - CONTENTAREA */
+	#page {
+		h1 {
+			@include lletra (normal, normal, 3, 1.2em);
+		}
+		.rte {
+			@include lletra (normal, normal, 1.5, 1.5em);
+			p, ol, ul {
+				text-align: justify;
+			}
+			p.bigImage {
+				text-align: center;
+			}
+			a, strong {
+				font-family: $fntQSBold;
+			}
+			em {
+				font-family: $fntQSLight;
+			}
+		}
+	}
+/* !3.1 - breadcrumbs */
+	.breadcrumb {
+		@include lletra (normal, normal, 1.2, 1.5em);
+		.navigation_page {
+			font-family: $fntQSBold;
+		}
+	}
+/* !3.2 - Catalogue */
+	.cat_desc {
+		@include lletra (normal, normal, 1.6, 1.5em);	
+	}
+	
+	#product_list {
+		h3 {
+			@include lletra (normal, normal, 1.6, 1.2em);
+		}
+	}
+
+/* ------------------------------------------ */
+/* !4 - FOOTER */
+	#footer {
+		#footer_links, .extraLinks {
+			@include lletra (normal, normal, 1.3, 1.2em);
+		}
+	}

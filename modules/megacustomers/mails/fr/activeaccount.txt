@@ -1,0 +1,8 @@
+Merci d'avoir créé votre compte client sur {shop_name}, vous trouverez dans ce message un rappel de vos codes d'accès.
+
+
+Pour activer votre compte, merci de coller cette url dans votre navigateur et de valider.
+{activation_link}
+
+
+{shop_url} réalisé par PrestaShop™

@@ -1,0 +1,7 @@
+Salve {firstname} {lastname},
+ 
+Per attivare l'account, vi ringrazio incollare l'URL nel proprio browser e inserire.
+{activation_link}
+
+
+{shop_url} powered by PrestaShop™
