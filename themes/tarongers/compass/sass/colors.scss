@@ -13,6 +13,8 @@
 		3.1 - breadcrumbs
 		3.2 - Catalogue
 	4 - FOOTER
+	5 - RIGHT
+		5.1 - Cart
 ---------------------------------------------- */
 
 /* !COLORS */
@@ -199,13 +201,40 @@
 		.catIntro {
 			background: url('../img/oranges/barritas.jpg') no-repeat center top transparent;
 		}
+		.btComparar {
+			background: transparent;
+			border: 0;
+			cursor: pointer;
+		}
+		.productsSortForm { //Dropdown menu for sorting
+			border-bottom: 1px solid lighten($colGris,16%);
+			label {
+				color: $colNegre;
+			}
+		}
+		.product_view {
+			li {
+				opacity: .4;
+				cursor: pointer;
+				&.current {
+					opacity: 1;
+				}
+				&#product_view_grid {
+					background: url('../img/oranges/icones.png') no-repeat -31px 0px transparent;
+				}
+				&#product_view_list {
+					background: url('../img/oranges/icones.png') no-repeat -66px 0px transparent;
+				}
+			}
+		}
+
 	}
 	#product_list {
-		border-top: 1px solid $colGris;
 		li {
 			.product_img_link {
 				@include box-shadow(3px 3px 20px $colGris);
 				border: 1px solid lighten($colGris,10%);
+				background-color: $colBlanc;
 			}
 			h3 {
 				color: $colNegre;
@@ -217,6 +246,9 @@
 					}
 				}
 			}
+			.availability {
+				color: green;
+				}
 		}
 	}
 	
@@ -248,3 +280,7 @@
 			}
 		}
 	}
+	
+/* ------------------------------------------ */
+/* !5 - RIGHT */
+/* !5.1 - Cart */

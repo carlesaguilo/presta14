@@ -13,21 +13,23 @@
 		3.1 - breadcrumbs
 		3.2 - Catalogue
 	4 - FOOTER
+	5 - RIGHT
+		5.1 - Cart
 ---------------------------------------------- */
 /* !VARIABLES */
 /* !MIXINS */
-/* line 27, ../compass/sass/layout.scss */
-.clearfix, nav#tmcategories, .headerTop, .headerTop #header_user, #page .rte, #product_list, #footer #footer_links, #footer .extraLinks {
+/* line 29, ../compass/sass/layout.scss */
+.clearfix, nav#tmcategories, .headerTop, .headerTop #header_user, #page .rte, #category #columns, #category .product_sort, #product_list, #footer #footer_links, #footer .extraLinks {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */
 }
-/* line 29, ../compass/sass/layout.scss */
-.clearfix:before, nav#tmcategories:before, .headerTop:before, .headerTop #header_user:before, #page .rte:before, #product_list:before, #footer #footer_links:before, #footer .extraLinks:before, .clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #product_list:after, #footer #footer_links:after, #footer .extraLinks:after {
+/* line 31, ../compass/sass/layout.scss */
+.clearfix:before, nav#tmcategories:before, .headerTop:before, .headerTop #header_user:before, #page .rte:before, #category #columns:before, #category .product_sort:before, #product_list:before, #footer #footer_links:before, #footer .extraLinks:before, .clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #category #columns:after, #category .product_sort:after, #product_list:after, #footer #footer_links:after, #footer .extraLinks:after {
   content: "";
   display: table;
 }
-/* line 33, ../compass/sass/layout.scss */
-.clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #product_list:after, #footer #footer_links:after, #footer .extraLinks:after {
+/* line 35, ../compass/sass/layout.scss */
+.clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #category #columns:after, #category .product_sort:after, #product_list:after, #footer #footer_links:after, #footer .extraLinks:after {
   clear: both;
 }
 
@@ -35,27 +37,27 @@
 /* !1 - BODY */
 /* !1.1 - Home */
 /* Center vertically */
-/* line 46, ../compass/sass/layout.scss */
+/* line 48, ../compass/sass/layout.scss */
 html {
   height: 100%;
 }
 
-/* line 47, ../compass/sass/layout.scss */
+/* line 49, ../compass/sass/layout.scss */
 body#index {
   height: 100%;
 }
-/* line 49, ../compass/sass/layout.scss */
+/* line 51, ../compass/sass/layout.scss */
 body#index #header {
   height: auto;
   width: auto;
   position: static;
 }
-/* line 53, ../compass/sass/layout.scss */
+/* line 55, ../compass/sass/layout.scss */
 body#index #page {
   position: relative;
   height: 100%;
 }
-/* line 57, ../compass/sass/layout.scss */
+/* line 59, ../compass/sass/layout.scss */
 body#index #tmcategories {
   height: 34px;
   margin: -34px 0 0 0;
@@ -63,7 +65,7 @@ body#index #tmcategories {
   top: 50%;
   left: 0px;
 }
-/* line 63, ../compass/sass/layout.scss */
+/* line 65, ../compass/sass/layout.scss */
 body#index #footer {
   position: absolute;
   bottom: 0px;
@@ -72,13 +74,13 @@ body#index #footer {
 
 /* ------------------------------------------ */
 /* !2 - HEADER */
-/* line 71, ../compass/sass/layout.scss */
+/* line 73, ../compass/sass/layout.scss */
 #header {
   height: 250px;
   width: 100%;
   position: relative;
 }
-/* line 74, ../compass/sass/layout.scss */
+/* line 76, ../compass/sass/layout.scss */
 #header #header_logo {
   display: block;
   width: 175px;
@@ -88,13 +90,13 @@ body#index #footer {
   left: 50%;
   margin-left: -87.5px;
 }
-/* line 81, ../compass/sass/layout.scss */
+/* line 83, ../compass/sass/layout.scss */
 #header #header_right {
   padding-top: 10px;
 }
 
 /* !2.1 - Menú Principal */
-/* line 86, ../compass/sass/layout.scss */
+/* line 88, ../compass/sass/layout.scss */
 nav#tmcategories {
   text-align: center;
   clear: both;
@@ -103,14 +105,14 @@ nav#tmcategories {
   bottom: 0px;
   left: 0;
 }
-/* line 93, ../compass/sass/layout.scss */
+/* line 95, ../compass/sass/layout.scss */
 nav#tmcategories ul#cat {
   width: 68.91667%;
   padding: 6px 0 9px 0;
   margin: 0 auto;
   text-align: center;
 }
-/* line 99, ../compass/sass/layout.scss */
+/* line 101, ../compass/sass/layout.scss */
 nav#tmcategories li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -120,35 +122,35 @@ nav#tmcategories li {
   *display: inline;
   margin-left: 3%;
 }
-/* line 102, ../compass/sass/layout.scss */
+/* line 104, ../compass/sass/layout.scss */
 nav#tmcategories li:first-child {
   margin-left: 0px;
 }
 
 /* !2.2 - User */
-/* line 108, ../compass/sass/layout.scss */
+/* line 110, ../compass/sass/layout.scss */
 .headerTop {
   width: 68.91667%;
   margin: 0px auto;
 }
-/* line 112, ../compass/sass/layout.scss */
+/* line 114, ../compass/sass/layout.scss */
 .headerTop #header_user {
   float: right;
 }
-/* line 115, ../compass/sass/layout.scss */
+/* line 117, ../compass/sass/layout.scss */
 .headerTop #header_user li {
   float: left;
   margin-left: 5px;
   padding-left: 5px;
 }
-/* line 119, ../compass/sass/layout.scss */
+/* line 121, ../compass/sass/layout.scss */
 .headerTop #header_user li:first-child {
   margin-left: 0;
   padding-left: 0;
 }
 
 /* !2.3 - Carret */
-/* line 126, ../compass/sass/layout.scss */
+/* line 128, ../compass/sass/layout.scss */
 #shopping_cart {
   float: right;
   clear: both;
@@ -157,21 +159,21 @@ nav#tmcategories li:first-child {
 }
 
 /* !2.4 - Search */
-/* line 133, ../compass/sass/layout.scss */
+/* line 135, ../compass/sass/layout.scss */
 #search_block_top {
   width: 68.91667%;
   margin: 10px auto 0 auto;
 }
-/* line 136, ../compass/sass/layout.scss */
+/* line 138, ../compass/sass/layout.scss */
 #search_block_top form {
   float: right;
   padding: 2px 1px 2px 3px;
 }
-/* line 140, ../compass/sass/layout.scss */
+/* line 142, ../compass/sass/layout.scss */
 #search_block_top input {
   width: 160px;
 }
-/* line 143, ../compass/sass/layout.scss */
+/* line 145, ../compass/sass/layout.scss */
 #search_block_top .button {
   width: 16px;
   height: 16px;
@@ -180,16 +182,16 @@ nav#tmcategories li:first-child {
 }
 
 /* !2.5 - Languages */
-/* line 151, ../compass/sass/layout.scss */
+/* line 153, ../compass/sass/layout.scss */
 #tmlanguages {
   width: 68.91667%;
   margin: 0 auto;
 }
-/* line 154, ../compass/sass/layout.scss */
+/* line 156, ../compass/sass/layout.scss */
 #tmlanguages #first-languages {
   float: left;
 }
-/* line 156, ../compass/sass/layout.scss */
+/* line 158, ../compass/sass/layout.scss */
 #tmlanguages #first-languages li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -201,65 +203,65 @@ nav#tmcategories li:first-child {
 
 /* ------------------------------------------ */
 /* !3 - CONTENTAREA */
-/* line 164, ../compass/sass/layout.scss */
+/* line 166, ../compass/sass/layout.scss */
 #columns {
   width: 64%;
   margin: 0 auto 75px auto;
 }
 
-/* line 169, ../compass/sass/layout.scss */
+/* line 171, ../compass/sass/layout.scss */
 #page {
   width: 100%;
 }
-/* line 171, ../compass/sass/layout.scss */
+/* line 173, ../compass/sass/layout.scss */
 #page h1 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 177, ../compass/sass/layout.scss */
+/* line 179, ../compass/sass/layout.scss */
 #page .rte ul, #page .rte ol {
   margin-left: 2em;
   padding-left: 2em;
   margin-bottom: .5em;
 }
-/* line 182, ../compass/sass/layout.scss */
+/* line 184, ../compass/sass/layout.scss */
 #page .rte li {
   margin-bottom: .25em;
 }
-/* line 185, ../compass/sass/layout.scss */
+/* line 187, ../compass/sass/layout.scss */
 #page .rte p {
   margin-bottom: .5em;
 }
-/* line 188, ../compass/sass/layout.scss */
+/* line 190, ../compass/sass/layout.scss */
 #page .rte p.bigImage img {
   width: 100%;
   height: auto;
   max-width: 899px;
 }
-/* line 196, ../compass/sass/layout.scss */
+/* line 198, ../compass/sass/layout.scss */
 #page .rte .columnaEsq, #page .rte .columnaDreta {
   width: 48.30729%;
   margin-right: 3.25521%;
   float: left;
 }
-/* line 201, ../compass/sass/layout.scss */
+/* line 203, ../compass/sass/layout.scss */
 #page .rte .columnaDreta {
   margin-right: 0;
 }
-/* line 206, ../compass/sass/layout.scss */
+/* line 208, ../compass/sass/layout.scss */
 #page .intro {
   width: 80.65296%;
   margin: 0 auto;
 }
 
 /* !3.1 - breadcrumbs */
-/* line 212, ../compass/sass/layout.scss */
+/* line 214, ../compass/sass/layout.scss */
 .breadcrumb {
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
-/* line 215, ../compass/sass/layout.scss */
+/* line 217, ../compass/sass/layout.scss */
 .breadcrumb p {
   position: absolute;
   left: 10px;
@@ -268,40 +270,80 @@ nav#tmcategories li:first-child {
 }
 
 /* !3.2 - Catalogue */
-/* line 223, ../compass/sass/layout.scss */
+/* line 225, ../compass/sass/layout.scss */
+#category #columns {
+  width: 72.25%;
+}
+/* line 231, ../compass/sass/layout.scss */
 #category .catIntro {
   padding-top: 340px;
+  margin-bottom: 20px;
 }
-
-/* line 227, ../compass/sass/layout.scss */
-.cat_desc {
+/* line 236, ../compass/sass/layout.scss */
+#category .productsSortForm label {
+  display: block;
+}
+/* line 240, ../compass/sass/layout.scss */
+#category .cat_desc {
   text-align: center;
 }
-
-/* line 230, ../compass/sass/layout.scss */
-#product_list {
-  margin-top: 16px;
-  padding-top: 16px;
+/* line 243, ../compass/sass/layout.scss */
+#category .btComparar {
+  float: right;
+  margin-top: 25px;
 }
-/* line 233, ../compass/sass/layout.scss */
+/* line 247, ../compass/sass/layout.scss */
+#category form.productsSortForm {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+/* line 253, ../compass/sass/layout.scss */
+#category #productsSortForm {
+  float: left;
+}
+/* line 256, ../compass/sass/layout.scss */
+#category .product_view {
+  float: right;
+  margin-top: 25px;
+}
+/* line 259, ../compass/sass/layout.scss */
+#category .product_view li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 25px;
+  height: 16px;
+  margin-left: 11px;
+}
+
+/* line 266, ../compass/sass/layout.scss */
+#product_list {
+  width: 73.81776%;
+  float: left;
+  margin-right: 2.99885%;
+}
+/* line 271, ../compass/sass/layout.scss */
 #product_list li {
   display: block;
-  width: 22.37001%;
+  width: 29.0625%;
   float: left;
-  margin-left: 4.59492%;
+  margin-left: 5.9375%;
   margin-bottom: 25px;
 }
-/* line 238, ../compass/sass/layout.scss */
+/* line 276, ../compass/sass/layout.scss */
 #product_list li.item {
   margin-left: 0;
   clear: left;
 }
-/* line 242, ../compass/sass/layout.scss */
+/* line 280, ../compass/sass/layout.scss */
 #product_list li .product_img_link {
   display: block;
   margin-bottom: 12px;
 }
-/* line 246, ../compass/sass/layout.scss */
+/* line 284, ../compass/sass/layout.scss */
 #product_list li img {
   width: 100%;
   height: auto;
@@ -309,18 +351,18 @@ nav#tmcategories li:first-child {
 
 /* ------------------------------------------ */
 /* !4 - FOOTER */
-/* line 254, ../compass/sass/layout.scss */
+/* line 292, ../compass/sass/layout.scss */
 #footer {
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
 }
-/* line 258, ../compass/sass/layout.scss */
+/* line 296, ../compass/sass/layout.scss */
 #footer #footer_links, #footer .extraLinks {
   width: 68.91667%;
   margin: 0 auto;
 }
-/* line 262, ../compass/sass/layout.scss */
+/* line 300, ../compass/sass/layout.scss */
 #footer #footer_links li, #footer .extraLinks li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -331,12 +373,22 @@ nav#tmcategories li:first-child {
   padding-left: 16px;
   margin-left: 16px;
 }
-/* line 266, ../compass/sass/layout.scss */
+/* line 304, ../compass/sass/layout.scss */
 #footer #footer_links li:first-child, #footer .extraLinks li:first-child {
   margin-left: 0px;
   padding-left: 0px;
 }
-/* line 272, ../compass/sass/layout.scss */
+/* line 310, ../compass/sass/layout.scss */
 #footer .extraLinks {
   margin-top: 20px;
 }
+
+/* ------------------------------------------ */
+/* !5 - RIGHT */
+/* line 317, ../compass/sass/layout.scss */
+#right_column {
+  float: left;
+  width: 23.06805%;
+}
+
+/* !5.1 - Cart */

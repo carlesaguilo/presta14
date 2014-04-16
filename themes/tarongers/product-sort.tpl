@@ -54,6 +54,9 @@ $(document).ready(function()
 
 <form class="productsSortForm" action="{$request|escape:'htmlall':'UTF-8'}">
 	<p class="select">
+		
+		<label for="selectPrductSort">{l s='Sort by'}</label>
+		
 		<select id="selectPrductSort">
 			<option value="{$orderbydefault|escape:'htmlall':'UTF-8'}:{$orderwaydefault|escape:'htmlall':'UTF-8'}" {if $orderby eq $orderbydefault}selected="selected"{/if}>{l s='--'}</option>
 			{if !$PS_CATALOG_MODE}
@@ -66,7 +69,7 @@ $(document).ready(function()
 				<option value="quantity:desc" {if $orderby eq 'quantity' AND $orderway eq 'desc'}selected="selected"{/if}>{l s='In stock'}</option>
 			{/if}
 		</select>
-		<label for="selectPrductSort">{l s='Sort by'}</label>
+		
 	</p>
 </form>
 <!-- /Sort products -->

@@ -13,6 +13,8 @@
 		3.1 - breadcrumbs
 		3.2 - Catalogue
 	4 - FOOTER
+	5 - RIGHT
+		5.1 - Cart
 ---------------------------------------------- */
 
 	@import "compass/css3";
@@ -220,21 +222,57 @@
 	}
 /* !3.2 - Catalogue */
 	#category {
+		#columns {
+			@extend .clearfix;
+			width: (867px / $pxNavAmplada) * 100%;
+		}
+		#center_column {
+		}
 		.catIntro {
 		  padding-top: 340px;
+		  margin-bottom: 20px;
 		}
-	}
-	.cat_desc {
-		text-align: center;
+		.productsSortForm { //Dropdown menu for sorting
+			label {
+				display: block;
+			}
+		}	
+		.cat_desc {
+			text-align: center;
+		}
+		.btComparar {
+			float: right;
+			margin-top: 25px;
+		}
+		form.productsSortForm {
+			margin-bottom: 16px; padding-bottom: 16px;
+		}
+		.product_sort {
+			@extend .clearfix;
+		}
+		#productsSortForm {
+			float: left;
+		}
+		.product_view {
+			float: right;
+			margin-top: 25px;
+			li {
+				@include inline-block;
+				width: 25px; height: 16px;
+				margin-left: 11px;
+			}
+		}
 	}
 	#product_list {
 		@extend .clearfix;
-		margin-top: 16px; padding-top: 16px;
+		width: (640px / 867px) * 100%;
+		float: left;
+		margin-right: (26px / 867px) * 100%;
 		li {
 			display: block;
-			width: (185px / $pxWebAmplada) * 100%;
+			width: (186px / 640px) * 100%;
 			float: left;
-			margin-left: (38px / $pxWebAmplada) * 100%; margin-bottom: 25px;
+			margin-left: (38px / 640px) * 100%; margin-bottom: 25px;
 			&.item {
 				margin-left: 0;
 				clear: left;
@@ -273,3 +311,11 @@
 			margin-top: 20px;
 		}
 	}
+	
+/* ------------------------------------------ */
+/* !5 - RIGHT */
+	#right_column {
+		float: left;
+		width: (200px / 867px) * 100%;
+	}
+/* !5.1 - Cart */

@@ -33,7 +33,7 @@
 </script>
 	<form method="get" action="{$link->getPageLink('products-comparison.php')}" onsubmit="true">
 		<p>
-		<input type="submit" class="button" value="{l s='Compare'}" style="float:right" />
+		<input type="submit" class="button btComparar" value="{l s='Compare'}"  />
 		<input type="hidden" name="compare_product_list" class="compare_product_list" value="" />
 		</p>
 	</form>
