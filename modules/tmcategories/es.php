@@ -23,11 +23,12 @@ $_MODULE['<{blockcategories}prestashop>blockcategories_footer_af1b98adf7f686b84c
 $_MODULE['<{tmcategories}prestashop>tmcategories_8f7f4c1ce7a4f933663d10543562b096'] = 'H&B';
 $_MODULE['<{tmcategories}prestashop>tmcategories_f9850531d2cc334b40589bf7cce1a4dc'] = 'El incienso';
 $_MODULE['<{tmcategories}prestashop>tmcategories_e5348e0c46480066c8c2176421798201'] = 'Filosofía';
-$_MODULE['<{tmcategories}prestashop>tmcategories_c32516babc5b6c47eb8ce1bfc223253c'] = 'Inciensos';
+$_MODULE['<{tmcategories}prestashop>tmcategories_d6af2af9e7d834863bdd929898de0c30'] = 'Inciensos';
 $_MODULE['<{tmcategories}prestashop>tmcategories_bbaff12800505b22a853e8b7f4eb6a22'] = 'Contacta';
 $_MODULE['<{tmcategories}prestashop>tmcategories_b17c09efc28699a790f2a5ac30327672'] = 'Puntos de Venta';
 $_MODULE['<{tmcategories}prestashop>tmcategories_e7a599ae1a0f8b7c24898b9c1aa7d1b8'] = 'Tiendas Físicas';
 $_MODULE['<{tmcategories}prestashop>tmcategories_a9f7ecebb493e129aafb4cbfd73e85df'] = 'Tiendas On-line';
-$_MODULE['<{tmcategories}prestashop>tmcategories_ '] = 'Te recomendamos';
-$_MODULE['<{tmcategories}prestashop>tmcategories_ '] = 'Entrar';
-$_MODULE['<{tmcategories}prestashop>tmcategories_ '] = 'Comprar';
+$_MODULE['<{tmcategories}prestashop>tmcategories_0f169d3dc0db47a4074489a89cb034b5'] = 'Te recomendamos';
+$_MODULE['<{tmcategories}prestashop>tmcategories_bffe9a3c9a7e00ba00a11749e022d911'] = 'Entrar';
+$_MODULE['<{tmcategories}prestashop>tmcategories_831a28f1e8df07c553fcd59546465d13'] = 'Comprar';
+$_MODULE['<{tmcategories}prestashop>tmcategories_d95cf4ab2cbf1dfb63f066b50558b07d'] = 'Mi cuenta';

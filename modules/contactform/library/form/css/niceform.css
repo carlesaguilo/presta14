@@ -18,19 +18,15 @@ line-height:2em;
 
 form.formular {
 
-	font-family: tahoma, verdana, "sans-serif";
+	font-family: inherit;
 
-	font-size: 12px;
+	font-size: inherit;
 
 	padding: 20px;
-
-	border:solid 0px #b7ddf2;
 
 	width: 300px;
 
 	margin: 0 auto;
-
-	background:#FFFFFF;
 
 }
 
@@ -173,6 +169,8 @@ padding-bottom:10px;
 	margin-top: 4px;
 
 	background: #FFF repeat-x;
+	max-width: 400px;
+	max-height: 300px;
 
 }
 

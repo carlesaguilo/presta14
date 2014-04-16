@@ -18,7 +18,7 @@ $_MODULE['<{contactform}prestashop>contactform_edf2dc092754ead201be533ded71f497'
 
 $_MODULE['<{contactform}prestashop>contactform_bec62a5ec4fa0c807b54cdf7b3456420'] = 'El correo debe tener un sujeto';
 
-$_MODULE['<{contactform}prestashop>contactform_2a81ce1d69a8c672b13f713fed8efbd7'] = 'El correo electr&oacute;nico es requerido';
+$_MODULE['<{contactform}prestashop>contactform_2a81ce1d69a8c672b13f713fed8efbd7'] = 'El correo electr&oacute;nico es obligatorio';
 
 $_MODULE['<{contactform}prestashop>contactform_0b2d48dcbfcf208bb1420f1438cf94c3'] = 'Direcci&oacute;n de correo electr&oacute;nico v&aacute;lida';
 
@@ -26,7 +26,7 @@ $_MODULE['<{contactform}prestashop>contactform_f6c69468b9ce19e1b08a7ee80f6f6260'
 
 $_MODULE['<{contactform}prestashop>contactform_f00c17a7c9f7984ba8bd9396f5c388b6'] = 'Los par&aacute;metros de las formularios se han guardado con &eacute;xito';
 
-$_MODULE['<{contactform}prestashop>contactform_bdef2580ba9d831b4292b32d4adf6b6f'] = 'Id campos requeridos';
+$_MODULE['<{contactform}prestashop>contactform_bdef2580ba9d831b4292b32d4adf6b6f'] = 'Id campos obligatorios';
 
 $_MODULE['<{contactform}prestashop>contactform_7d09843a01448bd5ac4ad4bcfb2c388e'] = 'El nombre del campo es obligatorio';
 
