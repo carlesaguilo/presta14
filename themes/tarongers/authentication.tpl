@@ -99,9 +99,32 @@ $(function(){ldelim}
 {include file="$tpl_dir./errors.tpl"}
 {assign var='stateExist' value=false}
 {if !isset($email_create)}
+	
+	<form action="{$link->getPageLink('authentication.php', true)}" method="post" id="login_form" class="std">
+		<fieldset>
+			<h3>{l s='Already registered ?'}</h3>
+			<p class="text">
+				<label for="email">{l s='E-mail address'}</label>
+				<span><input type="text" id="email" name="email" value="{if isset($smarty.post.email)}{$smarty.post.email|stripslashes|escape:'htmlall':'UTF-8'}{/if}" class="account_input" /></span>
+			</p>
+			<p class="text">
+				<label for="passwd">{l s='Password'}</label>
+				<span><input type="password" id="passwd" name="passwd" value="{if isset($smarty.post.passwd)}{$smarty.post.passwd|stripslashes|escape:'htmlall':'UTF-8'}{/if}" class="account_input" /></span>
+			</p>
+			
+			<p class="lost_password"><a href="{$link->getPageLink('password.php')}">{l s='Forgot your password?'}</a></p>
+			
+			<p class="submit">
+				{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'htmlall':'UTF-8'}" />{/if}
+				<input type="submit" id="SubmitLogin" name="SubmitLogin" class="button" value="{l s='Log in'}" />
+			</p>
+			
+		</fieldset>
+	</form>
+	
 	<form action="{$link->getPageLink('authentication.php', true)}" method="post" id="create-account_form" class="std">
 		<fieldset>
-			<h3>{l s='Create your account'}</h3>
+			<!-- <h3>{l s='Create your account'}</h3> -->
 			<h4>{l s='Enter your e-mail address to create an account'}.</h4>
 			<p class="text">
 				<label for="email_create">{l s='E-mail address'}</label>
@@ -114,24 +137,7 @@ $(function(){ldelim}
 			</p>
 		</fieldset>
 	</form>
-	<form action="{$link->getPageLink('authentication.php', true)}" method="post" id="login_form" class="std">
-		<fieldset>
-			<h3>{l s='Already registered ?'}</h3>
-			<p class="text">
-				<label for="email">{l s='E-mail address'}</label>
-				<span><input type="text" id="email" name="email" value="{if isset($smarty.post.email)}{$smarty.post.email|stripslashes|escape:'htmlall':'UTF-8'}{/if}" class="account_input" /></span>
-			</p>
-			<p class="text">
-				<label for="passwd">{l s='Password'}</label>
-				<span><input type="password" id="passwd" name="passwd" value="{if isset($smarty.post.passwd)}{$smarty.post.passwd|stripslashes|escape:'htmlall':'UTF-8'}{/if}" class="account_input" /></span>
-			</p>
-			<p class="submit">
-				{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'htmlall':'UTF-8'}" />{/if}
-				<input type="submit" id="SubmitLogin" name="SubmitLogin" class="button" value="{l s='Log in'}" />
-			</p>
-			<p class="lost_password"><a href="{$link->getPageLink('password.php')}">{l s='Forgot your password?'}</a></p>
-		</fieldset>
-	</form>
+	
 	{if isset($inOrderProcess) && $inOrderProcess && $PS_GUEST_CHECKOUT_ENABLED}
 		<form action="{$link->getPageLink('authentication.php', true)}?back={$back}" method="post" id="new_account_form" class="std">
 			<fieldset>
