@@ -12,6 +12,7 @@
 	3 - CONTENTAREA
 		3.1 - breadcrumbs
 		3.2 - Catalogue
+		3.3 - Product
 	4 - FOOTER
 	5 - RIGHT
 		5.1 - Cart
@@ -174,6 +175,10 @@
 			text-align: center;
 			margin-bottom: 30px;
 		}
+		h2 {
+			margin-bottom: 20px;
+			text-align: left;
+		}
 		.rte {
 			@extend .clearfix;
 			ul, ol {
@@ -209,6 +214,13 @@
 			width: (667px / $pxWebAmplada) * 100%;
 			margin: 0 auto;
 		}
+		.hb1, hb2 {
+			width: (373px / $pxWebAmplada) * 100%;
+			float: left;
+		}
+		.hb1 {
+			margin-right: (50px / $pxWebAmplada) * 100%;
+		}
 	}
 /* !3.1 - breadcrumbs */
 	.breadcrumb {
@@ -225,8 +237,6 @@
 		#columns {
 			@extend .clearfix;
 			width: (867px / $pxNavAmplada) * 100%;
-		}
-		#center_column {
 		}
 		.catIntro {
 		  padding-top: 340px;
@@ -261,7 +271,7 @@
 				width: 25px; height: 16px;
 				margin-left: 11px;
 			}
-		}
+		}		
 	}
 	#product_list {
 		@extend .clearfix;
@@ -292,6 +302,21 @@
 				float: right;
 				display: block;
 			}
+			.price {
+				display: block;
+				float: right;
+			}
+			.ajax_add_to_cart_button {
+				display: block;
+				text-align: center;
+				padding: 3px;
+			}
+		}
+	}
+/* !3.3 - Product */
+	#product {
+		#primary_block {
+			 padding-top: 340px;
 		}
 	}
 
@@ -328,11 +353,14 @@
 	}
 /* !5.1 - Cart */
 	#cart_block {
-		width: (190px / 200px) * 100%;
+		width: ((190px / 200px) * 100%) - 20%;
 		float: right;
-		padding: 30px 5% 15px 5%;
+		padding: 20px 10% 15px 10%;
 		h4, #cart_block_summary {
 			text-align: center;
+		}
+		h4 {
+			padding-bottom: 6px;
 		}
 		.cart_block_list {
 			text-align: left;
@@ -340,5 +368,15 @@
 		#cart-buttons {
 			text-align: center;
 			padding-top: 10px; margin-top: 10px;
+		}
+		.cart-prices-block {
+			@extend .clearfix;
+			span {
+				float: left;
+				display: block;
+				&.price {
+					float: right;
+				}
+			}
 		}
 	}

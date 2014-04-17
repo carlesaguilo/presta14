@@ -12,6 +12,7 @@
 	3 - CONTENTAREA
 		3.1 - breadcrumbs
 		3.2 - Catalogue
+		3.3 - Product
 	4 - FOOTER
 	5 - RIGHT
 		5.1 - Cart
@@ -122,6 +123,9 @@
 		h1 {
 			@include lletra (normal, normal, 3, 1.2em);
 		}
+		h2 {
+			@include lletra (normal, normal, 2.7, 1.2em);
+		}
 		.rte {
 			@include lletra (normal, normal, 1.5, 1.5em);
 			p, ol, ul {
@@ -165,7 +169,15 @@
 			@include lletra (normal, normal, 1.1, 1.5em);
 			text-transform: uppercase;
 		}
+		.price {
+			@include lletra (normal, normal, 1.4, 1.5em);
+			font-family: $fntQSBold;
+		}
+		.ajax_add_to_cart_button {
+			@include lletra (normal, normal, 1.3, 1.5em);
+		}
 	}
+/* !3.3 - Product */
 
 /* ------------------------------------------ */
 /* !4 - FOOTER */
@@ -183,10 +195,16 @@
 			@include lletra (normal, normal, 2.5, 1.2em);
 		}
 		.block_content {
-			@include lletra (normal, normal, 1.2, 1.2em);
+			@include lletra (normal, normal, 1.3, 1.5em);
 		}
 		.cart_block_list {
-			@include lletra (normal, normal, 1.2, 1.2em);
+			@include lletra (normal, normal, 1.3, 1.5em);
 			font-family: $fntQSBold;
+		}
+		.btTotal, .remove_link {
+			font-family: $fntQSBold;
+		}
+		#button_order_cart {
+			@include lletra (normal, normal, 2, 1.2em);
 		}
 	}

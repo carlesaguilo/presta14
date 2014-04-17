@@ -39,7 +39,7 @@ var removingLinkText = '{l s='remove this product from my cart' mod='blockcart' 
 				<span class="quantity-formated"><span class="quantity">{$product.cart_quantity}</span>x</span>
 				<a class="cart_block_product_name" href="{$link->getProductLink($product.id_product, $product.link_rewrite, $product.category)}" title="{$product.name|escape:html:'UTF-8'}">
 				{$product.name|truncate:13:'...'|escape:html:'UTF-8'}</a>
-				<span class="remove_link">{if !isset($customizedDatas.$productId.$productAttributeId)}<a rel="nofollow" class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart.php')}?delete&amp;id_product={$product.id_product}&amp;ipa={$product.id_product_attribute}&amp;token={$static_token}" title="{l s='remove this product from my cart' mod='blockcart'}">&nbsp;</a>{/if}</span>
+				<span class="remove_link">{if !isset($customizedDatas.$productId.$productAttributeId)}<a rel="nofollow" class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart.php')}?delete&amp;id_product={$product.id_product}&amp;ipa={$product.id_product_attribute}&amp;token={$static_token}" title="{l s='remove this product from my cart' mod='blockcart'}"></a>{/if}</span>
 				<span class="price">{if $priceDisplay == $smarty.const.PS_TAX_EXC}{displayWtPrice p="`$product.total`"}{else}{displayWtPrice p="`$product.total_wt`"}{/if}</span>
 			</dt>
 			{if isset($product.attributes_small)}
@@ -81,7 +81,7 @@ var removingLinkText = '{l s='remove this product from my cart' mod='blockcart' 
 		</table>
 		{/if}
 		<div class="cart-prices">
-			<div class="cart-prices-block">
+			<div class="cart-prices-block btTransport">
 				<span>{l s='Shipping' mod='blockcart'}</span>
 				<span id="cart_block_shipping_cost" class="price ajax_cart_shipping_cost">{$shipping_cost}</span>
 			</div>
@@ -100,7 +100,7 @@ var removingLinkText = '{l s='remove this product from my cart' mod='blockcart' 
 			</div>
 -->
 			{/if}
-			<div class="cart-prices-block">
+			<div class="cart-prices-block btTotal">
 				<span>{l s='Total' mod='blockcart'}</span>
 				<span id="cart_block_total" class="price ajax_block_cart_total">{$total}</span>
 			</div>

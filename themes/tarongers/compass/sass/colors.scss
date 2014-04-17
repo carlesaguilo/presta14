@@ -12,6 +12,7 @@
 	3 - CONTENTAREA
 		3.1 - breadcrumbs
 		3.2 - Catalogue
+		3.3 - Product
 	4 - FOOTER
 	5 - RIGHT
 		5.1 - Cart
@@ -20,6 +21,7 @@
 /* !COLORS */
 	$colGrisClar: #F4F4F4;
 	$colOcre: #978100;
+	$colOcreClar: #b9ab5d;
 	$colGroc: #EAD200;
 	$colBlanc: #FFFFFF;
 	$colNegre: #444444;
@@ -156,7 +158,7 @@
 		}
 	}
 	#page {
-		h1 {
+		h1, h2 {
 			color: $colOcre;
 		}
 		.rte {
@@ -194,6 +196,7 @@
 	#category {
 		#page {
 			@include background-image (url('../img/oranges/fons-fum_01.jpg'), url('../img/oranges/fons-fum_08.jpg'), url('../img/oranges/fons-fum_10.jpg'));
+			@include background-size (auto, 100%, auto);
 			background-repeat: no-repeat;
 			background-position: left 250px, center center, left bottom;
 			background-color: transparent;
@@ -248,7 +251,27 @@
 			}
 			.availability {
 				color: green;
+			}
+			.price {
+				color: $colOcre;
+			}
+			.ajax_add_to_cart_button {
+				text-decoration: none;
+				color: $colGroc;
+				background-color: $colOcre;
+				&:hover {
+					@include transition(background-color .25s ease-out);
+					color: $colBlanc;
+					background-color: lighten($colOcre, 10%);
 				}
+			}
+		}
+	}
+	
+/* !3.3 - Product */
+	#product {
+		#primary_block {
+			background: url('../img/oranges/barritas.jpg') no-repeat center top transparent;
 		}
 	}
 	
@@ -293,25 +316,57 @@
 			text-indent: -999em;
 			height: 27px;width: 11px;
 			position: absolute;
+			margin-top: -17px;
 			left: -10px; top: 50%;
-			background: url('../img/oranges/icones.png') no-repeat -390px -187px transparent;
+			background: url('../img/oranges/icones.png') no-repeat -390px -189px transparent;
 		}
 		h4 {
 			color: $colBlanc;
+			border-bottom: 1px solid $colOcreClar;
 			a {
 				color: $colBlanc;
 				text-decoration: none;
 			}
 		}
-		.block_content {
+		.block_content, a {
 			color: $colNegre;
 		}
-		#cart-buttons {
-			border-top: 1px solid $colGroc;
-			color: $colGroc;
-			a {
-				color: $colGroc;
-				text-decoration: none;
+		#cart_block_summary {
+			margin-bottom: 1em;
+		}
+		.products {
+			.price {
+				float: right;
+				display: block;
 			}
+		}
+		.ajax_cart_total, .price {
+			color: $colBlanc;
+		}
+		#cart-buttons {
+			border-top: 1px solid $colOcreClar;
+			color: $colOcreClar;
+			a {
+				color: $colOcreClar;
+				text-decoration: none;
+				&:hover {
+					color: $colBlanc;
+				}
+			}
+		}
+		.btTransport, .btTransport .price, .btTotal, .btTotal .price {
+			color: $colGroc;
+		}
+		dt {
+			position: relative;
+		}
+		.remove_link {
+			color: red;
+			display: block;
+			width: 10px; height: 10px;
+			position: absolute;
+			right: -13px; top: 5px;
+			background: url('../img/oranges/icones.png') no-repeat 0px -40px transparent;
+			cursor: pointer;
 		}
 	}
