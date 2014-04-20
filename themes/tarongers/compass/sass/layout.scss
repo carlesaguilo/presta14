@@ -191,6 +191,7 @@
 			}
 			h5, h6 {
 				margin-bottom: 1em;
+				margin-top: 2em;
 			}
 			p {
 				margin-bottom: .5em;
@@ -233,6 +234,21 @@
 				margin-left: 0;
 			}
 		}
+	}
+	.cms9 {
+		#page .rte {
+			h1 {
+				padding-top: 70px;
+			}
+			.columnaEsq {
+				width:45%;
+				margin-right: 10%;
+			}
+			.columnaDreta {
+				margin-right: 0 !important;
+			}
+		}
+		
 	}
 /* !3.1 - breadcrumbs */
 	.breadcrumb {
