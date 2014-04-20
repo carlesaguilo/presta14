@@ -10,7 +10,7 @@
 		2.4 - Search
 		2.5 - Languages
 	3 - CONTENTAREA
-		3.1 - breadcrumbs
+		3.1 - Breadcrumbs
 		3.2 - Catalogue
 		3.3 - Product
 		3.4 - Authentication
@@ -324,17 +324,21 @@
 	#authentication {
 		h1 {
 			padding-top: 30px;
+			float: right;
+			width: 410px;
+			text-align: left;
 		}
 		#center_column {
 			@extend .clearfix;
-			height: 628px;
+			min-height: 628px;
 		}
-		#login_form {
+		#login_form, #account-creation_form {
 			padding: 25px;
 			width: 360px;
 			float: right;	
+			clear: both;
 			h3 {
-				margin-bottom: .5em;
+				margin-bottom: .5em; margin-top: 1em;
 			}
 			label {
 				display: block;
@@ -354,20 +358,51 @@
 				width: auto;
 				margin-top: 10px;
 			}
+			.gender {
+				input, label {
+					display: inline;
+					width: auto;
+					float: none;
+				}
+			}
+			input#passwd {
+				margin-bottom: 0;
+			}
+			.form_info {
+				margin-bottom: 1em;
+				display: block;
+				text-align: right;
+			}
+			.select span {
+				display: block;
+			}
+			select {
+				width: 200px;
+				margin-bottom: 1em;
+			}
+			.birthDate select {
+				width: auto;
+			}
+			#submitAccount {
+				margin-left: 200px;
+			}
 		}
-		
 		.lost_password {
 			text-align: right;
 		}
 		#create-account_form {
-			float: right;
 			width: 410px;
+			float: right;
 			clear: right;
-			margin-top: 30px;
+			padding-top: 30px;
 			.submit {
 				text-align: center;
 				clear: right;
-				
+			}
+			.gender {
+				.input {
+					display: inline;
+				}
 			}
 		}
 	}

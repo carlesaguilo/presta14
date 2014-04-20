@@ -49,7 +49,7 @@ countries = new Array();
 <form action="{$base_dir_ssl}modules/paypal/express/submit.php" method="post" id="account-creation_form" class="std">
 	<fieldset class="account_creation">
 		<h3>{l s='Your personal information' mod='paypal'}</h3>
-		<p class="radio required">
+		<p class="radio required gender">
 			<span>{l s='Title'}</span>
 			<input type="radio" name="id_gender" id="id_gender1" value="1" {if isset($smarty.post.id_gender) && $smarty.post.id_gender == 1}checked="checked"{/if} />
 			<label for="id_gender1" class="top">{l s='Mr.' mod='paypal'}</label>

@@ -182,18 +182,18 @@
 
 /* !3.4 - Authentication */
 	#authentication {
-		#login_form {
+		#login_form, #account-creation_form {
 			h3 {
 				@include lletra (normal, normal, 1.5, 1.5em);
 				font-family: $fntQSBold;
 			}
-			label, .lost_password, input {
+			label, .lost_password, input, span {
 				@include lletra (normal, normal, 1.3, 1.5em);
 			}
 			input {
 				font-family: $fntQSBold;
 			}
-			#SubmitLogin {
+			#SubmitLogin, #submitAccount  {
 				@include lletra (normal, normal, 1.5, 1em);
 				font-family: $fntQSBold;
 			}
@@ -202,6 +202,11 @@
 			@include lletra (normal, normal, 1.3, 1.5em);
 			.submit input {
 				@include lletra (normal, normal, 2, 1.2em);
+			}
+		}
+		.required {
+			sup {
+				font-weight: bold;
 			}
 		}
 	}

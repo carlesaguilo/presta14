@@ -322,35 +322,35 @@ nav#tmcategories .current a {
 /* !3.4 - Authentication */
 /* line 280, ../compass/sass/colors.scss */
 #authentication #page {
-  background-image: url("../img/oranges/shiva.jpg"), url("../img/oranges/fons-fum_05.jpg"), url("../img/oranges/fons-fum_04.jpg");
+  background-image: url("../img/oranges/shiva.jpg"), url("../img/oranges/fons-fum_04.jpg");
   -webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: 100px 250px, left 250px, right bottom;
+  background-position: 10% 250px, right bottom;
   background-color: transparent;
 }
 /* line 287, ../compass/sass/colors.scss */
-#authentication #login_form {
+#authentication #login_form, #authentication #account-creation_form {
   background-color: #b4b4b4;
   background-color: rgba(180, 180, 180, 0.5);
   color: #444444;
 }
 /* line 291, ../compass/sass/colors.scss */
-#authentication #login_form input {
+#authentication #login_form input, #authentication #account-creation_form input {
   background-color: white;
   border: 1px solid #cccccc;
 }
 /* line 296, ../compass/sass/colors.scss */
-#authentication #login_form input#SubmitLogin {
+#authentication #login_form input#SubmitLogin, #authentication #login_form input#submitAccount, #authentication #account-creation_form input#SubmitLogin, #authentication #account-creation_form input#submitAccount {
   color: #444444;
   background-color: transparent;
   cursor: pointer;
   border: 0;
 }
 /* line 301, ../compass/sass/colors.scss */
-#authentication #login_form input#SubmitLogin:hover {
+#authentication #login_form input#SubmitLogin:hover, #authentication #login_form input#submitAccount:hover, #authentication #account-creation_form input#SubmitLogin:hover, #authentication #account-creation_form input#submitAccount:hover {
   color: #fdd800;
 }
 /* line 306, ../compass/sass/colors.scss */
@@ -379,32 +379,36 @@ nav#tmcategories .current a {
   padding: 3px;
   width: 250px;
 }
+/* line 330, ../compass/sass/colors.scss */
+#authentication .required sup {
+  color: #ff0000;
+}
 
 /* ------------------------------------------ */
 /* !4 - FOOTER */
-/* line 336, ../compass/sass/colors.scss */
+/* line 340, ../compass/sass/colors.scss */
 #footer #footer_links li {
   border-left: 1px solid #978100;
 }
-/* line 338, ../compass/sass/colors.scss */
+/* line 342, ../compass/sass/colors.scss */
 #footer #footer_links li:first-child {
   border-left: 0;
 }
-/* line 342, ../compass/sass/colors.scss */
+/* line 346, ../compass/sass/colors.scss */
 #footer #footer_links a {
   color: #978100;
   text-decoration: none;
 }
-/* line 345, ../compass/sass/colors.scss */
+/* line 349, ../compass/sass/colors.scss */
 #footer #footer_links a:hover {
-  color: #444444;
+  color: #fdd800;
 }
-/* line 351, ../compass/sass/colors.scss */
+/* line 355, ../compass/sass/colors.scss */
 #footer .extraLinks a {
   color: #978100;
   text-decoration: none;
 }
-/* line 354, ../compass/sass/colors.scss */
+/* line 358, ../compass/sass/colors.scss */
 #footer .extraLinks a:hover {
   color: #444444;
 }
@@ -412,12 +416,12 @@ nav#tmcategories .current a {
 /* ------------------------------------------ */
 /* !5 - RIGHT */
 /* !5.1 - Cart */
-/* line 364, ../compass/sass/colors.scss */
+/* line 368, ../compass/sass/colors.scss */
 #cart_block {
   background-color: #978100;
   position: relative;
 }
-/* line 367, ../compass/sass/colors.scss */
+/* line 371, ../compass/sass/colors.scss */
 #cart_block:after {
   content: "\003c";
   display: block;
@@ -430,56 +434,56 @@ nav#tmcategories .current a {
   top: 50%;
   background: url("../img/oranges/icones.png") no-repeat -390px -189px transparent;
 }
-/* line 377, ../compass/sass/colors.scss */
+/* line 381, ../compass/sass/colors.scss */
 #cart_block h4 {
   color: white;
   border-bottom: 1px solid #b9ab5d;
 }
-/* line 380, ../compass/sass/colors.scss */
+/* line 384, ../compass/sass/colors.scss */
 #cart_block h4 a {
   color: white;
   text-decoration: none;
 }
-/* line 385, ../compass/sass/colors.scss */
+/* line 389, ../compass/sass/colors.scss */
 #cart_block .block_content, #cart_block a {
   color: #444444;
 }
-/* line 388, ../compass/sass/colors.scss */
+/* line 392, ../compass/sass/colors.scss */
 #cart_block #cart_block_summary {
   margin-bottom: 1em;
 }
-/* line 392, ../compass/sass/colors.scss */
+/* line 396, ../compass/sass/colors.scss */
 #cart_block .products .price {
   float: right;
   display: block;
 }
-/* line 397, ../compass/sass/colors.scss */
+/* line 401, ../compass/sass/colors.scss */
 #cart_block .ajax_cart_total, #cart_block .price {
   color: white;
 }
-/* line 400, ../compass/sass/colors.scss */
+/* line 404, ../compass/sass/colors.scss */
 #cart_block #cart-buttons {
   border-top: 1px solid #b9ab5d;
   color: #b9ab5d;
 }
-/* line 403, ../compass/sass/colors.scss */
+/* line 407, ../compass/sass/colors.scss */
 #cart_block #cart-buttons a {
   color: #b9ab5d;
   text-decoration: none;
 }
-/* line 406, ../compass/sass/colors.scss */
+/* line 410, ../compass/sass/colors.scss */
 #cart_block #cart-buttons a:hover {
   color: white;
 }
-/* line 411, ../compass/sass/colors.scss */
+/* line 415, ../compass/sass/colors.scss */
 #cart_block .btTransport, #cart_block .btTransport .price, #cart_block .btTotal, #cart_block .btTotal .price {
   color: #ead200;
 }
-/* line 414, ../compass/sass/colors.scss */
+/* line 418, ../compass/sass/colors.scss */
 #cart_block dt {
   position: relative;
 }
-/* line 417, ../compass/sass/colors.scss */
+/* line 421, ../compass/sass/colors.scss */
 #cart_block .remove_link {
   color: red;
   display: block;
@@ -491,7 +495,7 @@ nav#tmcategories .current a {
   background: url("../img/oranges/icones.png") no-repeat 0px -40px transparent;
   cursor: pointer;
 }
-/* line 426, ../compass/sass/colors.scss */
+/* line 430, ../compass/sass/colors.scss */
 #cart_block #cart-price-precisions {
   color: #6a6a6a;
 }
