@@ -109,7 +109,7 @@ nav#tmcategories {
 }
 /* line 97, ../compass/sass/layout.scss */
 nav#tmcategories ul#cat {
-  width: 68.91667%;
+  width: 69.16667%;
   padding: 6px 0 9px 0;
   margin: 0 auto;
   text-align: center;
@@ -132,7 +132,7 @@ nav#tmcategories li:first-child {
 /* !2.2 - User */
 /* line 112, ../compass/sass/layout.scss */
 .headerTop {
-  width: 68.91667%;
+  width: 69.16667%;
   margin: 0px auto;
 }
 /* line 116, ../compass/sass/layout.scss */
@@ -163,7 +163,7 @@ nav#tmcategories li:first-child {
 /* !2.4 - Search */
 /* line 137, ../compass/sass/layout.scss */
 #search_block_top {
-  width: 68.91667%;
+  width: 69.16667%;
   margin: 10px auto 0 auto;
 }
 /* line 140, ../compass/sass/layout.scss */
@@ -186,7 +186,7 @@ nav#tmcategories li:first-child {
 /* !2.5 - Languages */
 /* line 155, ../compass/sass/layout.scss */
 #tmlanguages {
-  width: 68.91667%;
+  width: 69.16667%;
   margin: 0 auto;
 }
 /* line 158, ../compass/sass/layout.scss */
@@ -211,73 +211,88 @@ nav#tmcategories li:first-child {
   margin: 0 auto 75px auto;
 }
 
-/* line 173, ../compass/sass/layout.scss */
+/* line 172, ../compass/sass/layout.scss */
 #page {
   width: 100%;
 }
-/* line 175, ../compass/sass/layout.scss */
+/* line 174, ../compass/sass/layout.scss */
 #page h1 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 179, ../compass/sass/layout.scss */
+/* line 178, ../compass/sass/layout.scss */
 #page h2 {
   margin-bottom: 20px;
   text-align: left;
 }
-/* line 185, ../compass/sass/layout.scss */
+/* line 184, ../compass/sass/layout.scss */
 #page .rte ul, #page .rte ol {
   margin-left: 2em;
   padding-left: 2em;
   margin-bottom: .5em;
 }
-/* line 190, ../compass/sass/layout.scss */
+/* line 189, ../compass/sass/layout.scss */
 #page .rte li {
   margin-bottom: .25em;
 }
-/* line 193, ../compass/sass/layout.scss */
+/* line 192, ../compass/sass/layout.scss */
+#page .rte h5, #page .rte h6 {
+  margin-bottom: 1em;
+}
+/* line 195, ../compass/sass/layout.scss */
 #page .rte p {
   margin-bottom: .5em;
 }
-/* line 196, ../compass/sass/layout.scss */
+/* line 198, ../compass/sass/layout.scss */
 #page .rte p.bigImage img {
   width: 100%;
   height: auto;
   max-width: 899px;
 }
-/* line 204, ../compass/sass/layout.scss */
+/* line 206, ../compass/sass/layout.scss */
 #page .rte .columnaEsq, #page .rte .columnaDreta {
   width: 48.30729%;
   margin-right: 3.25521%;
   float: left;
 }
-/* line 209, ../compass/sass/layout.scss */
+/* line 211, ../compass/sass/layout.scss */
 #page .rte .columnaDreta {
   margin-right: 0;
 }
-/* line 214, ../compass/sass/layout.scss */
+/* line 216, ../compass/sass/layout.scss */
 #page .intro {
-  width: 80.65296%;
+  width: 80.36145%;
   margin: 0 auto;
 }
-/* line 218, ../compass/sass/layout.scss */
+/* line 220, ../compass/sass/layout.scss */
 #page .hb1, #page hb2 {
-  width: 45.10278%;
+  width: 44.93976%;
   float: left;
 }
-/* line 222, ../compass/sass/layout.scss */
+/* line 224, ../compass/sass/layout.scss */
 #page .hb1 {
-  margin-right: 6.04595%;
+  margin-right: 6.0241%;
+}
+/* line 227, ../compass/sass/layout.scss */
+#page .col3 {
+  float: left;
+  width: 29.51807%;
+  margin-left: 4.21687%;
+  word-wrap: break-word;
+}
+/* line 232, ../compass/sass/layout.scss */
+#page .col3.primer {
+  margin-left: 0;
 }
 
 /* !3.1 - breadcrumbs */
-/* line 227, ../compass/sass/layout.scss */
+/* line 238, ../compass/sass/layout.scss */
 .breadcrumb {
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
-/* line 230, ../compass/sass/layout.scss */
+/* line 241, ../compass/sass/layout.scss */
 .breadcrumb p {
   position: absolute;
   left: 10px;
@@ -286,43 +301,43 @@ nav#tmcategories li:first-child {
 }
 
 /* !3.2 - Catalogue */
-/* line 238, ../compass/sass/layout.scss */
+/* line 249, ../compass/sass/layout.scss */
 #category #columns {
   width: 72.25%;
 }
-/* line 242, ../compass/sass/layout.scss */
+/* line 253, ../compass/sass/layout.scss */
 #category .catIntro {
   padding-top: 340px;
   margin-bottom: 20px;
 }
-/* line 247, ../compass/sass/layout.scss */
+/* line 258, ../compass/sass/layout.scss */
 #category .productsSortForm label {
   display: block;
 }
-/* line 251, ../compass/sass/layout.scss */
+/* line 262, ../compass/sass/layout.scss */
 #category .cat_desc {
   text-align: center;
 }
-/* line 254, ../compass/sass/layout.scss */
+/* line 265, ../compass/sass/layout.scss */
 #category .btComparar {
   float: right;
   margin-top: 25px;
 }
-/* line 258, ../compass/sass/layout.scss */
+/* line 269, ../compass/sass/layout.scss */
 #category form.productsSortForm {
   margin-bottom: 16px;
   padding-bottom: 16px;
 }
-/* line 264, ../compass/sass/layout.scss */
+/* line 275, ../compass/sass/layout.scss */
 #category #productsSortForm {
   float: left;
 }
-/* line 267, ../compass/sass/layout.scss */
+/* line 278, ../compass/sass/layout.scss */
 #category .product_view {
   float: right;
   margin-top: 25px;
 }
-/* line 270, ../compass/sass/layout.scss */
+/* line 281, ../compass/sass/layout.scss */
 #category .product_view li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -335,13 +350,13 @@ nav#tmcategories li:first-child {
   margin-left: 11px;
 }
 
-/* line 277, ../compass/sass/layout.scss */
+/* line 288, ../compass/sass/layout.scss */
 #product_list {
   width: 73.81776%;
   float: left;
   margin-right: 2.99885%;
 }
-/* line 282, ../compass/sass/layout.scss */
+/* line 293, ../compass/sass/layout.scss */
 #product_list li {
   display: block;
   width: 29.0625%;
@@ -349,37 +364,37 @@ nav#tmcategories li:first-child {
   margin-left: 5.9375%;
   margin-bottom: 25px;
 }
-/* line 287, ../compass/sass/layout.scss */
+/* line 298, ../compass/sass/layout.scss */
 #product_list li.item {
   margin-left: 0;
   clear: left;
 }
-/* line 291, ../compass/sass/layout.scss */
+/* line 302, ../compass/sass/layout.scss */
 #product_list li .product_img_link {
   display: block;
   margin-bottom: 12px;
 }
-/* line 295, ../compass/sass/layout.scss */
+/* line 306, ../compass/sass/layout.scss */
 #product_list li img {
   width: 100%;
   height: auto;
 }
-/* line 298, ../compass/sass/layout.scss */
+/* line 309, ../compass/sass/layout.scss */
 #product_list li .availability {
   float: left;
   display: block;
 }
-/* line 302, ../compass/sass/layout.scss */
+/* line 313, ../compass/sass/layout.scss */
 #product_list li .compare {
   float: right;
   display: block;
 }
-/* line 306, ../compass/sass/layout.scss */
+/* line 317, ../compass/sass/layout.scss */
 #product_list li .price {
   display: block;
   float: right;
 }
-/* line 310, ../compass/sass/layout.scss */
+/* line 321, ../compass/sass/layout.scss */
 #product_list li .ajax_add_to_cart_button {
   display: block;
   text-align: center;
@@ -387,36 +402,36 @@ nav#tmcategories li:first-child {
 }
 
 /* !3.3 - Product */
-/* line 319, ../compass/sass/layout.scss */
+/* line 330, ../compass/sass/layout.scss */
 #product #primary_block {
   padding-top: 340px;
 }
 
 /* !3.4 - Authentication */
-/* line 325, ../compass/sass/layout.scss */
+/* line 336, ../compass/sass/layout.scss */
 #authentication h1 {
   padding-top: 30px;
   float: right;
   width: 410px;
   text-align: left;
 }
-/* line 331, ../compass/sass/layout.scss */
+/* line 342, ../compass/sass/layout.scss */
 #authentication #center_column {
   min-height: 628px;
 }
-/* line 335, ../compass/sass/layout.scss */
+/* line 346, ../compass/sass/layout.scss */
 #authentication #login_form, #authentication #account-creation_form {
   padding: 25px;
   width: 360px;
   float: right;
   clear: both;
 }
-/* line 340, ../compass/sass/layout.scss */
+/* line 351, ../compass/sass/layout.scss */
 #authentication #login_form h3, #authentication #account-creation_form h3 {
   margin-bottom: .5em;
   margin-top: 1em;
 }
-/* line 343, ../compass/sass/layout.scss */
+/* line 354, ../compass/sass/layout.scss */
 #authentication #login_form label, #authentication #account-creation_form label {
   display: block;
   float: left;
@@ -424,87 +439,87 @@ nav#tmcategories li:first-child {
   clear: left;
   margin-bottom: 15px;
 }
-/* line 350, ../compass/sass/layout.scss */
+/* line 361, ../compass/sass/layout.scss */
 #authentication #login_form input, #authentication #account-creation_form input {
   display: block;
   width: 210px;
   margin-bottom: 15px;
   padding: 3px;
 }
-/* line 356, ../compass/sass/layout.scss */
+/* line 367, ../compass/sass/layout.scss */
 #authentication #login_form input#SubmitLogin, #authentication #account-creation_form input#SubmitLogin {
   float: right;
   width: auto;
   margin-top: 10px;
 }
-/* line 362, ../compass/sass/layout.scss */
+/* line 373, ../compass/sass/layout.scss */
 #authentication #login_form .gender input, #authentication #login_form .gender label, #authentication #account-creation_form .gender input, #authentication #account-creation_form .gender label {
   display: inline;
   width: auto;
   float: none;
 }
-/* line 368, ../compass/sass/layout.scss */
+/* line 379, ../compass/sass/layout.scss */
 #authentication #login_form input#passwd, #authentication #account-creation_form input#passwd {
   margin-bottom: 0;
 }
-/* line 371, ../compass/sass/layout.scss */
+/* line 382, ../compass/sass/layout.scss */
 #authentication #login_form .form_info, #authentication #account-creation_form .form_info {
   margin-bottom: 1em;
   display: block;
   text-align: right;
 }
-/* line 376, ../compass/sass/layout.scss */
+/* line 387, ../compass/sass/layout.scss */
 #authentication #login_form .select span, #authentication #account-creation_form .select span {
   display: block;
 }
-/* line 379, ../compass/sass/layout.scss */
+/* line 390, ../compass/sass/layout.scss */
 #authentication #login_form select, #authentication #account-creation_form select {
   width: 200px;
   margin-bottom: 1em;
 }
-/* line 383, ../compass/sass/layout.scss */
+/* line 394, ../compass/sass/layout.scss */
 #authentication #login_form .birthDate select, #authentication #account-creation_form .birthDate select {
   width: auto;
 }
-/* line 386, ../compass/sass/layout.scss */
+/* line 397, ../compass/sass/layout.scss */
 #authentication #login_form #submitAccount, #authentication #account-creation_form #submitAccount {
   margin-left: 200px;
 }
-/* line 390, ../compass/sass/layout.scss */
+/* line 401, ../compass/sass/layout.scss */
 #authentication .lost_password {
   text-align: right;
 }
-/* line 393, ../compass/sass/layout.scss */
+/* line 404, ../compass/sass/layout.scss */
 #authentication #create-account_form {
   width: 410px;
   float: right;
   clear: right;
   padding-top: 30px;
 }
-/* line 398, ../compass/sass/layout.scss */
+/* line 409, ../compass/sass/layout.scss */
 #authentication #create-account_form .submit {
   text-align: center;
   clear: right;
 }
-/* line 403, ../compass/sass/layout.scss */
+/* line 414, ../compass/sass/layout.scss */
 #authentication #create-account_form .gender .input {
   display: inline;
 }
 
 /* ------------------------------------------ */
 /* !4 - FOOTER */
-/* line 412, ../compass/sass/layout.scss */
+/* line 423, ../compass/sass/layout.scss */
 #footer {
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
 }
-/* line 416, ../compass/sass/layout.scss */
+/* line 427, ../compass/sass/layout.scss */
 #footer #footer_links, #footer .extraLinks {
-  width: 68.91667%;
+  width: 69.16667%;
   margin: 0 auto;
 }
-/* line 420, ../compass/sass/layout.scss */
+/* line 431, ../compass/sass/layout.scss */
 #footer #footer_links li, #footer .extraLinks li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -515,55 +530,55 @@ nav#tmcategories li:first-child {
   padding-left: 16px;
   margin-left: 16px;
 }
-/* line 424, ../compass/sass/layout.scss */
+/* line 435, ../compass/sass/layout.scss */
 #footer #footer_links li:first-child, #footer .extraLinks li:first-child {
   margin-left: 0px;
   padding-left: 0px;
 }
-/* line 430, ../compass/sass/layout.scss */
+/* line 441, ../compass/sass/layout.scss */
 #footer .extraLinks {
   margin-top: 20px;
 }
 
 /* ------------------------------------------ */
 /* !5 - RIGHT */
-/* line 437, ../compass/sass/layout.scss */
+/* line 448, ../compass/sass/layout.scss */
 #right_column {
   float: left;
   width: 23.06805%;
 }
 
 /* !5.1 - Cart */
-/* line 442, ../compass/sass/layout.scss */
+/* line 453, ../compass/sass/layout.scss */
 #cart_block {
   width: 75%;
   float: right;
   padding: 20px 10% 15px 10%;
 }
-/* line 446, ../compass/sass/layout.scss */
+/* line 457, ../compass/sass/layout.scss */
 #cart_block h4, #cart_block #cart_block_summary {
   text-align: center;
 }
-/* line 449, ../compass/sass/layout.scss */
+/* line 460, ../compass/sass/layout.scss */
 #cart_block h4 {
   padding-bottom: 6px;
 }
-/* line 452, ../compass/sass/layout.scss */
+/* line 463, ../compass/sass/layout.scss */
 #cart_block .cart_block_list {
   text-align: left;
 }
-/* line 455, ../compass/sass/layout.scss */
+/* line 466, ../compass/sass/layout.scss */
 #cart_block #cart-buttons {
   text-align: center;
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 461, ../compass/sass/layout.scss */
+/* line 472, ../compass/sass/layout.scss */
 #cart_block .cart-prices-block span {
   float: left;
   display: block;
 }
-/* line 464, ../compass/sass/layout.scss */
+/* line 475, ../compass/sass/layout.scss */
 #cart_block .cart-prices-block span.price {
   float: right;
 }

@@ -158,8 +158,16 @@
 			background-color: transparent;
 		}
 	}
+	.cms11 {
+		#page {
+			@include background-image (url('../img/oranges/fons-fum_06.jpg'), url('../img/oranges/fons-fum_07.jpg'));
+			background-repeat: no-repeat;
+			background-position: left 250px, right bottom;
+			background-color: transparent;
+		}
+	}
 	#page {
-		h1, h2 {
+		h1, h2, h5, h6 {
 			color: $colOcre;
 		}
 		.rte {
@@ -180,6 +188,7 @@
 				}
 			}
 		}
+
 	}
 /* !3.1 - breadcrumbs */
 	.breadcrumb {

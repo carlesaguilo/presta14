@@ -135,12 +135,20 @@
 			p.bigImage {
 				text-align: center;
 			}
-			a, strong {
+			strong {
 				font-family: $fntQSBold;
 			}
 			em {
 				font-family: $fntQSLight;
 			}
+		}
+		h5 {
+			@include lletra (normal, normal, 1.5, 1.5em);
+			font-family: $fntQSBold;
+			text-transform: uppercase;
+		}
+		h6 {
+			@include lletra (normal, normal, 1.5, 1.5em);
 		}
 	}
 /* !3.1 - breadcrumbs */

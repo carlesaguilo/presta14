@@ -180,48 +180,56 @@ nav#tmcategories .current a {
 }
 
 /* line 162, ../compass/sass/colors.scss */
-#page h1, #page h2 {
+.cms11 #page {
+  background-image: url("../img/oranges/fons-fum_06.jpg"), url("../img/oranges/fons-fum_07.jpg");
+  background-repeat: no-repeat;
+  background-position: left 250px, right bottom;
+  background-color: transparent;
+}
+
+/* line 170, ../compass/sass/colors.scss */
+#page h1, #page h2, #page h5, #page h6 {
   color: #978100;
 }
-/* line 165, ../compass/sass/colors.scss */
+/* line 173, ../compass/sass/colors.scss */
 #page .rte {
   color: #444444;
 }
-/* line 170, ../compass/sass/colors.scss */
+/* line 178, ../compass/sass/colors.scss */
 #page .rte ul {
   list-style-type: circle;
 }
-/* line 173, ../compass/sass/colors.scss */
+/* line 181, ../compass/sass/colors.scss */
 #page .rte ol {
   list-style-type: decimal;
 }
-/* line 176, ../compass/sass/colors.scss */
+/* line 184, ../compass/sass/colors.scss */
 #page .rte a {
   color: #978100;
 }
-/* line 178, ../compass/sass/colors.scss */
+/* line 186, ../compass/sass/colors.scss */
 #page .rte a:hover {
   color: #caad00;
 }
 
 /* !3.1 - breadcrumbs */
-/* line 185, ../compass/sass/colors.scss */
+/* line 194, ../compass/sass/colors.scss */
 .breadcrumb {
   color: #444444;
 }
-/* line 187, ../compass/sass/colors.scss */
+/* line 196, ../compass/sass/colors.scss */
 .breadcrumb a {
   text-decoration: none;
   color: #978100;
 }
-/* line 190, ../compass/sass/colors.scss */
+/* line 199, ../compass/sass/colors.scss */
 .breadcrumb a:hover {
   color: #444444;
   text-decoration: underline;
 }
 
 /* !3.2 - Catalogue */
-/* line 198, ../compass/sass/colors.scss */
+/* line 207, ../compass/sass/colors.scss */
 #category #page {
   background-image: url("../img/oranges/fons-fum_01.jpg"), url("../img/oranges/fons-fum_08.jpg"), url("../img/oranges/fons-fum_10.jpg");
   -webkit-background-size: auto, 100%, auto;
@@ -232,43 +240,43 @@ nav#tmcategories .current a {
   background-position: left 250px, center center, left bottom;
   background-color: transparent;
 }
-/* line 205, ../compass/sass/colors.scss */
+/* line 214, ../compass/sass/colors.scss */
 #category .catIntro {
   background: url("../img/oranges/barritas.jpg") no-repeat center top transparent;
 }
-/* line 208, ../compass/sass/colors.scss */
+/* line 217, ../compass/sass/colors.scss */
 #category .btComparar {
   background: transparent;
   border: 0;
   cursor: pointer;
 }
-/* line 213, ../compass/sass/colors.scss */
+/* line 222, ../compass/sass/colors.scss */
 #category .productsSortForm {
   border-bottom: 1px solid #c2c2c2;
 }
-/* line 215, ../compass/sass/colors.scss */
+/* line 224, ../compass/sass/colors.scss */
 #category .productsSortForm label {
   color: #444444;
 }
-/* line 220, ../compass/sass/colors.scss */
+/* line 229, ../compass/sass/colors.scss */
 #category .product_view li {
   opacity: .4;
   cursor: pointer;
 }
-/* line 223, ../compass/sass/colors.scss */
+/* line 232, ../compass/sass/colors.scss */
 #category .product_view li.current {
   opacity: 1;
 }
-/* line 226, ../compass/sass/colors.scss */
+/* line 235, ../compass/sass/colors.scss */
 #category .product_view li#product_view_grid {
   background: url("../img/oranges/icones.png") no-repeat -31px 0px transparent;
 }
-/* line 229, ../compass/sass/colors.scss */
+/* line 238, ../compass/sass/colors.scss */
 #category .product_view li#product_view_list {
   background: url("../img/oranges/icones.png") no-repeat -66px 0px transparent;
 }
 
-/* line 238, ../compass/sass/colors.scss */
+/* line 247, ../compass/sass/colors.scss */
 #product_list li .product_img_link {
   -webkit-box-shadow: 3px 3px 20px #999999;
   -moz-box-shadow: 3px 3px 20px #999999;
@@ -276,34 +284,34 @@ nav#tmcategories .current a {
   border: 1px solid #b3b3b3;
   background-color: white;
 }
-/* line 243, ../compass/sass/colors.scss */
+/* line 252, ../compass/sass/colors.scss */
 #product_list li h3 {
   color: #444444;
 }
-/* line 245, ../compass/sass/colors.scss */
+/* line 254, ../compass/sass/colors.scss */
 #product_list li h3 a {
   color: #444444;
   text-decoration: none;
 }
-/* line 248, ../compass/sass/colors.scss */
+/* line 257, ../compass/sass/colors.scss */
 #product_list li h3 a:hover {
   color: #fdd800;
 }
-/* line 253, ../compass/sass/colors.scss */
+/* line 262, ../compass/sass/colors.scss */
 #product_list li .availability {
   color: green;
 }
-/* line 256, ../compass/sass/colors.scss */
+/* line 265, ../compass/sass/colors.scss */
 #product_list li .price {
   color: #978100;
 }
-/* line 259, ../compass/sass/colors.scss */
+/* line 268, ../compass/sass/colors.scss */
 #product_list li .ajax_add_to_cart_button {
   text-decoration: none;
   color: #ead200;
   background-color: #978100;
 }
-/* line 263, ../compass/sass/colors.scss */
+/* line 272, ../compass/sass/colors.scss */
 #product_list li .ajax_add_to_cart_button:hover {
   -webkit-transition: background-color 0.25s ease-out;
   -moz-transition: background-color 0.25s ease-out;
@@ -314,13 +322,13 @@ nav#tmcategories .current a {
 }
 
 /* !3.3 - Product */
-/* line 274, ../compass/sass/colors.scss */
+/* line 283, ../compass/sass/colors.scss */
 #product #primary_block {
   background: url("../img/oranges/barritas.jpg") no-repeat center top transparent;
 }
 
 /* !3.4 - Authentication */
-/* line 280, ../compass/sass/colors.scss */
+/* line 289, ../compass/sass/colors.scss */
 #authentication #page {
   background-image: url("../img/oranges/shiva.jpg"), url("../img/oranges/fons-fum_04.jpg");
   -webkit-background-size: auto;
@@ -331,84 +339,84 @@ nav#tmcategories .current a {
   background-position: 10% 250px, right bottom;
   background-color: transparent;
 }
-/* line 287, ../compass/sass/colors.scss */
+/* line 296, ../compass/sass/colors.scss */
 #authentication #login_form, #authentication #account-creation_form {
   background-color: #b4b4b4;
   background-color: rgba(180, 180, 180, 0.5);
   color: #444444;
 }
-/* line 291, ../compass/sass/colors.scss */
+/* line 300, ../compass/sass/colors.scss */
 #authentication #login_form input, #authentication #account-creation_form input {
   background-color: white;
   border: 1px solid #cccccc;
 }
-/* line 296, ../compass/sass/colors.scss */
+/* line 305, ../compass/sass/colors.scss */
 #authentication #login_form input#SubmitLogin, #authentication #login_form input#submitAccount, #authentication #account-creation_form input#SubmitLogin, #authentication #account-creation_form input#submitAccount {
   color: #444444;
   background-color: transparent;
   cursor: pointer;
   border: 0;
 }
-/* line 301, ../compass/sass/colors.scss */
+/* line 310, ../compass/sass/colors.scss */
 #authentication #login_form input#SubmitLogin:hover, #authentication #login_form input#submitAccount:hover, #authentication #account-creation_form input#SubmitLogin:hover, #authentication #account-creation_form input#submitAccount:hover {
   color: #fdd800;
 }
-/* line 306, ../compass/sass/colors.scss */
+/* line 315, ../compass/sass/colors.scss */
 #authentication .lost_password a {
   color: #FF0000;
 }
-/* line 308, ../compass/sass/colors.scss */
+/* line 317, ../compass/sass/colors.scss */
 #authentication .lost_password a:hover {
   color: #fdd800;
 }
-/* line 313, ../compass/sass/colors.scss */
+/* line 322, ../compass/sass/colors.scss */
 #authentication #create-account_form .submit input {
   color: #978100;
   background-color: transparent;
   border: 0;
   cursor: pointer;
 }
-/* line 318, ../compass/sass/colors.scss */
+/* line 327, ../compass/sass/colors.scss */
 #authentication #create-account_form .submit input:hover {
   color: #fdd800;
 }
-/* line 322, ../compass/sass/colors.scss */
+/* line 331, ../compass/sass/colors.scss */
 #authentication #create-account_form #email_create {
   background-color: white;
   border: 1px solid #cccccc;
   padding: 3px;
   width: 250px;
 }
-/* line 330, ../compass/sass/colors.scss */
+/* line 339, ../compass/sass/colors.scss */
 #authentication .required sup {
   color: #ff0000;
 }
 
 /* ------------------------------------------ */
 /* !4 - FOOTER */
-/* line 340, ../compass/sass/colors.scss */
+/* line 349, ../compass/sass/colors.scss */
 #footer #footer_links li {
   border-left: 1px solid #978100;
 }
-/* line 342, ../compass/sass/colors.scss */
+/* line 351, ../compass/sass/colors.scss */
 #footer #footer_links li:first-child {
   border-left: 0;
 }
-/* line 346, ../compass/sass/colors.scss */
+/* line 355, ../compass/sass/colors.scss */
 #footer #footer_links a {
   color: #978100;
   text-decoration: none;
 }
-/* line 349, ../compass/sass/colors.scss */
+/* line 358, ../compass/sass/colors.scss */
 #footer #footer_links a:hover {
   color: #fdd800;
 }
-/* line 355, ../compass/sass/colors.scss */
+/* line 364, ../compass/sass/colors.scss */
 #footer .extraLinks a {
   color: #978100;
   text-decoration: none;
 }
-/* line 358, ../compass/sass/colors.scss */
+/* line 367, ../compass/sass/colors.scss */
 #footer .extraLinks a:hover {
   color: #444444;
 }
@@ -416,12 +424,12 @@ nav#tmcategories .current a {
 /* ------------------------------------------ */
 /* !5 - RIGHT */
 /* !5.1 - Cart */
-/* line 368, ../compass/sass/colors.scss */
+/* line 377, ../compass/sass/colors.scss */
 #cart_block {
   background-color: #978100;
   position: relative;
 }
-/* line 371, ../compass/sass/colors.scss */
+/* line 380, ../compass/sass/colors.scss */
 #cart_block:after {
   content: "\003c";
   display: block;
@@ -434,56 +442,56 @@ nav#tmcategories .current a {
   top: 50%;
   background: url("../img/oranges/icones.png") no-repeat -390px -189px transparent;
 }
-/* line 381, ../compass/sass/colors.scss */
+/* line 390, ../compass/sass/colors.scss */
 #cart_block h4 {
   color: white;
   border-bottom: 1px solid #b9ab5d;
 }
-/* line 384, ../compass/sass/colors.scss */
+/* line 393, ../compass/sass/colors.scss */
 #cart_block h4 a {
   color: white;
   text-decoration: none;
 }
-/* line 389, ../compass/sass/colors.scss */
+/* line 398, ../compass/sass/colors.scss */
 #cart_block .block_content, #cart_block a {
   color: #444444;
 }
-/* line 392, ../compass/sass/colors.scss */
+/* line 401, ../compass/sass/colors.scss */
 #cart_block #cart_block_summary {
   margin-bottom: 1em;
 }
-/* line 396, ../compass/sass/colors.scss */
+/* line 405, ../compass/sass/colors.scss */
 #cart_block .products .price {
   float: right;
   display: block;
 }
-/* line 401, ../compass/sass/colors.scss */
+/* line 410, ../compass/sass/colors.scss */
 #cart_block .ajax_cart_total, #cart_block .price {
   color: white;
 }
-/* line 404, ../compass/sass/colors.scss */
+/* line 413, ../compass/sass/colors.scss */
 #cart_block #cart-buttons {
   border-top: 1px solid #b9ab5d;
   color: #b9ab5d;
 }
-/* line 407, ../compass/sass/colors.scss */
+/* line 416, ../compass/sass/colors.scss */
 #cart_block #cart-buttons a {
   color: #b9ab5d;
   text-decoration: none;
 }
-/* line 410, ../compass/sass/colors.scss */
+/* line 419, ../compass/sass/colors.scss */
 #cart_block #cart-buttons a:hover {
   color: white;
 }
-/* line 415, ../compass/sass/colors.scss */
+/* line 424, ../compass/sass/colors.scss */
 #cart_block .btTransport, #cart_block .btTransport .price, #cart_block .btTotal, #cart_block .btTotal .price {
   color: #ead200;
 }
-/* line 418, ../compass/sass/colors.scss */
+/* line 427, ../compass/sass/colors.scss */
 #cart_block dt {
   position: relative;
 }
-/* line 421, ../compass/sass/colors.scss */
+/* line 430, ../compass/sass/colors.scss */
 #cart_block .remove_link {
   color: red;
   display: block;
@@ -495,7 +503,7 @@ nav#tmcategories .current a {
   background: url("../img/oranges/icones.png") no-repeat 0px -40px transparent;
   cursor: pointer;
 }
-/* line 430, ../compass/sass/colors.scss */
+/* line 439, ../compass/sass/colors.scss */
 #cart_block #cart-price-precisions {
   color: #6a6a6a;
 }

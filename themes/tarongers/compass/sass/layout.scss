@@ -23,7 +23,7 @@
 	
 /* !VARIABLES */
 	$pxNavAmplada: 1200px;
-	$pxWebAmplada: 827px;
+	$pxWebAmplada: 830px;
 	$pxFluidAmplada: ($pxWebAmplada / $pxNavAmplada) * 100%;
 	$pxPagAmplada: 768px;
 	
@@ -169,7 +169,6 @@
 		width: (768px / $pxNavAmplada) * 100%;
 		margin: 0 auto 75px auto;
 	}
-
 	#page {
 		width: 100%;
 		h1 {
@@ -189,6 +188,9 @@
 			}
 			li {
 				margin-bottom: .25em;
+			}
+			h5, h6 {
+				margin-bottom: 1em;
 			}
 			p {
 				margin-bottom: .5em;
@@ -221,6 +223,15 @@
 		}
 		.hb1 {
 			margin-right: (50px / $pxWebAmplada) * 100%;
+		}
+		.col3 {
+			float: left;
+			width: (245px / $pxWebAmplada) * 100%;
+			margin-left:  (35px / $pxWebAmplada) * 100%;
+			word-wrap: break-word;
+			&.primer {
+				margin-left: 0;
+			}
 		}
 	}
 /* !3.1 - breadcrumbs */
