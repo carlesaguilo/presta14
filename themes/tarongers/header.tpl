@@ -57,11 +57,14 @@
 	{/foreach}
 {/if}
 		{$HOOK_HEADER}
+    <link href="{$css_dir}tmslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{$css_dir}address.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{$css_dir}discount.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 	
-	<body  {if $page_name}id="{if $page_name == '404'}p{/if}{$page_name|escape:'htmlall':'UTF-8'}"{/if} {if $page_name == 'cms'} class="cms{$smarty.get.id_cms}" {/if}> 
+	<body  {if $page_name}id="{if $page_name == '404'}p{/if}{$page_name|escape:'htmlall':'UTF-8'}"{/if} {if $page_name == 'cms'} class="cms{$smarty.get.id_cms}" {/if} {if $pageTrack == "contactform"} class="contactForm" {/if} > 
 	
-		
+	<!-- 	{debug}  -->
 
 	
 	{if !$content_only}
@@ -122,12 +125,13 @@
 
 			<div id="columns">
 				<!-- Left -->
-				{if $page_name != 'index'} <!-- Hide empty content in frontpage -->
-				<!--
-<div id="left_column" class="column">
-					{$HOOK_LEFT_COLUMN}
+				{if $page_name != 'index'} 
+                <!-- Hide empty content in frontpage -->
+				
+				<div id="left_column" class="column">
+					<!--{$HOOK_LEFT_COLUMN} 
 				</div>
--->
+
 				{/if}
 
 				<!-- Center -->

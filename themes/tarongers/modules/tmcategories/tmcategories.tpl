@@ -44,7 +44,7 @@ dropShadows: false
 	    </li>
         
         {if $logged}
-            <li {if ($page_name == 'my-account')} class="current" {/if}>
+            <li {if ($page_name == 'my-account') || ($page_name == 'history') || ($page_name == 'order-slip') || ($page_name == 'addresses') || ($page_name == 'address') || ($page_name == 'identity') || ($page_name == 'discount') || ($page_name == 'order')} class="current" {/if}>
                 <a href="my-account.php" >{l s='My account' mod='tmcategories'}</a> 
             </li>
         {else}

@@ -118,7 +118,6 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
 //]]>
 </script>
 
-{include file="$tpl_dir./breadcrumb.tpl"}
 <div id="primary_block" class="clearfix">
 	<!--<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>-->
 
@@ -143,29 +142,22 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
 
 	<!-- right infos-->
 	<div id="pb-right-column">
-		
-		<!-- usefull links
-		<ul id="usefull_link_block">
-			{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
-			<li><a href="javascript:print();">{l s='Print'}</a><br class="clear" /></li>
-			{if $have_image && !$jqZoomEnabled}
-			<li><span id="view_full_size" class="span_link">{l s='Maximize'}</span></li>
-			{/if}
-		</ul>-->
+	
 	</div>
+    
 <!-- product img-->
-		<div id="image-block">
+	<div id="image-block">
 		{if $have_image}
 			<img src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large')}"
 				{if $jqZoomEnabled}class="jqzoom" alt="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox')}"{else} title="{$product->name|escape:'htmlall':'UTF-8'}" alt="{$product->name|escape:'htmlall':'UTF-8'}" {/if} id="bigpic" width="{$largeSize.width}" height="{$largeSize.height}" />
 		{else}
 			<img src="{$img_prod_dir}{$lang_iso}-default-large.jpg" id="bigpic" alt="" title="{$cover.legend|escape:'htmlall':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}" />
 		{/if}
-		</div>
+	</div>
 
-		{if isset($images) && count($images) > 0}
-		<!-- thumbnails -->
-		<div id="views_block" {if isset($images) && count($images) < 2}class="hidden"{/if}>
+	{if isset($images) && count($images) > 0}
+	<!-- thumbnails -->
+	<div id="views_block" {if isset($images) && count($images) < 2}class="hidden"{/if}>
 		{if isset($images) && count($images) > 5}<span class="view_scroll_spacer"><a id="view_scroll_left" class="hidden" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">{l s='Previous'}</a></span>{/if}
 		<div id="thumbs_list">
 			<ul id="thumbs_list_frame">
@@ -182,46 +174,48 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
 			</ul>
 		</div>
 		{if isset($images) && count($images) > 5}<a id="view_scroll_right" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">{l s='Next'}</a>{/if}
-		</div>
-		{/if}
-		{if isset($images) && count($images) > 1}<p class="align_center clear"><span id="wrapResetImages" style="display: none;"><img src="{$img_dir}icon/cancel_16x18.gif" alt="{l s='Cancel'}" width="16" height="18"/> <a id="resetImages" href="{$link->getProductLink($product)}" onclick="$('span#wrapResetImages').hide('slow');return (false);">{l s='Display all pictures'}</a></span></p>{/if}
+	</div>
+	{/if}<!-- thumbnails -->
+    
+	{if isset($images) && count($images) > 1}<p class="align_center clear"><span id="wrapResetImages" style="display: none;"><img src="{$img_dir}icon/cancel_16x18.gif" alt="{l s='Cancel'}" width="16" height="18"/> <a id="resetImages" href="{$link->getProductLink($product)}" onclick="$('span#wrapResetImages').hide('slow');return (false);">{l s='Display all pictures'}</a></span></p>{/if}
+    
 	<!-- left infos-->
 	<div id="pb-left-column">
 		
 	</div>
-</div>
+</div><!-- primary_block -->
 
 {if $quantity_discounts}
-<!-- quantity discount -->
-<ul class="idTabs">
-	<li><a style="cursor: pointer" class="selected">{l s='Sliding scale pricing'}</a></li>
-</ul>
-<div id="quantityDiscount">
-	<table class="std">
-		<tr>
-			{foreach from=$quantity_discounts item='quantity_discount' name='quantity_discounts'}
-				<th>{$quantity_discount.quantity|intval}
-				{if $quantity_discount.quantity|intval > 1}
-					{l s='quantities'}
-				{else}
-					{l s='quantity'}
-				{/if}
-				</th>
-			{/foreach}
-		</tr>
-		<tr>
-			{foreach from=$quantity_discounts item='quantity_discount' name='quantity_discounts'}
-				<td>
-				{if $quantity_discount.price != 0 OR $quantity_discount.reduction_type == 'amount'}
-					-{convertPrice price=$quantity_discount.real_value|floatval}
-				{else}
-					-{$quantity_discount.real_value|floatval}%
-				{/if}
-				</td>
-			{/foreach}
-		</tr>
-	</table>
-</div>
+    <!-- quantity discount -->
+    <ul class="idTabs">
+        <li><a style="cursor: pointer" class="selected">{l s='Sliding scale pricing'}</a></li>
+    </ul>
+    <div id="quantityDiscount">
+        <table class="std">
+            <tr>
+                {foreach from=$quantity_discounts item='quantity_discount' name='quantity_discounts'}
+                    <th>{$quantity_discount.quantity|intval}
+                    {if $quantity_discount.quantity|intval > 1}
+                        {l s='quantities'}
+                    {else}
+                        {l s='quantity'}
+                    {/if}
+                    </th>
+                {/foreach}
+            </tr>
+            <tr>
+                {foreach from=$quantity_discounts item='quantity_discount' name='quantity_discounts'}
+                    <td>
+                    {if $quantity_discount.price != 0 OR $quantity_discount.reduction_type == 'amount'}
+                        -{convertPrice price=$quantity_discount.real_value|floatval}
+                    {else}
+                        -{$quantity_discount.real_value|floatval}%
+                    {/if}
+                    </td>
+                {/foreach}
+            </tr>
+        </table>
+    </div><!-- quantity discount -->
 {/if}
 
 {$HOOK_PRODUCT_FOOTER}
@@ -230,7 +224,8 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
 {if $product->description || $features || $accessories || $HOOK_PRODUCT_TAB || $attachments}
 <div id="more_info_block" class="clear">
 
-{if $product->description_short OR $packItems|@count > 0}
+	{if $product->description_short OR $packItems|@count > 0}
+    
 		<div id="short_description_block">
         	<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>
             <div id="more_info_sheets" class="sheets align_justify">
@@ -253,6 +248,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
                 {/foreach}
                 </ul>
             {/if}
+            
             {if isset($accessories) AND $accessories}
                 <!-- accessories -->
                 <ul id="idTab4" class="bullet">
@@ -284,44 +280,13 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
                         </div>
                     </div>
                 </ul>
-            {/if}
+            {/if}<!-- accessories -->
             {$HOOK_PRODUCT_TAB_CONTENT}
-            </div>
-		</div>
-        {if $product->description_short}
-				<div id="short_description_content">{$product->description_short}</div>
-			{/if}
-			<!--{if $product->description}
-			<p class="buttons_bottom_block"><a href="javascript:{ldelim}{rdelim}" class="button">{l s='More details'}</a></p>
-			{/if}-->
-			{if $packItems|@count > 0}
-				<h3>{l s='Pack content'}</h3>
-				{foreach from=$packItems item=packItem}
-					<div class="pack_content">
-						{$packItem.pack_quantity} x <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}">{$packItem.name|escape:'htmlall':'UTF-8'}</a>
-						<p>{$packItem.description_short}</p>
-					</div>
-				{/foreach}
-			{/if}
-		{/if}
-
-		{if isset($colors) && $colors}
-		<!-- colors -->
-		<div id="color_picker">
-			<p>{l s='Pick a color:' js=1}</p>
-			<div class="clear"></div>
-			<ul id="color_to_pick_list">
-			{foreach from=$colors key='id_attribute' item='color'}
-				<li><a id="color_{$id_attribute|intval}" class="color_pick" style="background: {$color.value};" onclick="updateColorSelect({$id_attribute|intval});$('#wrapResetImages').show('slow');" title="{$color.name}">{if file_exists($col_img_dir|cat:$id_attribute|cat:'.jpg')}<img src="{$img_col_dir}{$id_attribute}.jpg" alt="{$color.name}" width="20" height="20" />{/if}</a></li>
-			{/foreach}
-			</ul>
-			<div class="clear"></div>
-		</div>
-		{/if}
-
-		{if ($product->show_price AND !isset($restricted_country_mode)) OR isset($groups) OR $product->reference OR (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
-		<!-- add to cart form-->
-		<form id="buy_block" {if $PS_CATALOG_MODE AND !isset($groups) AND $product->quantity > 0}class="hidden"{/if} action="{$link->getPageLink('cart.php')}" method="post">
+            </div> <!-- more_info_sheets -->
+        
+            {if ($product->show_price AND !isset($restricted_country_mode)) OR isset($groups) OR $product->reference OR (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
+            <!-- add to cart form -->
+            <form id="buy_block" {if $PS_CATALOG_MODE AND !isset($groups) AND $product->quantity > 0}class="hidden"{/if} action="{$link->getPageLink('cart.php')}" method="post">
 
 			<!-- hidden datas -->
 			<p class="hidden">
@@ -398,7 +363,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
 					<p class="unit-price"><span id="unit_price_display">{convertPrice price=$unit_price}</span> {l s='per'} {$product->unity|escape:'htmlall':'UTF-8'}</p>
 				{/if}
 				{*close if for show price*}
-			{/if}
+			{/if}<!-- prices -->
 
 			{if isset($groups)}
 			<!-- attributes -->
@@ -417,7 +382,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
 			{/if}
 			{/foreach}
 			</div>
-			{/if}
+			{/if}<!-- attributes -->
 
 			<p id="product_reference" {if isset($groups) OR !$product->reference}style="display: none;"{/if}><label for="product_reference">{l s='Reference :'} </label><span class="editable">{$product->reference|escape:'htmlall':'UTF-8'}</span></p>
 
@@ -464,28 +429,46 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
 				<p>{l s='Online only'}</p>
 			{/if}
 
-			<!--<p{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE} style="display: none;"{/if} id="add_to_cart" class="buttons_bottom_block"><input type="submit" name="Submit" value="{l s='Add to cart'}" class="exclusive" /></p>
+			<!--<p{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE} style="display: none;"{/if} id="add_to_cart" class="buttons_bottom_block"><input type="submit" name="Submit" value="{l s='Add to cart'}" class="exclusive" /></p>-->
 			{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
 			<div class="clear"></div>
 		</form>
-		{/if}
+		{/if}<!-- add to cart form -->
 		{if $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
         
-	<!--<ul id="more_info_tabs" class="idTabs idTabsShort">
-		{if $product->description}<li><a id="more_info_tab_more_info" href="#idTab1">{l s='More info'}</a></li>{/if}
-		{if $features}<li><a id="more_info_tab_data_sheet" href="#idTab2">{l s='Data sheet'}</a></li>{/if}
-		{if $attachments}<li><a id="more_info_tab_attachments" href="#idTab9">{l s='Download'}</a></li>{/if}
-		{if isset($accessories) AND $accessories}<li><a href="#idTab4">{l s='Accessories'}</a></li>{/if}
-		{$HOOK_PRODUCT_TAB}
-	</ul>-->
-	
-</div>
-<div class="add_cart">
-<p{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE} style="display: none;"{/if} id="add_to_cart" class="buttons_bottom_block"><input type="submit" name="Submit" value="{l s='Add to cart'}" class="exclusive" /></p>
-{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
-</div>
-<div class="clear"></div>
-{/if}
+		</div><!-- short_description_block -->
+        
+		{/if} <!-- if short_description_block -->
+
+		{if $product->description_short}
+			<div id="short_description_content">{$product->description_short}</div>
+		{/if}
+		
+		{if $packItems|@count > 0}
+			<h3>{l s='Pack content'}</h3>
+			{foreach from=$packItems item=packItem}
+				<div class="pack_content">
+						{$packItem.pack_quantity} x <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)}">{$packItem.name|escape:'htmlall':'UTF-8'}</a>
+						<p>{$packItem.description_short}</p>
+				</div>
+			{/foreach}
+		{/if}
+        
+		{if isset($colors) && $colors}
+		<!-- colors -->
+		<div id="color_picker">
+			<p>{l s='Pick a color:' js=1}</p>
+			<div class="clear"></div>
+			<ul id="color_to_pick_list">
+			{foreach from=$colors key='id_attribute' item='color'}
+				<li><a id="color_{$id_attribute|intval}" class="color_pick" style="background: {$color.value};" onclick="updateColorSelect({$id_attribute|intval});$('#wrapResetImages').show('slow');" title="{$color.name}">{if file_exists($col_img_dir|cat:$id_attribute|cat:'.jpg')}<img src="{$img_col_dir}{$id_attribute}.jpg" alt="{$color.name}" width="20" height="20" />{/if}</a></li>
+			{/foreach}
+			</ul>
+			<div class="clear"></div>
+		</div>
+		{/if}
+</div><!-- more_info_block -->
+{/if}<!-- description and features -->
 
 <!-- Customizable products -->
 {if $product->customizable}
@@ -556,3 +539,8 @@ var fieldRequired = '{l s='Please fill in all required fields, then save your cu
 
 {/if}
 
+<div id="add_cart">
+<p{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE} style="display: none;"{/if} id="add_to_cart" class="buttons_bottom_block"><input type="submit" name="Submit" value="{l s='Add to My Cart'}" class="exclusive" /></p>
+{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
+</div>
+<div class="clear"></div>

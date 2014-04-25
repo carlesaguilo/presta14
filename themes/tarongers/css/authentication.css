@@ -1,5 +1,5 @@
-
 /* authentication.tpl */
+
 /*
 #create-account_form,
  #authentication #login_form {
@@ -58,3 +58,4 @@
 	font-size:9px;
 }
 */
+#authentication #footer { margin-top: 5rem; }

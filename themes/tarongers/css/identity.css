@@ -1,5 +1,29 @@
 /* identity.tpl */
+#identity #intro h3 { font-size: 1.5rem; margin-bottom: 3rem; }
 p#security_informations {
 	font-size: 0.85em;
 	margin: 0 3em
 }
+
+p#required { padding: 1rem 0; }
+
+#identity form.std { width: 500px; padding: 2rem; }
+#identity form.std label { width: 175px; }
+p.radio span { display: inline-block; width: 170px; }
+#identity form.std p.radio label { width: 75px; } 
+p.required input, p.password input { width: 280px; }
+input.button {
+	border: medium none;
+    color: #444444;
+    cursor: pointer;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 35px 15px 0;
+    text-decoration: none;
+}
+input.button:hover { color: #978100; }
+#identity .footer_links { margin-top: 5rem; margin-bottom: 20rem; }
+#identity .footer_links img { padding: 0 5px; }
+#identity .footer_links a { text-decoration: none; color: #978100; font-size: 1.5rem; }
+#identity .footer_links a:hover { color: #444; }

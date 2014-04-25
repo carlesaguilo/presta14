@@ -98,6 +98,7 @@ $(function(){ldelim}
 {capture name=path}{l s='Your addresses'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
+<div id="intro">
 <h1>{l s='Your addresses'}</h1>
 
 <h3>
@@ -112,12 +113,13 @@ $(function(){ldelim}
 	{l s='To add a new address, please fill out the form below.'}
 {/if}
 </h3>
+</div>
 
 {include file="$tpl_dir./errors.tpl"}
 
 <form action="{$link->getPageLink('address.php', true)}" method="post" class="std">
 	<fieldset>
-		<h3>{if isset($id_address)}{l s='Your address'}{else}{l s='New address'}{/if}</h3>
+		<!--<h3>{if isset($id_address)}{l s='Your address'}{else}{l s='New address'}{/if}</h3>-->
 		<p class="required text dni">
 			<label for="dni">{l s='Identification number'}</label>
 			<input type="text" class="text" name="dni" id="dni" value="{if isset($smarty.post.dni)}{$smarty.post.dni}{else}{if isset($address->dni)}{$address->dni|escape:'htmlall':'UTF-8'}{/if}{/if}" />
@@ -247,7 +249,7 @@ $(function(){ldelim}
 			<label for="other">{l s='Additional information'}</label>
 			<textarea id="other" name="other" cols="26" rows="3">{if isset($smarty.post.other)}{$smarty.post.other}{else}{if isset($address->other)}{$address->other|escape:'htmlall':'UTF-8'}{/if}{/if}</textarea>
 		</p>
-		<p style="margin-left:50px;">{l s='You must register at least one phone number'} <sup style="color:red;">*</sup></p>
+		<p id="info">{l s='You must register at least one phone number'} <sup style="color:red;">*</sup></p>
 		<p class="text">
 			<label for="phone">{l s='Home phone'}</label>
 			<input type="text" id="phone" name="phone" value="{if isset($smarty.post.phone)}{$smarty.post.phone}{else}{if isset($address->phone)}{$address->phone|escape:'htmlall':'UTF-8'}{/if}{/if}" />
@@ -271,6 +273,6 @@ $(function(){ldelim}
 		<input type="submit" name="submitAddress" id="submitAddress" value="{l s='Save'}" class="button" />
 		<br class="clear"/>
 	</p>
-	<p class="required"><sup>*</sup>{l s='Required field'}</p>
+	<p id="required"><sup>*</sup>&nbsp;{l s='Required field'}</p>
 </form>
 

@@ -1,10 +1,6 @@
 /* adresses */
 div.addresses {
-	border: 1px solid #d0d3d8;
-	background: #D0D1D5 url('../img/form_bg.jpg') repeat-x top left;
-	padding: 0.6em;
-	position: relative;
-	width: 544px
+	padding: 2em;
 }
 div.addresses h3 { margin: 0 }
 div.addresses p.checkbox input {
@@ -13,16 +9,18 @@ div.addresses p.checkbox input {
 }
 div.addresses ul.item { clear: both }
 ul.address {
-	background-color: white;
-	float: left;
+	/*background-color: white;
+	float: left; position: relative;*/
 	list-style-image: none;
 	list-style-position: outside;
 	list-style-type: none;
-	margin-left: 0.25em;
-	padding-bottom: 0.6em;
-	margin-bottom: 1em;
-	position: relative;
-	width: 268px
+	margin: 2rem 0 1rem 5rem;
+	padding-bottom: 1em;
+	width: 268px;
+	border: 1px solid #ccc;
+	font-size: 1.5rem;
+	height: 260px !important;
+	background: #ddd;
 }
 ul.address.full_width { width: 536px }
 ul.address li {
@@ -31,40 +29,73 @@ ul.address li {
 }
 li.address_title {
 	margin-top: 0!important;
-	background-color: #d0d1d5;
-	color: #374853;
+	background-color: #ccc;
 	font-weight: bold;
 	height: 27px;
 	font-size: 1.2em;
-	line-height: 1.9em
+	padding: 0.5rem 0;
 }
-ul.item li.address_title { background-image: url('../img/address_alias_left.gif') }
-ul.alternate_item li.address_title { background-image: url('../img/address_alias_right.gif') }
-ul.full_width li.address_title { background-image: url('../img/address_alias_full_width.gif') }
-li.address_name,
+ul.item li.address_title { /*background-image: url('../img/address_alias_left.gif') */}
+ul.alternate_item li.address_title { /*background-image: url('../img/address_alias_right.gif') */}
+ul.full_width li.address_title { /*background-image: url('../img/address_alias_full_width.gif') */}
+/*li.address_name,
 li.address_firstname,
-li.address_lastname,
- li.address_update a,
- li.address_delete a { color: #dd2a81 }
+li.address_lastname { color: #dd2a81 }*/
 li.address_name,
 li.address_firstname,
 li.address_lastname,
  li.address_company { font-weight: bold }
 
-span.address_name,
+/*span.address_name,
 span.address_firstname,
-span.address_lastname,
-span.address_update a,
-span.address_delete a { color: #dd2a81 }
+span.address_lastname { color: #dd2a81 }*/
 span.address_name,
 span.address_firstname,
 span.address_lastname,
 span.address_company { font-weight: bold }
 
-li.address_update,
- li.address_delete {
+/*li.address_update, li.address_delete {
 	background: transparent url('../img/bullet_myaccount.gif') no-repeat 0 0.5em!important;
 	background: transparent url('../img/bullet_myaccount.gif') no-repeat 0 0.4em;
 	margin-left: 1.4em
+}*/
+.address_add a.button_large {
+	background-color: #978100;
+    color: #EAD200;
+    text-decoration: none;
+	padding: 5px 25px;
+	font-size: 1.5rem;
+	cursor:pointer;
 }
 #center_column .address_add { padding: 1em 0 }
+
+li.address_update a,
+li.address_delete a {
+	border: medium none;
+    color: #444444;
+    cursor: pointer;
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px 20px 0 0;
+    text-decoration: none;
+	background: #f0f0f0;
+	padding: 0 15px;
+}
+
+.address_add a.button_large:hover {
+    background-color: #CAAD00;
+    color: #fff;
+	cursor:pointer;
+}
+li.address_update a:hover, li.address_delete a:hover { color: #978100; }
+
+/* Mis direcciones */
+#addresses #footer { margin-top: 20rem; }
+div.addresses p { font-size: 1.5rem; line-height: 2rem; }
+div.addresses p { color: #978100; }
+
+#addresses .footer_links { margin-top: 5rem; }
+#addresses .footer_links img { padding: 0 5px; }
+#addresses .footer_links a { text-decoration: none; color: #978100; font-size: 1.5rem; }
+#addresses .footer_links a:hover { color: #444; }

@@ -11,7 +11,7 @@ $_MODULE['<{carriercompare}prestashop>carriercompare_b72dd62d03697b37417288c63e7
 $_MODULE['<{carriercompare}prestashop>carriercompare_3f63451bbacbb1c3303d99d0309fdfe9'] = 'Por favor seleccione un transportista';
 $_MODULE['<{carriercompare}prestashop>carriercompare_efaf5c3827ef576b05de32ad458f196c'] = 'Este identificante de transportista no se encuentra disponible para esta selección';
 $_MODULE['<{carriercompare}prestashop>carriercompare_a0593567d9366b570d33cd3ac81042df'] = 'Imposible actualizar el carrito';
-$_MODULE['<{carriercompare}prestashop>carriercompare_36126598ecb1141cd37a92f48e7727f1'] = 'Refrescando y la actualización la cesta ...';
+$_MODULE['<{carriercompare}prestashop>carriercompare_36126598ecb1141cd37a92f48e7727f1'] = 'Refrescando y actualizando ...';
 $_MODULE['<{carriercompare}prestashop>carriercompare_43b6864a312731efd637b6f15716656f'] = 'Comprobación de los estados disponibles ...';
 $_MODULE['<{carriercompare}prestashop>carriercompare_c38be8e252777b47067cfe4de79b80a3'] = 'Recuperación de la información ...';
 $_MODULE['<{carriercompare}prestashop>carriercompare_e7a6ca4e744870d455a57b644f696457'] = '¡Gratis!';

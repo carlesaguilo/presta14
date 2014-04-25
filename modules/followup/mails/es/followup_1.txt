@@ -6,7 +6,7 @@ Hola {firstname} {lastname},
 
  
 
-Su cesta de {shop_name}
+Su carrito de {shop_name}
 
  
 

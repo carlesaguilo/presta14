@@ -1,6 +1,13 @@
 /* my-account.tpl */
-#my-account #center_column ul { margin: 2em 0 }
+#my-account h4 { font-size: 2rem; line-height: 3rem; }
+#my-account #center_column { margin-top: 4rem; }
+#my-account #center_column ul { margin: -10rem 5rem 0 0; float: right; }
 #my-account #center_column li { 
 	list-style: none; 
-	margin: 2em 1.5em 
+	margin: 1em 
 }
+#my-account #center_column li a { text-decoration: none; color: #978100; font-size: 1.5em; }
+#my-account #center_column li a:hover { color: #444; } 
+#my-account #center_column li a img { display: none; }
+#my-account #footer { margin-top: 30rem; }
+#my-account #intro { width: 70%; }

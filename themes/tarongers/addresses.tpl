@@ -90,12 +90,14 @@
 {capture name=path}<a href="{$link->getPageLink('my-account.php', true)}">{l s='My account'}</a><span class="navigation-pipe">{$navigationPipe}</span>{l s='My addresses'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
+<div id="intro">
 <h1>{l s='My addresses'}</h1>
 <p>{l s='Please configure the desired billing and delivery addresses to be preselected when placing an order. You may also add additional addresses, useful for sending gifts or receiving your order at the office.'}</p>
+</div>
 
 {if isset($multipleAddresses) && $multipleAddresses}
 <div class="addresses">
-	<h3>{l s='Your addresses are listed below.'}</h3>
+	<!--<h3>{l s='Your addresses are listed below.'}</h3>-->
 	<p>{l s='Be sure to update them if they have changed.'}</p>
 	{assign var="adrs_style" value=$addresses_style}
 	{foreach from=$multipleAddresses item=address name=myLoop}
@@ -125,5 +127,5 @@
 
 <ul class="footer_links">
 	<li><a href="{$link->getPageLink('my-account.php', true)}"><img src="{$img_dir}icon/my-account.gif" alt="" class="icon" /></a><a href="{$link->getPageLink('my-account.php', true)}">{l s='Back to Your Account'}</a></li>
-	<li><a href="{$base_dir}"><img src="{$img_dir}icon/home.gif" alt="" class="icon" /></a><a href="{$base_dir}">{l s='Home'}</a></li>
+	<!--<li><a href="{$base_dir}"><img src="{$img_dir}icon/home.gif" alt="" class="icon" /></a><a href="{$base_dir}">{l s='Home'}</a></li>-->
 </ul>

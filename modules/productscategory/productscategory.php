@@ -127,7 +127,8 @@ class productsCategory extends Module
 		// Remove current product from the list
 		if (is_array($categoryProducts) AND sizeof($categoryProducts))
 		{
-			foreach ($categoryProducts AS $key => $categoryProduct)
+			/*
+foreach ($categoryProducts AS $key => $categoryProduct)
 				if ($categoryProduct['id_product'] == $idProduct)
 				{
 					unset($categoryProducts[$key]);
@@ -163,6 +164,7 @@ class productsCategory extends Module
 				$categoryProducts = array_slice($categoryProducts, $middlePosition - 15, 30, true);
 				$middlePosition = 15;
 			}
+*/
 		}
 		
 		// Display tpl

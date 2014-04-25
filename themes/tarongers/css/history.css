@@ -43,3 +43,10 @@
 	padding: 0;
 	width: 528px;
 }
+/* Mi historial & Mis créditos */
+#history #footer, #order-slip #footer { margin-top: 20rem; }
+#history p.warning, #order-slip p.warning {  font-size: 1.5rem; line-height: 5rem; color: #978100; }
+#history .footer_links, #order-slip .footer_links { margin-top: 5rem; }
+#history .footer_links img, #order-slip .footer_links img { padding: 0 5px; }
+#history .footer_links a, #order-slip .footer_links a { text-decoration: none; color: #978100; font-size: 1.5rem; }
+#history .footer_links a:hover, #order-slip .footer_links a:hover { color: #444; }

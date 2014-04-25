@@ -27,6 +27,7 @@
 {capture name=path}<a href="{$link->getPageLink('my-account.php', true)}">{l s='My account'}</a><span class="navigation-pipe">{$navigationPipe}</span>{l s='My Vouchers'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
+<div id="intro">
 <h1>{l s='My Vouchers'}</h1>
 
 {if isset($discount) && count($discount) && $nbDiscounts}
@@ -36,7 +37,7 @@
 			<th class="discount_code first_item">{l s='Code'}</th>
 			<th class="discount_description item">{l s='Description'}</th>
 			<th class="discount_quantity item">{l s='Quantity'}</th>
-			<th class="discount_value item">{l s='Value'}*</th>
+			<th class="discount_value item">{l s='Value'}&nbsp;<sup>*</sup></th>
 			<th class="discount_minimum item">{l s='Minimum'}</th>
 			<th class="discount_cumulative item">{l s='Cumulative'}</th>
 			<th class="discount_expiration_date last_item">{l s='Expiration date'}</th>
@@ -76,14 +77,15 @@
 	{/foreach}
 	</tbody>
 </table>
-<p>
-	*{l s='Tax included'}
+<p id="required">
+	*&nbsp;{l s='Tax included'}
 </p>
 {else}
 	<p class="warning">{l s='You do not possess any vouchers.'}</p>
 {/if}
+</div>
 
 <ul class="footer_links">
 	<li><a href="{$link->getPageLink('my-account.php', true)}"><img src="{$img_dir}icon/my-account.gif" alt="" class="icon" /></a><a href="{$link->getPageLink('my-account.php', true)}">{l s='Back to Your Account'}</a></li>
-	<li><a href="{$base_dir}"><img src="{$img_dir}icon/home.gif" alt="" class="icon" /></a><a href="{$base_dir}">{l s='Home'}</a></li>
+	<!--<li><a href="{$base_dir}"><img src="{$img_dir}icon/home.gif" alt="" class="icon" /></a><a href="{$base_dir}">{l s='Home'}</a></li>-->
 </ul>

@@ -7,13 +7,14 @@
 
 #primary_block #image-block {
 	border: #d0d1d5 solid 1px;
-	height: 300px;
-	width: 300px
+	height: 450px;
+	width: 450px;
+	margin: 5rem 33rem 0;
 }
 #primary_block #image-block img#bigpic { 
 	cursor: pointer; 
-	height: 300px;
-	width: 300px
+	height: 450px;
+	width: 450px
 }
 #primary_block ul#usefull_link_block { list-style-type: none; margin-top: 1em; width: 300px; }
 #primary_block ul#usefull_link_block li { margin: 0.5em 1em 0.5em 0; display: block; line-height: 15px; }
@@ -70,7 +71,7 @@
 }
 #primary_block p.buttons_bottom_block { margin: 0 }
 #primary_block p.buttons_bottom_block a,
- #primary_block p.buttons_bottom_block input { margin: 0.9em auto 0 auto }
+#primary_block p.buttons_bottom_block input { margin: 0.9em auto 0 auto }
 #primary_block #short_description_content { margin-bottom: 0.5em }
 #primary_block #buy_block {
 	background: #f1f2f4 url('../img/product-buy-bg.gif') repeat-x top left;
@@ -157,3 +158,49 @@
 {
 	margin-top: 5px
 }
+
+#thumbs_list { width: 100%; }
+ul#thumbs_list_frame { width: 500px !important; margin-top: 1rem; }
+ul#thumbs_list_frame li { display: inline-block; padding: 0 5px; }
+#views_block { margin: 2rem 0 0rem 30rem; }
+
+/* Carrito */
+#product #page{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/oranges/fons-fum_01.jpg"), url("../img/oranges/fons-fum_10.jpg");
+    background-position: left 250px, left bottom;
+    background-repeat: no-repeat;
+    background-size: auto auto, auto auto;
+}
+#product #right_column { float: right; position:relative; bottom: 100rem; left: 0; }
+#more_info_block { background-color: #ddd; margin: 0 35rem 0 25rem; }
+#product h1 { text-align: left; margin-bottom: 1rem; }
+#product #short_description_block { padding: 2rem 0 2rem 2rem; border-bottom: 1px solid #D0D1D5; width: 90%; margin-left: 1.5rem; }
+#product form#buy_block, #product #short_description_block #more_info_sheets{ width: 50%; }
+#product form#buy_block { float: right; position:relative; bottom: 19rem; left: 8rem; font-size: 1.5rem; line-height: 3rem }
+#product #short_description_content { width: 90%; text-align:center; font-size: 1.5rem; line-height: 2.5rem; padding: 3rem; margin:0; }
+#product #short_description_content p { width: 100%; text-align: center; }
+#product #short_description_block #more_info_sheets .rte:before, #product #short_description_block #more_info_sheets .rte:after { display: inline; }
+#product div#more_info_sheets p { text-align: left; }
+#product .price span#our_price_display { font-size: 3rem; color: #978100; }
+#product .buttons_bottom_block { width:25%; }
+#product div#add_cart {	/*#product .buttons_bottom_block input.exclusive, #product .buttons_bottom_block input.exclusive_disabled, */
+	background: url("../img/oranges/icones.png") no-repeat scroll -118px 0 rgba(0, 0, 0, 0);
+	margin-top: 30px;
+	position: absolute;
+    left: 43%;
+	padding: 10px;
+}
+#product p#add_to_cart input.exclusive, #product p#add_to_cart input.exclusive_disabled { 
+	background: #978100; 
+	color: #EAD200; 
+	display: block;
+    height: 65px;
+	font-family: inherit;
+	font-size: 1.5rem;
+	border:none;
+	cursor: pointer;
+}
+#product p#add_to_cart input.exclusive:hover { color: #fff; }
+#product #footer { margin-top: 35rem; }
+#product div.recomendado { position: absolute; margin: 180px 0 0 65px; font-size: 2rem; }

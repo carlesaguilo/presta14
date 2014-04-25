@@ -27,6 +27,7 @@
 {capture name=path}{l s='Your shopping cart'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
+
 <h1 id="cart_title">{l s='Shopping cart summary'}</h1>
 
 {assign var='current_step' value='summary'}
@@ -52,7 +53,7 @@
 {if isset($lastProductAdded) AND $lastProductAdded}
 	{foreach from=$products item=product}
 		{if $product.id_product == $lastProductAdded.id_product AND (!$product.id_product_attribute OR ($product.id_product_attribute == $lastProductAdded.id_product_attribute))}
-			<div class="cart_last_product">
+			<!--<div class="cart_last_product">
 				<div class="cart_last_product_header">
 					<div class="left">{l s='Last added product'}</div>
 				</div>
@@ -62,7 +63,7 @@
 					{if isset($product.attributes) && $product.attributes}<a href="{$link->getProductLink($product.id_product, $product.link_rewrite, $product.category)|escape:'htmlall':'UTF-8'}">{$product.attributes|escape:'htmlall':'UTF-8'}</a>{/if}
 				</div>
 				<br class="clear" />
-			</div>
+			</div>-->
 		{/if}
 	{/foreach}
 {/if}
@@ -293,7 +294,7 @@
 	<form action="{if $opc}{$link->getPageLink('order-opc.php', true)}{else}{$link->getPageLink('order.php', true)}{/if}" method="post" id="voucher">
 		<fieldset>
 			<h4>{l s='Vouchers'}</h4>
-			<p>
+			<p class="code">
 				<label for="discount_name">{l s='Code:'}</label>
 				<input type="text" id="discount_name" name="discount_name" value="{if isset($discount_name) && $discount_name}{$discount_name}{/if}" />
 			</p>

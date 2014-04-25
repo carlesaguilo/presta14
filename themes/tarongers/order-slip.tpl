@@ -27,8 +27,10 @@
 {capture name=path}<a href="{$link->getPageLink('my-account.php', true)}">{l s='My account'}</a><span class="navigation-pipe">{$navigationPipe}</span>{l s='Credit slips'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
+<div id="intro">
 <h1>{l s='Credit slips'}</h1>
 <p>{l s='Credit slips you have received after cancelled orders'}.</p>
+</div>
 <div class="block-center" id="block-history">
 	{if $ordersSlip && count($ordersSlip)}
 	<table id="order-list" class="std">
@@ -61,5 +63,5 @@
 </div>
 <ul class="footer_links">
 	<li><a href="{$link->getPageLink('my-account.php', true)}"><img src="{$img_dir}icon/my-account.gif" alt="" class="icon" /></a><a href="{$link->getPageLink('my-account.php', true)}">{l s='Back to Your Account'}</a></li>
-	<li><a href="{$base_dir}"><img src="{$img_dir}icon/home.gif" alt="" class="icon" /></a><a href="{$base_dir}">{l s='Home'}</a></li>
+	<!--<li><a href="{$base_dir}"><img src="{$img_dir}icon/home.gif" alt="" class="icon" /></a><a href="{$base_dir}">{l s='Home'}</a></li>-->
 </ul>

@@ -27,8 +27,10 @@
 {capture name=path}{l s='My account'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
+<div id="intro">
 <h1>{l s='My account'}</h1>
 <h4>{l s='Welcome to your account. Here you can manage your personal information, addresses and orders.'}</h4>
+</div>
 <ul>
 	<li><a href="{$link->getPageLink('history.php', true)}" title="{l s='Orders'}"><img src="{$img_dir}icon/order.gif" alt="{l s='Orders'}" class="icon" /></a><a href="{$link->getPageLink('history.php', true)}" title="{l s='Orders'}">{l s='Order history and details '}</a></li>
 	{if $returnAllowed}
@@ -42,4 +44,4 @@
 	{/if}
 	{$HOOK_CUSTOMER_ACCOUNT}
 </ul>
-<p><a href="{$base_dir}" title="{l s='Home'}"><img src="{$img_dir}icon/home.gif" alt="{l s='Home'}" class="icon" /></a><a href="{$base_dir}" title="{l s='Home'}">{l s='Home'}</a></p>
+<!--<p><a href="{$base_dir}" title="{l s='Home'}"><img src="{$img_dir}icon/home.gif" alt="{l s='Home'}" class="icon" /></a><a href="{$base_dir}" title="{l s='Home'}">{l s='Home'}</a></p>-->

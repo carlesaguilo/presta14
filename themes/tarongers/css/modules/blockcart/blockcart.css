@@ -114,3 +114,28 @@
 	height: 2em
 }
 */
+
+#center_column { margin-top: 4rem; font-size: 1.5rem; line-height: 2.5rem; }
+
+div.error { width: 70%; color: #ff0000;}
+
+div.error p.align_right a.button_smallm form#voucher p.submit input.button {
+	background: #ddd;
+    color: #444444;
+    float: right;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin: 20px 35px 15px 0;
+    padding: 0 10px;
+    text-decoration: none;
+}
+div.error p.align_right a.button_small:hover { color: #978100; }
+
+.cart_last_product { margin: 10rem 0; }
+.order_delivery ul.address { display: inline-block; width: 25%; padding: 0; }
+
+#cart_voucher { width: 65%; margin: 5rem 0;  text-align: center; }
+#cart_voucher h4 { color: #978100; font-size: 3rem; margin-bottom: 1.5rem; }
+form#voucher p.code { margin: 2rem; }
+
+p.cart_navigation { float:left; }
