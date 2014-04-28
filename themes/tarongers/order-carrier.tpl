@@ -82,7 +82,7 @@
 
 {include file="$tpl_dir./errors.tpl"}
 
-<form id="form" action="{$link->getPageLink('order.php', true)}" method="post" onsubmit="return acceptCGV();">
+<form id="form_conditions" action="{$link->getPageLink('order.php', true)}" method="post" onsubmit="return acceptCGV();">
 {else}
 <div id="opc_delivery_methods" class="opc-main-block">
 	<div id="opc_delivery_methods-overlay" class="opc-overlay" style="display: none;"></div>
@@ -90,7 +90,7 @@
 
 {if $conditions AND $cms_id}
 	<h3 class="condition_title">{l s='Terms of service'}</h3>
-	<p class="checkbox">
+	<p class="checkbox_conditions">
 		<input type="checkbox" name="cgv" id="cgv" value="1" {if $checkedTOS}checked="checked"{/if} />
 		<label for="cgv">{l s='I agree to the terms of service and adhere to them unconditionally.'}</label> <a href="{$link_conditions}" class="iframe">{l s='(read)'}</a>
 	</p>
@@ -114,14 +114,14 @@
 	{/if}
 	<p class="warning" id="noCarrierWarning" {if isset($carriers) && $carriers && count($carriers)}style="display:none;"{/if}>{l s='There are no carriers available that deliver to this address.'}</p>
 	<table id="carrierTable" class="std" {if !isset($carriers) || !$carriers || !count($carriers)}style="display:none;"{/if}>
-		<thead>
+		<!--<thead>
 			<tr>
 				<th class="carrier_action first_item"></th>
 				<th class="carrier_name item">{l s='Carrier'}</th>
 				<th class="carrier_infos item">{l s='Information'}</th>
 				<th class="carrier_price last_item">{l s='Price'}</th>
 			</tr>
-		</thead>
+		</thead>-->
 		<tbody>
 		{if isset($carriers)}
 			{foreach from=$carriers item=carrier name=myLoop}
@@ -177,7 +177,7 @@
 {/if}
 
 {if !$opc}
-	<p class="cart_navigation submit">
+	<p class="cart_navigation_carrier submit">
 		<input type="hidden" name="step" value="3" />
 		<input type="hidden" name="back" value="{$back}" />
 		<a href="{$link->getPageLink('order.php', true)}{if !$is_guest}?step=1{if $back}&back={$back}{/if}{/if}" title="{l s='Previous'}" class="button">&laquo; {l s='Previous'}</a>

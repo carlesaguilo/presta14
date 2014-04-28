@@ -74,7 +74,7 @@ li.address_delete a {
 	border: medium none;
     color: #444444;
     cursor: pointer;
-    float: left;
+    float: right;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 5px 20px 0 0;
@@ -93,7 +93,6 @@ li.address_update a:hover, li.address_delete a:hover { color: #978100; }
 /* Mis direcciones */
 #addresses #footer { margin-top: 20rem; }
 div.addresses p { font-size: 1.5rem; line-height: 2rem; }
-div.addresses p { color: #978100; }
 
 #addresses .footer_links { margin-top: 5rem; }
 #addresses .footer_links img { padding: 0 5px; }

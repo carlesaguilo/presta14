@@ -31,41 +31,41 @@
 	<li class="{if $current_step=='summary'}step_current{else}{if $current_step=='payment' || $current_step=='shipping' || $current_step=='address' || $current_step=='login'}step_done{else}step_todo{/if}{/if}">
 		{if $current_step=='payment' || $current_step=='shipping' || $current_step=='address' || $current_step=='login'}
 		<a href="{$link->getPageLink('order.php', true)}{if isset($back) && $back}?back={$back}{/if}">
-			{l s='Summary'}
+			<span>1</span>{l s='Summary'}
 		</a>
 		{else}
-		{l s='Summary'}
+		<span>1</span>{l s='Summary'}
 		{/if}
 	</li>
 	<li class="{if $current_step=='login'}step_current{else}{if $current_step=='payment' || $current_step=='shipping' || $current_step=='address'}step_done{else}step_todo{/if}{/if}">
 		{if $current_step=='payment' || $current_step=='shipping' || $current_step=='address'}
 		<a href="{$link->getPageLink('order.php', true)}?step=1{if isset($back) && $back}&amp;back={$back}{/if}">
-			{l s='Login'}
+			<span>2</span>{l s='Login'}
 		</a>
 		{else}
-		{l s='Login'}
+			<span>2</span>{l s='Login'}
 		{/if}
 	</li>
 	<li class="{if $current_step=='address'}step_current{else}{if $current_step=='payment' || $current_step=='shipping'}step_done{else}step_todo{/if}{/if}">
 		{if $current_step=='payment' || $current_step=='shipping'}
 		<a href="{$link->getPageLink('order.php', true)}?step=1{if isset($back) && $back}&amp;back={$back}{/if}">
-			{l s='Address'}
+			<span>3</span>{l s='Address'}
 		</a>
 		{else}
-		{l s='Address'}
+			<span>3</span>{l s='Address'}
 		{/if}
 	</li>
 	<li class="{if $current_step=='shipping'}step_current{else}{if $current_step=='payment'}step_done{else}step_todo{/if}{/if}">
 		{if $current_step=='payment'}
 		<a href="{$link->getPageLink('order.php', true)}?step=2{if isset($back) && $back}&amp;back={$back}{/if}">
-			{l s='Shipping'}
+			<span>4</span>{l s='Shipping'}
 		</a>
 		{else}
-		{l s='Shipping'}
+			<span>4</span>{l s='Shipping'}
 		{/if}
 	</li>
 	<li id="step_end" class="{if $current_step=='payment'}step_current{else}step_todo{/if}">
-		{l s='Payment'}
+		<span>5</span>{l s='Payment'}
 	</li>
 </ul>
 <!-- /Steps -->

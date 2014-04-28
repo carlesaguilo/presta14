@@ -27,7 +27,7 @@ $_MODULE['<{bankwire}prestashop>payment_execution_c5e8668ba5e211603955f0b5e913d8
 $_MODULE['<{bankwire}prestashop>payment_execution_f1d3b424cd68795ecaa552883759aceb'] = 'Resumen del pedido';
 $_MODULE['<{bankwire}prestashop>payment_execution_879f6b8877752685a966564d072f498f'] = 'Su carrito está vacío.';
 $_MODULE['<{bankwire}prestashop>payment_execution_e40a43534d7f4ece69347847d75401e0'] = 'Transferencia bancaria';
-$_MODULE['<{bankwire}prestashop>payment_execution_afda466128ee0594745d9f8152699b74'] = 'Ha elegido pagar por transferencia bancaria';
+$_MODULE['<{bankwire}prestashop>payment_execution_afda466128ee0594745d9f8152699b74'] = 'Ha elegido pagar por transferencia bancaria.';
 $_MODULE['<{bankwire}prestashop>payment_execution_c884ed19483d45970c5bf23a681e2dd2'] = 'Aquí tiene un resumen de su pedido:';
 $_MODULE['<{bankwire}prestashop>payment_execution_e2867a925cba382f1436d1834bb52a1c'] = 'El importe total de su pedido es';
 $_MODULE['<{bankwire}prestashop>payment_execution_1f87346a16cf80c372065de3c54c86d9'] = 'IVA incluído';

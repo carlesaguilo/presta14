@@ -1,6 +1,6 @@
 /* my-account.tpl */
 #my-account h4 { font-size: 2rem; line-height: 3rem; }
-#my-account #center_column { margin-top: 4rem; }
+#my-account #center_column { font-size: inherit; }
 #my-account #center_column ul { margin: -10rem 5rem 0 0; float: right; }
 #my-account #center_column li { 
 	list-style: none; 

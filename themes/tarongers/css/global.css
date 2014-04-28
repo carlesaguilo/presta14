@@ -1571,6 +1571,6 @@ nav#tmcategories {
 
 /* PORQUERIA A BORRAR */
 /* line 12, ../compass/sass/global.scss */
-#jGrowl, #order_step {
+#jGrowl {
   display: none !important;
 }

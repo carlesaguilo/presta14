@@ -114,12 +114,13 @@
 	height: 2em
 }
 */
+#order p.warning { margin: 10rem 0 20rem; } /* missatge carrito buit */
 
-#center_column { margin-top: 4rem; font-size: 1.5rem; line-height: 2.5rem; }
-
+#center_column { margin-top: 4rem; line-height: 2.5rem; font-size: 1.5rem; }
+p.carrito { width: 50%; position: relative; top: 5rem; left: 10rem; text-align: center; font-size: 2rem; }
 div.error { width: 70%; color: #ff0000;}
 
-div.error p.align_right a.button_smallm form#voucher p.submit input.button {
+div.error p.align_right a.button_small, form#voucher p.submit input.button {
 	background: #ddd;
     color: #444444;
     float: right;
@@ -132,10 +133,105 @@ div.error p.align_right a.button_smallm form#voucher p.submit input.button {
 div.error p.align_right a.button_small:hover { color: #978100; }
 
 .cart_last_product { margin: 10rem 0; }
-.order_delivery ul.address { display: inline-block; width: 25%; padding: 0; }
+
+ul#order_step { width: 55%; margin: 5rem 0 20rem 15rem; }
+ul#order_step li { 
+	display: block;
+	margin:0 1rem;
+	padding: 1rem;
+	width: 65px;
+	height: 94px;
+	text-align:center;
+	float:left;
+	color: #fff;
+	background: #978100;
+}
+ul#order_step li.step_current:after {
+	background: url(../../../img/oranges/icones.png) no-repeat scroll -184px -354px;
+	content: " ";
+    padding: 15px;
+}
+ul#order_step li.step_done a { text-decoration: none; color: #fff; }
+ul#order_step li span { display: block; color: #EAD200; font-size: 3.5rem; padding: 1rem 0 2rem 0; } 
+ul#order_step li.step_todo { line-height: 2rem; }
+div#order-detail-content { margin-top: 10rem;  width: 70%; }
+table#cart_summary { width: 100%; }
+table#cart_summary thead, table#cart_summary tbody { background: #ddd; }
+table#cart_summary tfoot { background: #978100; }
+table#cart_summary th{ padding: 1rem; font-weight: bold; }
+table#cart_summary td { padding: 0 1rem 1rem 1rem; }
+table#cart_summary td.cart_quantity { padding: 0 4rem; }
+td.cart_unit, td.cart_total { text-align: right; }
+th.cart_total { text-align:right; }
+th.cart_quantity, td.cart_quantity, th.cart_unit { text-align:center; }
+.cart_unit, .cart_total { width: 17%; }
+.cart_description h5 a, p.checkbox_conditions a.iframe { text-transform:none; color: #978100; text-decoration:none; }
+.cart_description h5 a:hover, p.checkbox_conditions a.iframe:hover { color: #444; }
+input.cart_quantity_input { font-size:inherit; text-align: center; vertical-align: text-bottom; }
+div#delete {float: right; position: relative; left: -40px; top: 2px; }
+
+/*table#cart_summary tfoot td { color: #EAD200; }
+table#cart_summary tfoot td#total_product, table#cart_summary tfoot td#total_discount, table#cart_summary tfoot td#total_wrapping, 
+table#cart_summary tfoot td#total_shipping, table#cart_summary tfoot td#total_price_without_tax, table#cart_summary tfoot td#total_tax, 
+table#cart_summary tfoot td#total_price, tfoot td#free_shipping { color: #fff; text-align: right; }
+table#cart_summary tfoot td#total_price { font-size: 2.5rem; }*/
+
+table#tfoot { width: 60%; background: #978100; margin: 5rem 0 0 15rem; }
+table#tfoot td { color: #EAD200; padding: 1rem; }
+table#tfoot td#total_product, table#tfoot td#total_discount, table#tfoot td#total_wrapping, 
+table#tfoot td#total_shipping, table#tfoot td#total_price_without_tax, table#tfoot td#total_tax, 
+table#tfoot td#total_price, table#tfoot td#free_shipping { color: #fff; text-align: right; }
+table#tfoot td#total_price { font-size: 2.5rem; }
+table#tfoot tr.cart_total_price { }
+table#tfoot tr.cart_total_price:before { background: url("../../../img/oranges/icones.png") no-repeat scroll 186px 0px; width: 29px; height: 11px; }
 
 #cart_voucher { width: 65%; margin: 5rem 0;  text-align: center; }
 #cart_voucher h4 { color: #978100; font-size: 3rem; margin-bottom: 1.5rem; }
 form#voucher p.code { margin: 2rem; }
+form#voucher p.code input#discount_name { font-family: inherit; width: 25%; }
+form#voucher p.submit input.buttonDiscount, p.submit a.button, p.submit input.exclusive { font-family:inherit; border: none; }
 
-p.cart_navigation { float:left; }
+.order_delivery ul.address { display: inline-block; width: 25%; padding: 0; }
+div#ordermsg textarea { width: 670px; height: 150px; max-width: 700px; max-height: 200px; }
+ul#address_delivery, ul#address_invoice { width: 300px; display: inline-block; }
+p.address_delivery, p#address_invoice_form { margin: 2rem 0; }
+p.address_add { margin: 3rem 0; }
+
+p.cart_navigation { margin: 5rem 0 15rem 0; width: 70%; }
+p.cart_navigation_carrier { margin: 2rem 0 8rem 0; width: 100%; }
+p.cart_navigation a.button_large, p.cart_navigation a.exclusive, form#voucher p.submit input.buttonDiscount, p#address_invoice_form a.button_large,
+p.cart_navigation a.button, p.cart_navigation_carrier a.button, p.cart_navigation input.exclusive, p.cart_navigation_carrier input.exclusive,
+p.cart_navigation input.exclusive_large {
+	background-color: #978100;
+    color: #EAD200;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 5px 25px;
+    text-decoration: none;
+	border:none;
+}
+p.cart_navigation a.button_large { float: left; }
+p.cart_navigation a.exclusive, p.submit input.exclusive, p.cart_navigation input.exclusive_large { float:right; }
+p.cart_navigation a.button_large:hover, p.cart_navigation a.exclusive:hover, form#voucher p.submit input.buttonDiscount:hover, 
+p#address_invoice_form a.button_large:hover, p.cart_navigation a.button:hover, p.cart_navigation_carrier a.button:hover, 
+p.cart_navigation input.exclusive:hover, p.cart_navigation_carrier input.exclusive:hover, p.cart_navigation input.exclusive_large:hover { background:#CAAD00; color: #fff; }
+
+/* pas 4-Envío - confirmar condicions i transport */
+form#form_conditions { width: 65%; margin: 8rem 8rem 20rem 8rem; }
+form#form_conditions h3 { font-size: 2rem; color: #978100; padding: 2rem; background: #ddd; }
+table#carrierTable { width: 100%; background: #ddd; }
+p.checkbox_conditions { background: #ddd; margin-bottom: 1rem; padding: 0 0 2rem 2rem; }
+table#carrierTable td { padding: 0 0 2rem 2rem; }
+
+div#order_carrier { width: 50%; margin: 5rem; }
+div#order_carrier h4 { color: #978100; font-size: 2rem; }
+div#order_carrier span {}
+
+/* pas 5-Pago */
+span.price { font-size: 2rem; }
+div#HOOK_PAYMENT { width: 70%; }
+div#HOOK_PAYMENT p.payment_module { margin: 2rem; }
+div#HOOK_PAYMENT p.payment_module a { color: #978100; text-decoration: none; }
+div#HOOK_PAYMENT p.payment_module a:hover { color: #444; }
+div#HOOK_PAYMENT p.payment_module a img { vertical-align: middle; padding-right: 2rem; }
+#module-bankwire-payment p.cart_navigation { margin: 5rem 0 25rem 0; }
