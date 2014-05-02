@@ -24,8 +24,10 @@
   	<li class="item"><a href="http://www.qweb.es/empresas-de-productos-naturales.html" target="_blank" title="Directorio de Empresas de Productos naturales"> <img src="http://www.qweb.es/certqweb-www.incienso-incense.com.gif" width="97" height="31" border="0" align="absmiddle" alt="Directorio de Empresas de Productos naturales" /> </a></li>
   	
 	{if $display_poweredby}
-		<li class="last_item"><a href="{$link->getPageLink('index.php')}" class="footer_logo"><img class="logo" src="{$img_dir}logo_footer.png?{$img_update_time}" alt="{$shop_name|escape:'htmlall':'UTF-8'}" /></a> &copy; {$smarty.now|date_format:"%Y"} </li>
-		<li>Developed by <a href="mailto:carles.aguilo@gmail.com">Carles Aguiló</a> & <a href="http://www.carmepujol.eu" target="_blank">Carme Pujol</a></li>
+		<!--<li class="last_item"><a href="{$link->getPageLink('index.php')}" class="footer_logo"><img class="logo" src="{$img_dir}logo_footer.png?{$img_update_time}" alt="{$shop_name|escape:'htmlall':'UTF-8'}" /></a> &copy; {$smarty.now|date_format:"%Y"} </li>
+		<li>Developed by <a href="mailto:carles.aguilo@gmail.com">Carles Aguiló</a> & <a href="http://www.carmepujol.eu" target="_blank">Carme Pujol</a></li>-->
+        <li class="last_item"><a href="{$link->getPageLink('index.php')}" class="footer_logo">H&B Incienso Natural</a> &copy; {$smarty.now|date_format:"%Y"} </li>
+		<li>Web: <a href="mailto:carles.aguilo@gmail.com">Carles Aguiló</a> & <a href="http://www.carmepujol.eu" target="_blank">Carme Pujol</a></li>
 	{/if}
 </ul>
 <!-- /MODULE Block footer -->

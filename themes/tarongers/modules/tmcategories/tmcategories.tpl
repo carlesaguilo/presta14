@@ -27,7 +27,7 @@ dropShadows: false
         <li {if ($smarty.get.id_cms == 2)} class="current" {/if}>
 			<a href="cms.php?id_cms=2" >{l s='Philosophy' mod='tmcategories'}</a>
 		</li>
-        <li {if $page_name == "category"} class="current"{/if}>
+        <li {if $page_name == "category" || $page_name == "product" } class="current"{/if}>
 			<a href="category.php?id_category=45">{l s='Incenses' mod='tmcategories'}</a>
 		</li>	
         <!--<li {if $page_name == "my-account"} class="current"{/if}>

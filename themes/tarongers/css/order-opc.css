@@ -21,8 +21,8 @@
 } 
 
 #order-opc #login_form p.text {
-	height: 3.4em;
-	margin-left: 4em;
+	height: 34px;
+	margin-left: 40px;
 	padding-left: 0;
 	padding-right: 0
 }
@@ -34,18 +34,18 @@
 	text-align: left;
 	padding-left: 17%!important
 }
-#order-opc p.lost_password { padding-left: 4em }
-#order-opc p.submit span { padding-right: 0.5em }
+#order-opc p.lost_password { padding-left: 40px }
+#order-opc p.submit span { padding-right: 5px }
 #order-opc #login_form label {
 	float: none;
 	clear: both;
 	display: block;
 	text-align: left;
 	width: 100%;
-	margin-bottom: 0.3em
+	margin-bottom: 3px;
 }
 
-#order-opc textarea#message { width: 42em }
+#order-opc textarea#message { width: 420px; }
 
 #order-opc sup { color: red }
 

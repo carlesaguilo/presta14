@@ -648,7 +648,7 @@ $_LANG['shopping-cart_598a4c4d56197cc1f6bca50b20aa484a'] = 'Total de impuestos:'
 $_LANG['shopping-cart_7ca91e615742b38bf7c41101b246fe95'] = 'Impuesto sobre venta estimado';
 $_LANG['shopping-cart_d4262a684450da4efdd912182c32f4d1'] = 'Total IVA incluído:';
 $_LANG['shopping-cart_66c4c5112f455a19afde47829df363fa'] = 'Total:';
-$_LANG['shopping-cart_1bd1426dbcbf1efd679596204f994389'] = 'Cantidad restante que se añadirá a su cesta, a fin de obtener el envío gratuito:';
+$_LANG['shopping-cart_1bd1426dbcbf1efd679596204f994389'] = 'Cantidad restante que se añadirá a su carrito, a fin de obtener el envío gratuito:';
 $_LANG['shopping-cart_2fb3b950fd7711136f7f251ae5fbdbdc'] = 'Texto Nº';
 $_LANG['shopping-cart_f2a6c498fb90ee345d997f888fce3b18'] = 'Eliminar';
 $_LANG['shopping-cart_c8cd21bd2e33378f10611bc4498cf96f'] = 'Borrar esta personalización';
@@ -728,5 +728,5 @@ $_LANG['live_edit_3c5b87f318f203adbfcc5d6a68959359'] = 'No se pudo cargar la li
 $_LANG['live_edit_c9cc8cce247e49bae79f15173ce97354'] = 'Guargar';
 $_LANG['live_edit_d8dcfab18b3a6eba56d617dd1dcb1ba7'] = 'Cierre de edición en vivo';
 
-$_LANG['tmslider_5ba44c8bc47ee0c102ccbbe83548bb5b'] = 'Solicitar muestras gratuitas';
+$_LANG['tmslider_5ba44c8bc47ee0c102ccbbe83548bb5b'] = 'Solicitar muestras gratis';
 ?>

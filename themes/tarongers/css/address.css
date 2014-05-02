@@ -1,17 +1,24 @@
 /* adress.tpl */
-#address #intro p { font-size: 1.5rem; line-height: 2.5rem; }
-#address h3 { font-size: 2rem; margin-bottom: 3rem; }
+#address #intro p { font-size: 15px; line-height: 25px; }
+#address h3 { font-size: 15px; margin-bottom: 30px; }
 
-form.std { font-size: 1.5rem; line-height: 3rem; margin-bottom: 10rem; background: #ddd; width: 700px; padding: 2rem; }
+form.std { 
+	font-size: 15px;
+	line-height: 30px;
+	margin-bottom: 100px;
+	background: url("../img/oranges/fons_paper_gris.png") repeat scroll left top #DDDDDD;
+	width: 70%;
+	padding: 20px;
+}
 form.std label { vertical-align: top; display: inline-block; width: 250px; }
 input#address1, input#address2 { width: 330px; }
 p#address_alias label { width: 475px; }
 form.std input, form.std select { font-family: inherit; font-size: inherit; } 
 form.std textarea#other { width: 330px; max-height: 300px; max-width: 330px; }
-p#info { color: #978100; margin-top: 1rem; }
+p#info { color: #978100; margin-top: 10px; }
 
-sup, p#required { color: #FF0000; font-style: italic; }
-#address p#required { margin-top: 7rem; }
+sup, p#required { color: #FF0000; font-style: italic; font-size: 15px; margin: 10px 0; }
+#address p#required { margin-top: 70px; }
 p.address_navigation { margin: 15px 10px; }
 input#submitAddress { 
 	/*background-color: #978100;
@@ -25,12 +32,12 @@ input#submitAddress {
     color: #444444;
     cursor: pointer;
     float: right;
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: bold;
     margin: 20px 35px 15px 0;
 }
 
-#address a.button { float: left; margin: 20px 35px 15px 0; text-decoration: none; color: #444444; background: #f0f0f0; padding: 0 10px; font-weight: bold; line-height: 2.5rem; }
+#address a.button { float: left; margin: 20px 35px 15px 0; text-decoration: none; color: #444444; background: #f0f0f0; padding: 0 10px; font-weight: bold; line-height: 25px; }
 input#submitAddress { padding: 2px 10px; }
 #address a.button:hover, input#submitAddress:hover { 
 	/*background-color: #CAAD00;

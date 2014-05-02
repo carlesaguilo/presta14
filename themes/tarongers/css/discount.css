@@ -1,11 +1,10 @@
 /* discount.tpl */
-#discount #intro { width: 60%; }
-#discount .footer_links { margin-top: 5rem; margin-bottom: 20rem; }
+#discount .footer_links { margin-top: 50px; margin-bottom: 200px; }
 #discount .footer_links img { padding: 0 5px; }
-#discount .footer_links a { text-decoration: none; color: #978100; font-size: 1.5rem; }
+#discount .footer_links a { text-decoration: none; color: #978100; font-size: 15px; }
 #discount .footer_links a:hover { color: #444; }
 
-table.discount { width: 120%; }
-table.discount th { background: #ddd; padding: 1rem 1.5rem; border: 1px solid #ccc; font-weight: bold; vertical-align: top;  }
-table.discount td { border: 1px solid #ccc; padding: 1rem; vertical-align: top; }
-table.discount tr { font-size: 1.5rem; }
+table.discount { width: 70%; }
+table.discount th { background: #ddd; padding: 10px 15px; border: 1px solid #ccc; font-weight: bold; vertical-align: top;  }
+table.discount td { border: 1px solid #ccc; padding: 10px; vertical-align: top; }
+table.discount tr { font-size: 15px; }

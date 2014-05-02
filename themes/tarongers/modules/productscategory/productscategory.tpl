@@ -31,12 +31,12 @@
 	<div id="productscategory_list">
 		<ul id="prod_list">               
 			{foreach from=$categoryProducts item='categoryProduct' name=categoryProduct}
-			<li>
+			<li {if $categoryProduct.id_product ==  $product->id|intval} class="current"{/if}>  
 				<!--<a href="{$link->getProductLink($categoryProduct.id_product, $categoryProduct.link_rewrite, $categoryProduct.category, $categoryProduct.ean13)}" title="{$categoryProduct.name|htmlspecialchars}"><img src="{$link->getImageLink($categoryProduct.link_rewrite, $categoryProduct.id_image, 'medium')}" alt="{$categoryProduct.name|htmlspecialchars}" /></a>-->
-                <br/>
+                
 				<a href="{$link->getProductLink($categoryProduct.id_product, $categoryProduct.link_rewrite, $categoryProduct.category, $categoryProduct.ean13)}" title="{$categoryProduct.name|htmlspecialchars}">
 				{$categoryProduct.name|truncate:15:'...'|escape:'htmlall':'UTF-8'} 
-				</a><br />
+				</a> 
 			</li>
 			{/foreach}
 		</ul>

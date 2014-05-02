@@ -26,6 +26,7 @@
 	$pxWebAmplada: 830px;
 	$pxFluidAmplada: ($pxWebAmplada / $pxNavAmplada) * 100%;
 	$pxPagAmplada: 768px;
+	$pxFixaAmplada: 865px;
 	
 /* !MIXINS */
 	.clearfix {
@@ -38,6 +39,14 @@
 			clear: both;
 		}
 		zoom:1;/* For IE 6/7 (trigger hasLayout) */
+	}
+	@mixin breakpoint($point) {
+		@if $point == p1218px {
+	    	@media only screen and (max-width: 1218px) { @content; }
+		}
+		@else if $point == p1033px {
+	    	@media only screen and (max-width: 1033px)  { @content; }
+		}
 	}
 	
 /* ------------------------------------------ */
@@ -99,6 +108,10 @@
 			padding: 6px 0 9px 0;
 			margin: 0 auto;
 			text-align: center;
+			
+			@include breakpoint(p1033px) {
+				width: $pxFixaAmplada;
+			}
 		}
 		li {
 			@include inline-block;
@@ -124,6 +137,10 @@
 					margin-left: 0; padding-left: 0;
 				}
 			}
+		}
+		
+		@include breakpoint(p1033px) {
+			width: $pxFixaAmplada;
 		}
 	}
 /* !2.3 - Carret */
@@ -161,13 +178,21 @@
 				@include inline-block;
 			}
 		}
+		
+		@include breakpoint(p1033px) {
+			width: $pxFixaAmplada;
+		}
 	}
 	
 /* ------------------------------------------ */
 /* !3 - CONTENTAREA */
 	#columns {
 		width: (768px / $pxNavAmplada) * 100%;
-		margin: 0 auto 75px auto;
+		margin: 0 auto 0px auto;
+		
+		@include breakpoint(p1033px) {
+			width: $pxFixaAmplada;
+		}
 	}
 	#page {
 		width: 100%;
@@ -250,6 +275,15 @@
 		}
 		
 	}
+	#order #columns {
+		@include breakpoint(p1218px) {
+	    	width: 90%;
+	    	margin: 0 auto;
+		}
+		@include breakpoint(p1033px) {
+	    	width: $pxFixaAmplada;
+		}
+	}
 /* !3.1 - breadcrumbs */
 	.breadcrumb {
 		position: relative; width: 100%;
@@ -265,6 +299,13 @@
 		#columns {
 			@extend .clearfix;
 			width: (867px / $pxNavAmplada) * 100%;
+			
+			@include breakpoint(p1033px) {
+				width: $pxFixaAmplada;
+			}
+		}
+		#left_column {
+			@extend .clearfix;
 		}
 		.catIntro {
 		  padding-top: 340px;
@@ -318,9 +359,10 @@
 			.product_img_link {
 				display: block;
 				margin-bottom: 12px;
+				text-align: center;
 			}
 			img {
-				width: 100%; height: auto;
+				width: 80%; height: auto;
 			}
 			.availability {
 				float: left;
@@ -343,8 +385,20 @@
 	}
 /* !3.3 - Product */
 	#product {
-		#primary_block {
-			 padding-top: 340px;
+		#columns {
+			@extend .clearfix;
+			padding-top: 390px;
+			width: (865px / 1200px) * 100%;
+			margin: 0 auto;
+			
+			@include breakpoint(p1033px) {
+				width: $pxFixaAmplada;
+			}
+		}
+		#center_column {
+			@extend .clearfix;
+			float: left;
+			width: 75%;
 		}
 	}
 /* !3.4 - Authentication */
@@ -440,6 +494,8 @@
 		width: 100%;
 		text-align: center;
 		padding-bottom: 20px;
+		margin-top: 75px;
+		clear: both;
 		#footer_links, .extraLinks {
 			@extend .clearfix;
 			width: $pxFluidAmplada;
@@ -453,6 +509,11 @@
 					padding-left: 0px;
 				}
 			}
+			
+			@include breakpoint(p1033px) {
+				width: $pxFixaAmplada;
+			}
+		
 		}
 		.extraLinks {
 			margin-top: 20px;
@@ -467,7 +528,9 @@
 	}
 /* !5.1 - Cart */
 	#cart_block {
-		width: ((190px / 200px) * 100%) - 20%;
+		@include box-sizing(border-box);
+		width: 100%;
+		margin-left: 11px;
 		float: right;
 		padding: 20px 10% 15px 10%;
 		h4, #cart_block_summary {
@@ -493,4 +556,7 @@
 				}
 			}
 		}
+	}
+	#columns .cart_navigation {
+		@extend .clearfix;
 	}

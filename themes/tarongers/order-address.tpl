@@ -194,14 +194,17 @@
 			{/section}
 			</select>
 			{else}
-				<a style="margin-left: 221px;" href="{$link->getPageLink('address.php', true)}?back={$back_order_page}?step=1&select_address=1{if $back}&mod={$back}{/if}" title="{l s='Add'}" class="button_large">{l s='Add a new address'}</a>
+				<a href="{$link->getPageLink('address.php', true)}?back={$back_order_page}?step=1&select_address=1{if $back}&mod={$back}{/if}" title="{l s='Add'}" class="button_large">{l s='Add a new address'}</a>
 			{/if}
 		</p>
 		<div class="clear"></div>
-		<ul class="address item" id="address_delivery" {if $cart->isVirtualCart()}style="display:none;"{/if}>
-		</ul>
-		<ul class="address alternate_item {if $cart->isVirtualCart()}full_width{/if}" id="address_invoice">
-		</ul>
+		
+		<div class="addressCentrat">
+			<ul class="address item" id="address_delivery" {if $cart->isVirtualCart()}style="display:none;"{/if}>
+			</ul>
+			<ul class="address alternate_item {if $cart->isVirtualCart()}full_width{/if}" id="address_invoice">
+			</ul>
+		</div>
 		<br class="clear" />
 		<p class="address_add submit">
 			<a href="{$link->getPageLink('address.php', true)}?back={$back_order_page}?step=1{if $back}&mod={$back}{/if}" title="{l s='Add'}" class="button_large">{l s='Add a new address'}</a>

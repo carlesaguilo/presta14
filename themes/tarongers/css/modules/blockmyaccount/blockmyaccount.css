@@ -1,23 +1,25 @@
 /* block myaccount */
+#my-account #center_column, #history #center_column, #order-slip #center_column, #addresses #center_column,
+#address #center_column, #identity #center_column, #discount #center_column { margin: 40px 0 130px 0; }
+#intro p { font-size: 15px; line-height: 25px; }
 #left_column div.myaccount, #right_column div.myaccount { /*background: #f6dce8 url('../../../img/block_footer_myaccount.jpg') no-repeat bottom left*/ }
 div.myaccount h4 { /*background: #971d58 url('../../../img/block_header_myaccount.jpg') no-repeat top left*/ }
 div.myaccount h4 a, div.myaccount h4 { color: #978100; display: none }
 div.myaccount {
 	float: right;
 	width: 35%;
-	font-size: 1.5rem;
+	font-size: 15px;
 }
 div.myaccount a, div.myaccount li a { color: #978100; text-decoration: none; }
 div.myaccount a:hover, div.myaccount li a:hover, div.myaccount p.logout a:hover { color: #444; text-decoration: none }
-div.myaccount ul.bullet { margin:-0.5rem 0rem 0 10rem;}
-div.myaccount ul.bullet li { margin: 1em; line-height: 1rem; /*background-image: url('../../../img/bullet_myaccount.gif')*/ }
+div.myaccount ul.bullet { margin:-5px 0 0 100px;}
+div.myaccount ul.bullet li { margin: 10px; line-height: 15px; /*background-image: url('../../../img/bullet_myaccount.gif')*/ }
+ul.bullet li.current { font-weight:bold; }
 div.myaccount ul.bullet .icon { display: none }
-div.myaccount p.logout { padding: 0; margin-left: 11.5rem;}
+div.myaccount p.logout { padding: 0; margin-left: 110px;}
 div.myaccount p.logout, div.myaccount p.logout a { color: #978100; text-decoration:none; }
 
 div.myaccount .block_content { 
 	/*background: #f6dce8 url('../../../img/block_bg_myaccount.jpg') repeat-x bottom left; border-left: 1px solid #f6dce8; border-right: 1px solid #f6dce8*/
 }
-.account_input { margin-left: 0; width: 15em }
-
-li.current { font-weight:bold; }
+.account_input { margin-left: 0; width: 150px }

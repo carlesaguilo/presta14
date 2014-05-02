@@ -280,6 +280,8 @@
 		</tbody>
 	{/if}
 	</table>
+	
+	<div class="carritoTotal">
     <table id="tfoot">
 			{if $use_taxes}
 				{if $priceDisplay}
@@ -403,12 +405,20 @@
 				<td class="price" id="total_price">{displayPrice price=$total_price_without_tax}</td>
 			</tr>
 			{/if}
-			<tr class="cart_free_shipping" {if $free_ship <= 0 || $isVirtualCart} style="display: none;" {/if}>
+			<!--<tr class="cart_free_shipping" {if $free_ship <= 0 || $isVirtualCart} style="display: none;" {/if}>
 					<td colspan="4" style="white-space: normal;">{l s='In order to obtain free shipping you must first place an order'}</td>
 					<td id="free_shipping" class="price">{displayPrice price=$free_ship}</td>
-				</tr>
+			</tr>-->
 		</table>
-</div>
+	</div><!-- final carritoTotal -->
+	
+        <div class="freeEnviament">
+        	<div class="cart_free_shipping" {if $free_ship <= 0 || $isVirtualCart} style="display: none;" {/if}>
+				<p colspan="4" style="white-space: normal;">{l s='In order to obtain free shipping you must first place an order'}</p>
+				<p id="free_shipping" class="price">{displayPrice price=$free_ship}</p>
+        	</div>
+        </div>
+
 
 {if $voucherAllowed}
 <div id="cart_voucher" class="table_block">
@@ -440,6 +450,8 @@
 	</form>
 </div>
 {/if}
+</div>
+
 <div id="HOOK_SHOPPING_CART">{$HOOK_SHOPPING_CART}</div>
 
 {* Define the style if it doesn't exist in the PrestaShop version*}

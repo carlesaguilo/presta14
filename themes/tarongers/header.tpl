@@ -56,6 +56,8 @@
 	<script type="text/javascript" src="{$js_uri}"></script>
 	{/foreach}
 {/if}
+	<script type="text/javascript" src="js/modernizr.custom.23059.js"></script>
+	
 		{$HOOK_HEADER}
     <link href="{$css_dir}tmslider.css" rel="stylesheet" type="text/css" media="all" />
     <link href="{$css_dir}address.css" rel="stylesheet" type="text/css" media="all" />
@@ -129,7 +131,7 @@
                 <!-- Hide empty content in frontpage -->
 				
 				<div id="left_column" class="column">
-					<!--{$HOOK_LEFT_COLUMN} 
+					 {$HOOK_LEFT_COLUMN} 
 				</div>
 
 				{/if}

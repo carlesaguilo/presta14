@@ -1,13 +1,13 @@
 /* identity.tpl */
-#identity #intro h3 { font-size: 1.5rem; margin-bottom: 3rem; }
+#identity #intro h3 { font-size: 15px; margin-bottom: 30px; }
 p#security_informations {
-	font-size: 0.85em;
-	margin: 0 3em
+	font-size: 8.5px;
+	margin: 0 30px
 }
 
-p#required { padding: 1rem 0; }
+p#required { padding: 10px 0; }
 
-#identity form.std { width: 500px; padding: 2rem; }
+#identity form.std { width: 500px; padding: 20px; }
 #identity form.std label { width: 175px; }
 p.radio span { display: inline-block; width: 170px; }
 #identity form.std p.radio label { width: 75px; } 
@@ -17,13 +17,13 @@ input.button {
     color: #444444;
     cursor: pointer;
     float: right;
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: bold;
     margin: 20px 35px 15px 0;
     text-decoration: none;
 }
 input.button:hover { color: #978100; }
-#identity .footer_links { margin-top: 5rem; margin-bottom: 20rem; }
+#identity .footer_links { float: left; margin: 45px 0; }
 #identity .footer_links img { padding: 0 5px; }
-#identity .footer_links a { text-decoration: none; color: #978100; font-size: 1.5rem; }
+#identity .footer_links a { text-decoration: none; color: #978100; font-size: 15px; }
 #identity .footer_links a:hover { color: #444; }

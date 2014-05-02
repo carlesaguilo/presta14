@@ -272,7 +272,7 @@ nav#tmcategories {
 
 /* !3.3 - Product */
 /* !3.4 - Authentication */
-/* line 194, ../compass/sass/fonts.scss */
+/* line 195, ../compass/sass/fonts.scss */
 #authentication #login_form h3, #authentication #account-creation_form h3 {
   font-weight: normal;
   font-size: 15px;
@@ -282,7 +282,7 @@ nav#tmcategories {
   font-style: normal;
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 198, ../compass/sass/fonts.scss */
+/* line 199, ../compass/sass/fonts.scss */
 #authentication #login_form label, #authentication #login_form .lost_password, #authentication #login_form input, #authentication #login_form span, #authentication #account-creation_form label, #authentication #account-creation_form .lost_password, #authentication #account-creation_form input, #authentication #account-creation_form span {
   font-weight: normal;
   font-size: 13px;
@@ -291,11 +291,11 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 201, ../compass/sass/fonts.scss */
+/* line 202, ../compass/sass/fonts.scss */
 #authentication #login_form input, #authentication #account-creation_form input {
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 204, ../compass/sass/fonts.scss */
+/* line 205, ../compass/sass/fonts.scss */
 #authentication #login_form #SubmitLogin, #authentication #login_form #submitAccount, #authentication #account-creation_form #SubmitLogin, #authentication #account-creation_form #submitAccount {
   font-weight: normal;
   font-size: 15px;
@@ -305,7 +305,7 @@ nav#tmcategories {
   font-style: normal;
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 209, ../compass/sass/fonts.scss */
+/* line 210, ../compass/sass/fonts.scss */
 #authentication #create-account_form {
   font-weight: normal;
   font-size: 13px;
@@ -314,7 +314,7 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 211, ../compass/sass/fonts.scss */
+/* line 212, ../compass/sass/fonts.scss */
 #authentication #create-account_form .submit input {
   font-weight: normal;
   font-size: 20px;
@@ -323,14 +323,14 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 216, ../compass/sass/fonts.scss */
+/* line 217, ../compass/sass/fonts.scss */
 #authentication .required sup {
   font-weight: bold;
 }
 
 /* ------------------------------------------ */
 /* !4 - FOOTER */
-/* line 225, ../compass/sass/fonts.scss */
+/* line 226, ../compass/sass/fonts.scss */
 #footer #footer_links, #footer .extraLinks {
   font-weight: normal;
   font-size: 13px;
@@ -343,7 +343,7 @@ nav#tmcategories {
 /* ------------------------------------------ */
 /* !5 - RIGHT */
 /* !5.1 - Cart */
-/* line 234, ../compass/sass/fonts.scss */
+/* line 235, ../compass/sass/fonts.scss */
 #cart_block h4 {
   font-weight: normal;
   font-size: 25px;
@@ -352,7 +352,7 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 237, ../compass/sass/fonts.scss */
+/* line 238, ../compass/sass/fonts.scss */
 #cart_block .block_content {
   font-weight: normal;
   font-size: 13px;
@@ -361,7 +361,7 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 240, ../compass/sass/fonts.scss */
+/* line 241, ../compass/sass/fonts.scss */
 #cart_block .cart_block_list {
   font-weight: normal;
   font-size: 13px;
@@ -371,11 +371,11 @@ nav#tmcategories {
   font-style: normal;
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 244, ../compass/sass/fonts.scss */
+/* line 245, ../compass/sass/fonts.scss */
 #cart_block .btTotal, #cart_block .remove_link {
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 247, ../compass/sass/fonts.scss */
+/* line 248, ../compass/sass/fonts.scss */
 #cart_block #button_order_cart {
   font-weight: normal;
   font-size: 20px;

@@ -1,7 +1,5 @@
 /* adresses */
-div.addresses {
-	padding: 2em;
-}
+div.addresses {	padding: 40px 0; }
 div.addresses h3 { margin: 0 }
 div.addresses p.checkbox input {
 	margin-top: 0!important;
@@ -14,26 +12,27 @@ ul.address {
 	list-style-image: none;
 	list-style-position: outside;
 	list-style-type: none;
-	margin: 2rem 0 1rem 5rem;
-	padding-bottom: 1em;
+	margin: 20px 0 10px 40px;
+	padding-bottom: 10px;
 	width: 268px;
 	border: 1px solid #ccc;
-	font-size: 1.5rem;
+	font-size: 15px;
 	height: 260px !important;
-	background: #ddd;
+	background: url("../img/oranges/fons_paper_gris.png") repeat scroll left top #DDDDDD;
 }
 ul.address.full_width { width: 536px }
 ul.address li {
-	padding-left: 1.4em;
-	margin-top: 0.6em
+	padding-left: 14px;
+	margin-top: 6px;
+	line-height: 22px;
 }
 li.address_title {
 	margin-top: 0!important;
 	background-color: #ccc;
 	font-weight: bold;
 	height: 27px;
-	font-size: 1.2em;
-	padding: 0.5rem 0;
+	font-size: 18px;
+	padding: 5px 0;
 }
 ul.item li.address_title { /*background-image: url('../img/address_alias_left.gif') */}
 ul.alternate_item li.address_title { /*background-image: url('../img/address_alias_right.gif') */}
@@ -58,16 +57,21 @@ span.address_company { font-weight: bold }
 	background: transparent url('../img/bullet_myaccount.gif') no-repeat 0 0.5em!important;
 	background: transparent url('../img/bullet_myaccount.gif') no-repeat 0 0.4em;
 	margin-left: 1.4em
-}*/
+}
 .address_add a.button_large {
 	background-color: #978100;
     color: #EAD200;
     text-decoration: none;
 	padding: 5px 25px;
-	font-size: 1.5rem;
+	font-size: 15px;
 	cursor:pointer;
 }
-#center_column .address_add { padding: 1em 0 }
+.address_add a.button_large:hover {
+    background-color: #CAAD00;
+    color: #fff;
+	cursor:pointer;
+}*/
+p.address_add { padding: 10px 0; width: 65%; }
 
 li.address_update a,
 li.address_delete a {
@@ -75,26 +79,22 @@ li.address_delete a {
     color: #444444;
     cursor: pointer;
     float: right;
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: bold;
     margin: 5px 20px 0 0;
     text-decoration: none;
 	background: #f0f0f0;
-	padding: 0 15px;
+	padding: 5px 15px;
 }
 
-.address_add a.button_large:hover {
-    background-color: #CAAD00;
-    color: #fff;
-	cursor:pointer;
-}
+
 li.address_update a:hover, li.address_delete a:hover { color: #978100; }
 
 /* Mis direcciones */
-#addresses #footer { margin-top: 20rem; }
-div.addresses p { font-size: 1.5rem; line-height: 2rem; }
+#addresses #footer { margin-top: 200px; }
+div.addresses p { font-size: 15px; line-height: 20px; }
 
-#addresses .footer_links { margin-top: 5rem; }
+#addresses .footer_links { float: left; margin: 45px 0; }
 #addresses .footer_links img { padding: 0 5px; }
-#addresses .footer_links a { text-decoration: none; color: #978100; font-size: 1.5rem; }
+#addresses .footer_links a { text-decoration: none; color: #978100; font-size: 15px; }
 #addresses .footer_links a:hover { color: #444; }

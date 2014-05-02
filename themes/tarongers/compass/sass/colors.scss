@@ -35,6 +35,12 @@
 	a {
 		@include transition(color .25s ease-in);
 	}
+	@mixin breakpoint($point) {
+		@if $point == iphone {
+	    	@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { @content; }
+	    	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { @content; }
+		}
+	}
 
 /* ------------------------------------------ */
 /* !1 - BODY */
@@ -73,7 +79,7 @@
 			&:before {
 				content: "\003c";
 				position: absolute;
-				bottom: -20px; left: 50%;
+				bottom: -19px; left: 50%;
 				display: block;
 				background: url('../img/oranges/icones.png') no-repeat center -389px transparent;
 				width: 27px; height: 11px;
@@ -138,7 +144,7 @@
 		a {
 			color: $colOcre;
 			&:hover {
-				color: lighten($colOcre,16%);
+				color: $colNegre;
 			}
 		}
 	}
@@ -189,12 +195,18 @@
 			a {
 				color: $colOcre;
 				&:hover {
-					color: lighten($colOcre, 10%);
+					color: $colNegre;
 				}
 			}
 		}
 
 	}
+	#order {
+		#page {
+			background: url('../img/oranges/fons-fum_10.jpg') no-repeat left bottom transparent;
+		}
+	}
+
 /* !3.1 - breadcrumbs */
 	.breadcrumb {
 		color: $colNegre;
@@ -215,6 +227,14 @@
 			background-repeat: no-repeat;
 			background-position: left 250px, center center, left bottom;
 			background-color: transparent;
+			
+			@include breakpoint (iphone) {
+				@include background-image (url('../img/oranges/fons-fum_01.jpg'), url('../img/oranges/fons-fum_10.jpg'));
+				@include background-size (auto, auto);
+				background-repeat: no-repeat;
+				background-position: left 250px, left bottom;
+				background-color: transparent;
+			}
 		}
 		.catIntro {
 			background: url('../img/oranges/barritas.jpg') no-repeat center top transparent;
@@ -260,7 +280,7 @@
 					color: $colNegre;
 					text-decoration: none;
 					&:hover {
-						color: lighten($colOcre, 20%);
+						color: $colNegre;
 					}
 				}
 			}
@@ -277,7 +297,7 @@
 				&:hover {
 					@include transition(background-color .25s ease-out);
 					color: $colBlanc;
-					background-color: lighten($colOcre, 10%);
+					background-color: $colNegre;
 				}
 			}
 		}
@@ -285,7 +305,7 @@
 	
 /* !3.3 - Product */
 	#product {
-		#primary_block {
+		#columns {
 			background: url('../img/oranges/barritas.jpg') no-repeat center top transparent;
 		}
 	}
@@ -313,14 +333,14 @@
 				cursor: pointer;
 				border: 0;
 				&:hover {
-					color: lighten($colOcre, 20%);
+					color: $colNegre;
 				}
 			}
 		}
 		.lost_password a {
 			color: #FF0000;
 			&:hover {
-				color: lighten($colOcre, 20%);
+				color: $colNegre;
 			}
 		}
 		#create-account_form {
@@ -330,7 +350,7 @@
 				border: 0;
 				cursor: pointer;
 				&:hover {
-					color: lighten($colOcre, 20%);
+					color: $colNegre;
 				}
 			}
 			#email_create {
@@ -361,7 +381,7 @@
 				color: $colOcre;
 				text-decoration: none;
 				&:hover {
-					color: lighten($colOcre, 20%);
+					color: $colNegre;
 				}
 			}
 		}
@@ -417,12 +437,12 @@
 		}
 		#cart-buttons {
 			border-top: 1px solid $colOcreClar;
-			color: $colOcreClar;
+			color: $colBlanc;
 			a {
-				color: $colOcreClar;
+				color: darken($colBlanc, 6%);
 				text-decoration: none;
 				&:hover {
-					color: $colBlanc;
+					color: $colGroc;
 				}
 			}
 		}
@@ -432,14 +452,18 @@
 		dt {
 			position: relative;
 		}
-		.remove_link {
-			color: red;
+		.remove_link a {
+	
+
+color: red;
 			display: block;
 			width: 10px; height: 10px;
 			position: absolute;
 			right: -13px; top: 5px;
 			background: url('../img/oranges/icones.png') no-repeat 0px -40px transparent;
 			cursor: pointer;
+
+
 		}
 		#cart-price-precisions {
 			color: $colBlanc;

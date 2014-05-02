@@ -27,11 +27,11 @@
 {capture name=path}<a href="{$link->getPageLink('my-account.php', true)}">{l s='My account'}</a><span class="navigation-pipe">{$navigationPipe}</span>{l s='My Vouchers'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
-<div id="intro">
+
 <h1>{l s='My Vouchers'}</h1>
 
 {if isset($discount) && count($discount) && $nbDiscounts}
-<table class="discount std">
+<table class="discount">
 	<thead>
 		<tr>
 			<th class="discount_code first_item">{l s='Code'}</th>
@@ -83,9 +83,9 @@
 {else}
 	<p class="warning">{l s='You do not possess any vouchers.'}</p>
 {/if}
-</div>
 
-<ul class="footer_links">
+
+<!--<ul class="footer_links">
 	<li><a href="{$link->getPageLink('my-account.php', true)}"><img src="{$img_dir}icon/my-account.gif" alt="" class="icon" /></a><a href="{$link->getPageLink('my-account.php', true)}">{l s='Back to Your Account'}</a></li>
-	<!--<li><a href="{$base_dir}"><img src="{$img_dir}icon/home.gif" alt="" class="icon" /></a><a href="{$base_dir}">{l s='Home'}</a></li>-->
-</ul>
+	<li><a href="{$base_dir}"><img src="{$img_dir}icon/home.gif" alt="" class="icon" /></a><a href="{$base_dir}">{l s='Home'}</a></li>
+</ul>-->
