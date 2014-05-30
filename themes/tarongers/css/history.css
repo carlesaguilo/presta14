@@ -1,25 +1,66 @@
-/* history.tpl*/
-#block-history { color: #374853 }
-.color-myaccount { color: #dd2a81 }
-#block-history table#order-list { border: none }
+/* history.tpl - Detalle pedidos históricos */
+#block-history { color: #374853; width: 70%; margin: 20px 0; }
+.color-myaccount { color: #978100; text-decoration:none; }
+.color-myaccount:hover { color: #444; }
+#block-history table#order-list { border: none; width: 100%; font-size: 15px; }
 #block-history table#order-list thead th { background-image: url('../img/block_myaccount_header_large.gif') }
-#block-history table#order-list thead th { color: white }
+#block-history table#order-list thead th,
+#block-history #block-order-detail table.detail_step_by_step thead th,
+#block-history #block-order-detail table.std thead th { 
+	background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    font-weight: bold;
+    padding: 10px 15px;
+    vertical-align: top;
+}
 #block-history table#order-list tbody { background: #D0D1D5 url('../img/form_bg.jpg') repeat-x top left }
-#block-history table#order-list tbody tr td { background-color: white }
-#block-history table#order-list td.history_link {
-	white-space: nowrap;
-	text-align: right
-}
-#block-history #block-order-detail {
-	border-top: 2px #dd2a81 solid;
-	border-bottom: 2px #dd2a81 solid;
+#block-history table#order-list tbody tr td,
+#block-history #block-order-detail table.detail_step_by_step tbody tr td,
+#block-history #block-order-detail table.std tbody tr td { 
+	background: white;
+	border: 1px solid #CCCCCC;
+    padding: 10px;
+    vertical-align: top;
+	vertical-align:middle;
 	padding: 5px;
-	background: #D0D1D5 url('../img/form_bg.jpg') repeat-x top left
 }
-#block-history #block-order-detail p {
-	padding-left: 0;
-	padding-right: 0
+#block-history table#order-list td.history_link { white-space: nowrap; }
+#block-history #block-order-detail {
+	border-left: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+	border-right: 1px #ccc solid;
+	padding: 20px;
+	font-size:15px;
 }
+#block-history #block-order-detail input.button {
+	background-color: #978100;
+    border: medium none;
+    color: #EAD200;
+    cursor: pointer;
+    padding: 5px 25px;
+    text-decoration: none;
+	font-size: inherit;
+}
+#block-history #block-order-detail input.button:hover {
+	background-color: #caad00;
+	color: #fff;
+}
+#block-history #block-order-detail p { padding: 10px 0; }
+#block-history #block-order-detail ul.address { float: left; margin-bottom: 25px; font-size:12px; }
+#block-history #block-order-detail ul.address li.address_title { font-size: inherit; }
+#block-history #block-order-detail table.table_block { width: 80%; }
+
+#block-history #block-order-detail table.detail_step_by_step thead th,
+#block-history #block-order-detail table.std thead th { font-size:12px; }
+
+#block-history #block-order-detail table.detail_step_by_step, 
+#block-history #block-order-detail table.std { margin-bottom: 10px; }
+
+#block-history #block-order-detail table.std tfoot tr td{ padding: 5px 0; }
+#block-history #block-order-detail form.std { margin-bottom: 0;}
+
+form#sendOrderMessage textarea { width: 500px; max-width: 565px; max-height:150px; }
+
 #order-detail-content {
 	clear: both;
 	margin-top: 15px
@@ -32,7 +73,7 @@
 	width: 100%;
 	display: block
 }
-#block-history #block-order-detail h4 { font-size: 14px }
+#block-history #block-order-detail h4 { font-size: 14px; color: #978100; }
 #block-history #block-order-detail #sendOrderMessage p { padding: 0 4px 0 1px }
 #block-history #block-order-detail textarea {
 	margin: 0 auto;

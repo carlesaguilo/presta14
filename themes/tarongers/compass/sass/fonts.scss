@@ -14,6 +14,7 @@
 		3.2 - Catalogue
 		3.3 - Product
 		3.4 - Authentication
+		3.5 - Error
 	4 - FOOTER
 	5 - RIGHT
 		5.1 - Cart
@@ -67,7 +68,28 @@
 		font-family: $fntQSRegular;		
 		font-style: $estil;
 	}
-
+	#cms.cms3 {
+		@include lletra (normal, normal, 1.5, 1.5em);
+		h1 {
+			@include lletra (normal, normal, 3, 1.2em);
+			color: #978100;
+		}
+		h2 {
+			@include lletra (normal, normal, 2, 1.2em);
+		}
+		h3 {
+			@include lletra (normal, normal, 1.8, 1.2em);
+		}
+		h4 {
+			@include lletra (bold, normal, 1.5, 1.2em);
+		}
+		h1, h2, h3, h4 {
+			margin-bottom: 1em;
+		}
+		p {
+			margin-bottom: .5em;
+		}
+	}
 
 /* ------------------------------------------ */
 /* !1 - BODY */
@@ -77,6 +99,9 @@
 	body {
 		font-family: $fntQSRegular;
 		
+	}
+	.bold {
+		font-family: 'quicksandbold';
 	}
 /* !1.1 - Home */
 
@@ -95,6 +120,7 @@
 	}
 /* !2.3 - Carret */
 	#shopping_cart {
+		@include lletra (normal, normal, 1.2, 1.2em);
 		strong {
 			font-family: $fntQSBold;
 		}
@@ -219,6 +245,25 @@
 			}
 		}
 	}
+/* !3.5 - Error */
+	#module-servired-pago_error {
+		.cms {
+			@include lletra (normal, normal, 1.5, 1.5em);
+			ul {
+				list-style-type: disc;
+			}
+		}
+		.pago_error {
+			text-decoration: none;
+		}
+	}
+	#order-confirmation, #p404 #center_column, .bankWire {
+		@include lletra (normal, normal, 1.5, 1.5em);
+		
+	}
+	#p404 #center_column h3 {
+		@include lletra (bold, normal, 1.8, 1.5em);
+	}
 
 /* ------------------------------------------ */
 /* !4 - FOOTER */
@@ -249,3 +294,6 @@
 			@include lletra (normal, normal, 2, 1.2em);
 		}
 	}
+.formular #Send.submit {
+	@include lletra (bold, normal, 1.6, 1.2em);
+}

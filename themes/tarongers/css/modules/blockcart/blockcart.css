@@ -175,7 +175,7 @@ th.cart_quantity, td.cart_quantity, th.cart_unit { text-align:center; }
 .cart_description h5 a, p.checkbox_conditions a.iframe { text-transform:none; color: #978100; text-decoration:none; }
 .cart_description h5 a:hover, p.checkbox_conditions a.iframe:hover { color: #444; }
 input.cart_quantity_input { font-size:inherit; text-align: center; vertical-align: text-bottom; }
-div#delete {float: right; position: relative; left: -40px; top: 2px; }
+div#delete {float: right; position: relative; left: -30px; top: 2px; }
 
 /*table#cart_summary tfoot td { color: #EAD200; }
 table#cart_summary tfoot td#total_product, table#cart_summary tfoot td#total_discount, table#cart_summary tfoot td#total_wrapping, 
@@ -241,7 +241,7 @@ p.cart_navigation a.button_large { float: left; }
 p.cart_navigation a.exclusive, p.submit input.exclusive, p.cart_navigation input.exclusive_large { float:right; }
 p.cart_navigation a.button_large:hover, p.cart_navigation a.exclusive:hover, form#voucher p.submit input.buttonDiscount:hover, 
  p.cart_navigation a.button:hover, p.cart_navigation_carrier a.button:hover, 
-p.cart_navigation input.exclusive:hover, p.cart_navigation_carrier input.exclusive:hover, p.cart_navigation input.exclusive_large:hover { background:#CAAD00; color: #fff; }
+p.cart_navigation input.exclusive:hover, p.cart_navigation_carrier input.exclusive:hover, p.cart_navigation input.exclusive_large:hover { background:#ccae00; color: #fff; }
 
 /* pas 3-Dirección */
 form div.addresses { padding: 0; }

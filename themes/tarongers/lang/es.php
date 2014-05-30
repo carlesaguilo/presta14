@@ -729,4 +729,5 @@ $_LANG['live_edit_c9cc8cce247e49bae79f15173ce97354'] = 'Guargar';
 $_LANG['live_edit_d8dcfab18b3a6eba56d617dd1dcb1ba7'] = 'Cierre de edición en vivo';
 
 $_LANG['tmslider_5ba44c8bc47ee0c102ccbbe83548bb5b'] = 'Solicitar muestras gratis';
+$_LANG['header_7e3e374bb01097b18929dbf837af90db'] = 'El incienso que cuida de tu salud';
 ?>

@@ -4,7 +4,9 @@ div#tmslider {	/*#product .buttons_bottom_block input.exclusive, #product .butto
     left: 15%;
 	padding: 10px;
 }
-
+div#tmslider:hover {
+	background-position: -348px -385px;
+}
 div#tmslider ul { margin: -100px 0 0 -20px; font-size: 15px; display: block; }
 div#tmslider ul li { height: 80px; background: #978100; padding: 15px 10px 0; width: 80px; line-height: 20px; }
 div#tmslider ul li a { text-decoration: none; color: #EAD200; }

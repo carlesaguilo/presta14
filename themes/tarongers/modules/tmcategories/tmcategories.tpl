@@ -32,13 +32,29 @@ dropShadows: false
 		</li>	
         <!--<li {if $page_name == "my-account"} class="current"{/if}>
 			<a href="authentication.php?back=my-account.php">{l s='Buy' mod='tmcategories'}</a>
-		</li>-->							
+		</li>							
 		<li {if ($smarty.get.id_cms == 11)} class="current" {/if}>
 			<a href="cms.php?id_cms=11" >{l s='Point of Sale' mod='tmcategories'}</a>
-		</li>	
+		</li>-->
+        <li {if ($smarty.get.id_cms == 11) || ($smarty.get.id_cms == 7)} class="current" {/if}>
+			<a href="">{l s='Point of Sale' mod='tmcategories'}</a>
+			<ul class="sub">
+				<li {if ($smarty.get.id_cms == 11)} class="current_sub" {else} class="no_current" {/if}>
+					<a href="cms.php?id_cms=11">{l s='Physical Stores' mod='tmcategories'}</a>
+				</li>	
+                <li {if ($smarty.get.id_cms == 7)} class="current_sub" {else} class="no_current" {/if}>
+					<a href="cms.php?id_cms=7">{l s='E-Commerce' mod='tmcategories'}</a>
+				</li>
+             </ul>							
+   		 </li>	
         <li {if ($smarty.get.id_cms == 9)} class="current" {/if}>
 			<a href="cms.php?id_cms=9" >{l s='We recommend' mod='tmcategories'}</a>
-		</li>																							
+		</li>	
+        <li {if ($smarty.get.id_cms_category == 2) } class="current"{/if}>
+        <!--<li {if ($smarty.get.id_cms == '') } class="current"{/if}>-->
+			<a href="cms.php?id_cms_category=2">{l s='Press' mod='tmcategories'}</a>
+            <!--plBlog <a href="modules/plblog/frontent/list-post.php">{l s='Press' mod='tmcategories'}</a>-->
+		</li>																			
 		<li {if ($page_name == '')} class="current" {/if}>
 			<a href="contact-form.php?fid=4" >{l s='Contact' mod='tmcategories'}</a>
 	    </li>
@@ -51,18 +67,7 @@ dropShadows: false
             <li {if ($page_name == 'authentication')} class="current" {/if}>
             	<a href="authentication.php?back=my-account.php" >{l s='Log in' mod='tmcategories'}</a>   
             </li>
-        {/if}							   	
-	    <!--<li class="sub">
-		<a href="">{l s='Where to Buy' mod='tmcategories'}</a>
-				<ul class="subcat1">
-					<li>
-						<a href="/contact-form.php?fid=5">{l s='Point of Sale' mod='tmcategories'}</a>
-					</li>	
-	                <li>
-						<a href="/cms.php?id_cms=7">{l s='E-Commerce' mod='tmcategories'}</a>
-					</li>
-	             </ul>		
-	    </li>-->	
+        {/if}	
     </ul>
 </nav>
 <!-- /TM Categories -->

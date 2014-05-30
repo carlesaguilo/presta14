@@ -62,6 +62,8 @@
     <link href="{$css_dir}tmslider.css" rel="stylesheet" type="text/css" media="all" />
     <link href="{$css_dir}address.css" rel="stylesheet" type="text/css" media="all" />
     <link href="{$css_dir}discount.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{$css_dir}header.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{$css_dir}tmcategories.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 	
 	<body  {if $page_name}id="{if $page_name == '404'}p{/if}{$page_name|escape:'htmlall':'UTF-8'}"{/if} {if $page_name == 'cms'} class="cms{$smarty.get.id_cms}" {/if} {if $pageTrack == "contactform"} class="contactForm" {/if} > 
@@ -84,6 +86,9 @@
 					<a id="header_logo" href="{$link->getPageLink('index.php')}" title="{$shop_name|escape:'htmlall':'UTF-8'}">
 						<img class="logo" src="{$img_ps_dir}logo.jpg?{$img_update_time}" alt="{$shop_name|escape:'htmlall':'UTF-8'}" {if $logo_image_width}width="{$logo_image_width}"{/if} {if $logo_image_height}height="{$logo_image_height}" {/if} />
 					</a>
+                {else} <!-- logo in Homepage -->
+						<img id="header_logo_home" src="{$img_ps_dir}logo.jpg?{$img_update_time}" alt="{$shop_name|escape:'htmlall':'UTF-8'}" {if $logo_image_width}width="{$logo_image_width}"{/if} {if $logo_image_height}height="{$logo_image_height}" {/if} />
+                        <p id="slogan">{l s='The incense that looks after your health'}</p>
 				{/if} 
 								
 				<div id="header_right">

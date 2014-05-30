@@ -83,24 +83,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 		3.2 - Catalogue
 		3.3 - Product
 		3.4 - Authentication
+		3.5 - Error
 	4 - FOOTER
 	5 - RIGHT
 		5.1 - Cart
 ---------------------------------------------- */
 /* !VARIABLES */
 /* !MIXINS */
-/* line 32, ../compass/sass/layout.scss */
-.clearfix, nav#tmcategories, .headerTop, .headerTop #header_user, #page .rte, #category #columns, #category #left_column, #category .product_sort, #product_list, #product #columns, #product #center_column, #authentication #center_column, #footer #footer_links, #footer .extraLinks, #cart_block .cart-prices-block, #columns .cart_navigation {
+/* line 33, ../compass/sass/layout.scss */
+.clearfix, nav#tmcategories, .headerTop, .headerTop #header_user, #page .rte, #category #columns, #category #left_column, #category .product_sort, #product_list, #product #columns, #product #center_column, #authentication #center_column, #module-servired-pago_error #columns, #footer #footer_links, #footer .extraLinks, #cart_block .cart-prices-block, #columns .cart_navigation {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */
 }
-/* line 34, ../compass/sass/layout.scss */
-.clearfix:before, nav#tmcategories:before, .headerTop:before, .headerTop #header_user:before, #page .rte:before, #category #columns:before, #category #left_column:before, #category .product_sort:before, #product_list:before, #product #columns:before, #product #center_column:before, #authentication #center_column:before, #footer #footer_links:before, #footer .extraLinks:before, #cart_block .cart-prices-block:before, #columns .cart_navigation:before, .clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #category #columns:after, #category #left_column:after, #category .product_sort:after, #product_list:after, #product #columns:after, #product #center_column:after, #authentication #center_column:after, #footer #footer_links:after, #footer .extraLinks:after, #cart_block .cart-prices-block:after, #columns .cart_navigation:after {
+/* line 35, ../compass/sass/layout.scss */
+.clearfix:before, nav#tmcategories:before, .headerTop:before, .headerTop #header_user:before, #page .rte:before, #category #columns:before, #category #left_column:before, #category .product_sort:before, #product_list:before, #product #columns:before, #product #center_column:before, #authentication #center_column:before, #module-servired-pago_error #columns:before, #footer #footer_links:before, #footer .extraLinks:before, #cart_block .cart-prices-block:before, #columns .cart_navigation:before, .clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #category #columns:after, #category #left_column:after, #category .product_sort:after, #product_list:after, #product #columns:after, #product #center_column:after, #authentication #center_column:after, #module-servired-pago_error #columns:after, #footer #footer_links:after, #footer .extraLinks:after, #cart_block .cart-prices-block:after, #columns .cart_navigation:after {
   content: "";
   display: table;
 }
-/* line 38, ../compass/sass/layout.scss */
-.clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #category #columns:after, #category #left_column:after, #category .product_sort:after, #product_list:after, #product #columns:after, #product #center_column:after, #authentication #center_column:after, #footer #footer_links:after, #footer .extraLinks:after, #cart_block .cart-prices-block:after, #columns .cart_navigation:after {
+/* line 39, ../compass/sass/layout.scss */
+.clearfix:after, nav#tmcategories:after, .headerTop:after, .headerTop #header_user:after, #page .rte:after, #category #columns:after, #category #left_column:after, #category .product_sort:after, #product_list:after, #product #columns:after, #product #center_column:after, #authentication #center_column:after, #module-servired-pago_error #columns:after, #footer #footer_links:after, #footer .extraLinks:after, #cart_block .cart-prices-block:after, #columns .cart_navigation:after {
   clear: both;
 }
 
@@ -108,27 +109,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* !1 - BODY */
 /* !1.1 - Home */
 /* Center vertically */
-/* line 59, ../compass/sass/layout.scss */
+/* line 60, ../compass/sass/layout.scss */
 html {
   height: 100%;
 }
 
-/* line 60, ../compass/sass/layout.scss */
+/* line 61, ../compass/sass/layout.scss */
 body#index {
   height: 100%;
 }
-/* line 62, ../compass/sass/layout.scss */
+/* line 63, ../compass/sass/layout.scss */
 body#index #header {
   height: auto;
   width: auto;
   position: static;
 }
-/* line 66, ../compass/sass/layout.scss */
+/* line 67, ../compass/sass/layout.scss */
 body#index #page {
   position: relative;
   height: 100%;
 }
-/* line 70, ../compass/sass/layout.scss */
+/* line 71, ../compass/sass/layout.scss */
 body#index #tmcategories {
   height: 34px;
   margin: -34px 0 0 0;
@@ -136,7 +137,7 @@ body#index #tmcategories {
   top: 50%;
   left: 0px;
 }
-/* line 76, ../compass/sass/layout.scss */
+/* line 77, ../compass/sass/layout.scss */
 body#index #footer {
   position: absolute;
   bottom: 0px;
@@ -145,13 +146,13 @@ body#index #footer {
 
 /* ------------------------------------------ */
 /* !2 - HEADER */
-/* line 84, ../compass/sass/layout.scss */
+/* line 85, ../compass/sass/layout.scss */
 #header {
   height: 250px;
   width: 100%;
   position: relative;
 }
-/* line 87, ../compass/sass/layout.scss */
+/* line 88, ../compass/sass/layout.scss */
 #header #header_logo {
   display: block;
   width: 175px;
@@ -161,13 +162,13 @@ body#index #footer {
   left: 50%;
   margin-left: -87.5px;
 }
-/* line 94, ../compass/sass/layout.scss */
+/* line 95, ../compass/sass/layout.scss */
 #header #header_right {
   padding-top: 10px;
 }
 
 /* !2.1 - Menú Principal */
-/* line 99, ../compass/sass/layout.scss */
+/* line 100, ../compass/sass/layout.scss */
 nav#tmcategories {
   text-align: center;
   clear: both;
@@ -176,7 +177,7 @@ nav#tmcategories {
   bottom: 0px;
   left: 0;
 }
-/* line 106, ../compass/sass/layout.scss */
+/* line 107, ../compass/sass/layout.scss */
 nav#tmcategories ul#cat {
   width: 69.16667%;
   padding: 6px 0 9px 0;
@@ -184,12 +185,12 @@ nav#tmcategories ul#cat {
   text-align: center;
 }
 @media only screen and (max-width: 1033px) {
-  /* line 106, ../compass/sass/layout.scss */
+  /* line 107, ../compass/sass/layout.scss */
   nav#tmcategories ul#cat {
     width: 865px;
   }
 }
-/* line 116, ../compass/sass/layout.scss */
+/* line 117, ../compass/sass/layout.scss */
 nav#tmcategories li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -199,41 +200,41 @@ nav#tmcategories li {
   *display: inline;
   margin-left: 3%;
 }
-/* line 119, ../compass/sass/layout.scss */
+/* line 120, ../compass/sass/layout.scss */
 nav#tmcategories li:first-child {
   margin-left: 0px;
 }
 
 /* !2.2 - User */
-/* line 125, ../compass/sass/layout.scss */
+/* line 126, ../compass/sass/layout.scss */
 .headerTop {
   width: 69.16667%;
   margin: 0px auto;
 }
-/* line 129, ../compass/sass/layout.scss */
+/* line 130, ../compass/sass/layout.scss */
 .headerTop #header_user {
   float: right;
 }
-/* line 132, ../compass/sass/layout.scss */
+/* line 133, ../compass/sass/layout.scss */
 .headerTop #header_user li {
   float: left;
   margin-left: 5px;
   padding-left: 5px;
 }
-/* line 136, ../compass/sass/layout.scss */
+/* line 137, ../compass/sass/layout.scss */
 .headerTop #header_user li:first-child {
   margin-left: 0;
   padding-left: 0;
 }
 @media only screen and (max-width: 1033px) {
-  /* line 125, ../compass/sass/layout.scss */
+  /* line 126, ../compass/sass/layout.scss */
   .headerTop {
     width: 865px;
   }
 }
 
 /* !2.3 - Carret */
-/* line 147, ../compass/sass/layout.scss */
+/* line 148, ../compass/sass/layout.scss */
 #shopping_cart {
   float: right;
   clear: both;
@@ -242,21 +243,21 @@ nav#tmcategories li:first-child {
 }
 
 /* !2.4 - Search */
-/* line 154, ../compass/sass/layout.scss */
+/* line 155, ../compass/sass/layout.scss */
 #search_block_top {
   width: 69.16667%;
   margin: 10px auto 0 auto;
 }
-/* line 157, ../compass/sass/layout.scss */
+/* line 158, ../compass/sass/layout.scss */
 #search_block_top form {
   float: right;
   padding: 2px 1px 2px 3px;
 }
-/* line 161, ../compass/sass/layout.scss */
+/* line 162, ../compass/sass/layout.scss */
 #search_block_top input {
   width: 160px;
 }
-/* line 164, ../compass/sass/layout.scss */
+/* line 165, ../compass/sass/layout.scss */
 #search_block_top .button {
   width: 16px;
   height: 16px;
@@ -265,16 +266,16 @@ nav#tmcategories li:first-child {
 }
 
 /* !2.5 - Languages */
-/* line 172, ../compass/sass/layout.scss */
+/* line 173, ../compass/sass/layout.scss */
 #tmlanguages {
   width: 69.16667%;
   margin: 0 auto;
 }
-/* line 175, ../compass/sass/layout.scss */
+/* line 176, ../compass/sass/layout.scss */
 #tmlanguages #first-languages {
   float: left;
 }
-/* line 177, ../compass/sass/layout.scss */
+/* line 178, ../compass/sass/layout.scss */
 #tmlanguages #first-languages li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -284,7 +285,7 @@ nav#tmcategories li:first-child {
   *display: inline;
 }
 @media only screen and (max-width: 1033px) {
-  /* line 172, ../compass/sass/layout.scss */
+  /* line 173, ../compass/sass/layout.scss */
   #tmlanguages {
     width: 865px;
   }
@@ -292,129 +293,129 @@ nav#tmcategories li:first-child {
 
 /* ------------------------------------------ */
 /* !3 - CONTENTAREA */
-/* line 189, ../compass/sass/layout.scss */
+/* line 190, ../compass/sass/layout.scss */
 #columns {
   width: 64%;
   margin: 0 auto 0px auto;
 }
 @media only screen and (max-width: 1033px) {
-  /* line 189, ../compass/sass/layout.scss */
+  /* line 190, ../compass/sass/layout.scss */
   #columns {
     width: 865px;
   }
 }
 
-/* line 197, ../compass/sass/layout.scss */
+/* line 198, ../compass/sass/layout.scss */
 #page {
   width: 100%;
 }
-/* line 199, ../compass/sass/layout.scss */
+/* line 200, ../compass/sass/layout.scss */
 #page h1 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 203, ../compass/sass/layout.scss */
+/* line 204, ../compass/sass/layout.scss */
 #page h2 {
   margin-bottom: 20px;
   text-align: left;
 }
-/* line 209, ../compass/sass/layout.scss */
+/* line 210, ../compass/sass/layout.scss */
 #page .rte ul, #page .rte ol {
   margin-left: 2em;
   padding-left: 2em;
   margin-bottom: .5em;
 }
-/* line 214, ../compass/sass/layout.scss */
+/* line 215, ../compass/sass/layout.scss */
 #page .rte li {
   margin-bottom: .25em;
 }
-/* line 217, ../compass/sass/layout.scss */
+/* line 218, ../compass/sass/layout.scss */
 #page .rte h5, #page .rte h6 {
   margin-bottom: 1em;
   margin-top: 2em;
 }
-/* line 221, ../compass/sass/layout.scss */
+/* line 222, ../compass/sass/layout.scss */
 #page .rte p {
   margin-bottom: .5em;
 }
-/* line 224, ../compass/sass/layout.scss */
+/* line 225, ../compass/sass/layout.scss */
 #page .rte p.bigImage img {
   width: 100%;
   height: auto;
   max-width: 899px;
 }
-/* line 232, ../compass/sass/layout.scss */
+/* line 233, ../compass/sass/layout.scss */
 #page .rte .columnaEsq, #page .rte .columnaDreta {
   width: 48.30729%;
   margin-right: 3.25521%;
   float: left;
 }
-/* line 237, ../compass/sass/layout.scss */
+/* line 238, ../compass/sass/layout.scss */
 #page .rte .columnaDreta {
   margin-right: 0;
 }
-/* line 242, ../compass/sass/layout.scss */
+/* line 243, ../compass/sass/layout.scss */
 #page .intro {
   width: 80.36145%;
   margin: 0 auto;
 }
-/* line 246, ../compass/sass/layout.scss */
+/* line 247, ../compass/sass/layout.scss */
 #page .hb1, #page hb2 {
   width: 44.93976%;
   float: left;
 }
-/* line 250, ../compass/sass/layout.scss */
+/* line 251, ../compass/sass/layout.scss */
 #page .hb1 {
   margin-right: 6.0241%;
 }
-/* line 253, ../compass/sass/layout.scss */
+/* line 254, ../compass/sass/layout.scss */
 #page .col3 {
   float: left;
   width: 29.51807%;
   margin-left: 4.21687%;
   word-wrap: break-word;
 }
-/* line 258, ../compass/sass/layout.scss */
+/* line 259, ../compass/sass/layout.scss */
 #page .col3.primer {
   margin-left: 0;
 }
 
-/* line 265, ../compass/sass/layout.scss */
+/* line 266, ../compass/sass/layout.scss */
 .cms9 #page .rte h1 {
   padding-top: 70px;
 }
-/* line 268, ../compass/sass/layout.scss */
+/* line 269, ../compass/sass/layout.scss */
 .cms9 #page .rte .columnaEsq, .cms9 #page .rte .columnaDreta {
   width: 45%;
   margin-right: 10%;
 }
-/* line 272, ../compass/sass/layout.scss */
+/* line 273, ../compass/sass/layout.scss */
 .cms9 #page .rte .columnaDreta {
   margin-right: 0 !important;
 }
 
 @media only screen and (max-width: 1218px) {
-  /* line 278, ../compass/sass/layout.scss */
+  /* line 279, ../compass/sass/layout.scss */
   #order #columns {
     width: 90%;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 1033px) {
-  /* line 278, ../compass/sass/layout.scss */
+  /* line 279, ../compass/sass/layout.scss */
   #order #columns {
     width: 865px;
   }
 }
 
 /* !3.1 - breadcrumbs */
-/* line 288, ../compass/sass/layout.scss */
+/* line 289, ../compass/sass/layout.scss */
 .breadcrumb {
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
-/* line 291, ../compass/sass/layout.scss */
+/* line 292, ../compass/sass/layout.scss */
 .breadcrumb p {
   position: absolute;
   left: 10px;
@@ -423,49 +424,49 @@ nav#tmcategories li:first-child {
 }
 
 /* !3.2 - Catalogue */
-/* line 299, ../compass/sass/layout.scss */
+/* line 300, ../compass/sass/layout.scss */
 #category #columns {
   width: 72.25%;
 }
 @media only screen and (max-width: 1033px) {
-  /* line 299, ../compass/sass/layout.scss */
+  /* line 300, ../compass/sass/layout.scss */
   #category #columns {
     width: 865px;
   }
 }
-/* line 310, ../compass/sass/layout.scss */
+/* line 311, ../compass/sass/layout.scss */
 #category .catIntro {
   padding-top: 340px;
   margin-bottom: 20px;
 }
-/* line 315, ../compass/sass/layout.scss */
+/* line 316, ../compass/sass/layout.scss */
 #category .productsSortForm label {
   display: block;
 }
-/* line 319, ../compass/sass/layout.scss */
+/* line 320, ../compass/sass/layout.scss */
 #category .cat_desc {
   text-align: center;
 }
-/* line 322, ../compass/sass/layout.scss */
+/* line 323, ../compass/sass/layout.scss */
 #category .btComparar {
   float: right;
   margin-top: 25px;
 }
-/* line 326, ../compass/sass/layout.scss */
+/* line 327, ../compass/sass/layout.scss */
 #category form.productsSortForm {
   margin-bottom: 16px;
   padding-bottom: 16px;
 }
-/* line 332, ../compass/sass/layout.scss */
+/* line 333, ../compass/sass/layout.scss */
 #category #productsSortForm {
   float: left;
 }
-/* line 335, ../compass/sass/layout.scss */
+/* line 336, ../compass/sass/layout.scss */
 #category .product_view {
   float: right;
   margin-top: 25px;
 }
-/* line 338, ../compass/sass/layout.scss */
+/* line 339, ../compass/sass/layout.scss */
 #category .product_view li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -478,13 +479,13 @@ nav#tmcategories li:first-child {
   margin-left: 11px;
 }
 
-/* line 345, ../compass/sass/layout.scss */
+/* line 346, ../compass/sass/layout.scss */
 #product_list {
   width: 73.81776%;
   float: left;
   margin-right: 2.99885%;
 }
-/* line 350, ../compass/sass/layout.scss */
+/* line 351, ../compass/sass/layout.scss */
 #product_list li {
   display: block;
   width: 29.0625%;
@@ -492,38 +493,38 @@ nav#tmcategories li:first-child {
   margin-left: 5.9375%;
   margin-bottom: 25px;
 }
-/* line 355, ../compass/sass/layout.scss */
+/* line 356, ../compass/sass/layout.scss */
 #product_list li.item {
   margin-left: 0;
   clear: left;
 }
-/* line 359, ../compass/sass/layout.scss */
+/* line 360, ../compass/sass/layout.scss */
 #product_list li .product_img_link {
   display: block;
   margin-bottom: 12px;
   text-align: center;
 }
-/* line 364, ../compass/sass/layout.scss */
+/* line 365, ../compass/sass/layout.scss */
 #product_list li img {
   width: 80%;
   height: auto;
 }
-/* line 367, ../compass/sass/layout.scss */
+/* line 368, ../compass/sass/layout.scss */
 #product_list li .availability {
   float: left;
   display: block;
 }
-/* line 371, ../compass/sass/layout.scss */
+/* line 372, ../compass/sass/layout.scss */
 #product_list li .compare {
   float: right;
   display: block;
 }
-/* line 375, ../compass/sass/layout.scss */
+/* line 376, ../compass/sass/layout.scss */
 #product_list li .price {
   display: block;
   float: right;
 }
-/* line 379, ../compass/sass/layout.scss */
+/* line 380, ../compass/sass/layout.scss */
 #product_list li .ajax_add_to_cart_button {
   display: block;
   text-align: center;
@@ -531,49 +532,49 @@ nav#tmcategories li:first-child {
 }
 
 /* !3.3 - Product */
-/* line 388, ../compass/sass/layout.scss */
+/* line 389, ../compass/sass/layout.scss */
 #product #columns {
   padding-top: 390px;
   width: 72.08333%;
   margin: 0 auto;
 }
 @media only screen and (max-width: 1033px) {
-  /* line 388, ../compass/sass/layout.scss */
+  /* line 389, ../compass/sass/layout.scss */
   #product #columns {
     width: 865px;
   }
 }
-/* line 398, ../compass/sass/layout.scss */
+/* line 399, ../compass/sass/layout.scss */
 #product #center_column {
   float: left;
   width: 75%;
 }
 
 /* !3.4 - Authentication */
-/* line 406, ../compass/sass/layout.scss */
+/* line 407, ../compass/sass/layout.scss */
 #authentication h1 {
   padding-top: 30px;
   float: right;
   width: 410px;
   text-align: left;
 }
-/* line 412, ../compass/sass/layout.scss */
+/* line 413, ../compass/sass/layout.scss */
 #authentication #center_column {
   min-height: 628px;
 }
-/* line 416, ../compass/sass/layout.scss */
+/* line 417, ../compass/sass/layout.scss */
 #authentication #login_form, #authentication #account-creation_form {
   padding: 25px;
   width: 360px;
   float: right;
   clear: both;
 }
-/* line 421, ../compass/sass/layout.scss */
+/* line 422, ../compass/sass/layout.scss */
 #authentication #login_form h3, #authentication #account-creation_form h3 {
   margin-bottom: .5em;
   margin-top: 1em;
 }
-/* line 424, ../compass/sass/layout.scss */
+/* line 425, ../compass/sass/layout.scss */
 #authentication #login_form label, #authentication #account-creation_form label {
   display: block;
   float: left;
@@ -581,76 +582,160 @@ nav#tmcategories li:first-child {
   clear: left;
   margin-bottom: 15px;
 }
-/* line 431, ../compass/sass/layout.scss */
+/* line 432, ../compass/sass/layout.scss */
 #authentication #login_form input, #authentication #account-creation_form input {
   display: block;
   width: 210px;
   margin-bottom: 15px;
   padding: 3px;
 }
-/* line 437, ../compass/sass/layout.scss */
+/* line 438, ../compass/sass/layout.scss */
 #authentication #login_form input#SubmitLogin, #authentication #account-creation_form input#SubmitLogin {
   float: right;
   width: auto;
   margin-top: 10px;
 }
-/* line 443, ../compass/sass/layout.scss */
+/* line 444, ../compass/sass/layout.scss */
 #authentication #login_form .gender input, #authentication #login_form .gender label, #authentication #account-creation_form .gender input, #authentication #account-creation_form .gender label {
   display: inline;
   width: auto;
   float: none;
 }
-/* line 449, ../compass/sass/layout.scss */
+/* line 450, ../compass/sass/layout.scss */
 #authentication #login_form input#passwd, #authentication #account-creation_form input#passwd {
   margin-bottom: 0;
 }
-/* line 452, ../compass/sass/layout.scss */
+/* line 453, ../compass/sass/layout.scss */
 #authentication #login_form .form_info, #authentication #account-creation_form .form_info {
   margin-bottom: 1em;
   display: block;
   text-align: right;
 }
-/* line 457, ../compass/sass/layout.scss */
+/* line 458, ../compass/sass/layout.scss */
 #authentication #login_form .select span, #authentication #account-creation_form .select span {
   display: block;
 }
-/* line 460, ../compass/sass/layout.scss */
+/* line 461, ../compass/sass/layout.scss */
 #authentication #login_form select, #authentication #account-creation_form select {
   width: 200px;
   margin-bottom: 1em;
 }
-/* line 464, ../compass/sass/layout.scss */
+/* line 465, ../compass/sass/layout.scss */
 #authentication #login_form .birthDate select, #authentication #account-creation_form .birthDate select {
   width: auto;
 }
-/* line 467, ../compass/sass/layout.scss */
+/* line 468, ../compass/sass/layout.scss */
 #authentication #login_form #submitAccount, #authentication #account-creation_form #submitAccount {
   margin-left: 200px;
 }
-/* line 471, ../compass/sass/layout.scss */
+/* line 472, ../compass/sass/layout.scss */
 #authentication .lost_password {
   text-align: right;
 }
-/* line 474, ../compass/sass/layout.scss */
+/* line 475, ../compass/sass/layout.scss */
 #authentication #create-account_form {
   width: 410px;
   float: right;
   clear: right;
   padding-top: 30px;
 }
-/* line 479, ../compass/sass/layout.scss */
+/* line 480, ../compass/sass/layout.scss */
 #authentication #create-account_form .submit {
   text-align: center;
   clear: right;
 }
-/* line 484, ../compass/sass/layout.scss */
+/* line 485, ../compass/sass/layout.scss */
 #authentication #create-account_form .gender .input {
   display: inline;
 }
 
+/* !3.5 - Error */
+/* line 496, ../compass/sass/layout.scss */
+#module-servired-pago_error #center_column {
+  float: left;
+  width: 60%;
+  margin-bottom: 100px;
+}
+/* line 500, ../compass/sass/layout.scss */
+#module-servired-pago_error #center_column img {
+  max-width: 100%;
+}
+/* line 503, ../compass/sass/layout.scss */
+#module-servired-pago_error #center_column ul {
+  margin-left: 3em;
+}
+/* line 506, ../compass/sass/layout.scss */
+#module-servired-pago_error #center_column li {
+  padding-left: .5em;
+}
+/* line 509, ../compass/sass/layout.scss */
+#module-servired-pago_error #center_column p, #module-servired-pago_error #center_column ul {
+  margin-bottom: 1em;
+}
+/* line 513, ../compass/sass/layout.scss */
+#module-servired-pago_error div.myaccount {
+  margin-top: 22px;
+}
+/* line 516, ../compass/sass/layout.scss */
+#module-servired-pago_error .pago_error {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* line 524, ../compass/sass/layout.scss */
+#order-confirmation #center_column {
+  float: left;
+  width: 60%;
+  margin-bottom: 200px;
+  margin-top: 22px;
+}
+/* line 528, ../compass/sass/layout.scss */
+#order-confirmation #center_column img {
+  width: 100%;
+}
+/* line 532, ../compass/sass/layout.scss */
+#order-confirmation .pago a, #order-confirmation a.volverPedidos {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+
+/* line 540, ../compass/sass/layout.scss */
+#p404 #center_column {
+  float: left;
+  width: 60%;
+  padding-top: 22px;
+  padding-bottom: 122px;
+}
+/* line 545, ../compass/sass/layout.scss */
+#p404 #right_column {
+  display: none;
+}
+/* line 548, ../compass/sass/layout.scss */
+#p404 h3 {
+  margin-top: 1em;
+}
+/* line 551, ../compass/sass/layout.scss */
+#p404 .myaccount {
+  margin-top: 22px;
+}
+
+/* line 555, ../compass/sass/layout.scss */
+.bankWire {
+  float: left;
+  width: 60%;
+}
+
 /* ------------------------------------------ */
 /* !4 - FOOTER */
-/* line 493, ../compass/sass/layout.scss */
+/* line 562, ../compass/sass/layout.scss */
 #footer {
   width: 100%;
   text-align: center;
@@ -658,12 +743,12 @@ nav#tmcategories li:first-child {
   margin-top: 75px;
   clear: both;
 }
-/* line 499, ../compass/sass/layout.scss */
+/* line 568, ../compass/sass/layout.scss */
 #footer #footer_links, #footer .extraLinks {
   width: 69.16667%;
   margin: 0 auto;
 }
-/* line 503, ../compass/sass/layout.scss */
+/* line 572, ../compass/sass/layout.scss */
 #footer #footer_links li, #footer .extraLinks li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -674,32 +759,32 @@ nav#tmcategories li:first-child {
   padding-left: 16px;
   margin-left: 16px;
 }
-/* line 507, ../compass/sass/layout.scss */
+/* line 576, ../compass/sass/layout.scss */
 #footer #footer_links li:first-child, #footer .extraLinks li:first-child {
   margin-left: 0px;
   padding-left: 0px;
 }
 @media only screen and (max-width: 1033px) {
-  /* line 499, ../compass/sass/layout.scss */
+  /* line 568, ../compass/sass/layout.scss */
   #footer #footer_links, #footer .extraLinks {
     width: 865px;
   }
 }
-/* line 518, ../compass/sass/layout.scss */
+/* line 587, ../compass/sass/layout.scss */
 #footer .extraLinks {
   margin-top: 20px;
 }
 
 /* ------------------------------------------ */
 /* !5 - RIGHT */
-/* line 525, ../compass/sass/layout.scss */
+/* line 594, ../compass/sass/layout.scss */
 #right_column {
   float: left;
   width: 23.06805%;
 }
 
 /* !5.1 - Cart */
-/* line 530, ../compass/sass/layout.scss */
+/* line 599, ../compass/sass/layout.scss */
 #cart_block {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -709,32 +794,37 @@ nav#tmcategories li:first-child {
   float: right;
   padding: 20px 10% 15px 10%;
 }
-/* line 536, ../compass/sass/layout.scss */
+/* line 605, ../compass/sass/layout.scss */
 #cart_block h4, #cart_block #cart_block_summary {
   text-align: center;
 }
-/* line 539, ../compass/sass/layout.scss */
+/* line 608, ../compass/sass/layout.scss */
 #cart_block h4 {
   padding-bottom: 6px;
 }
-/* line 542, ../compass/sass/layout.scss */
+/* line 611, ../compass/sass/layout.scss */
 #cart_block .cart_block_list {
   text-align: left;
 }
-/* line 545, ../compass/sass/layout.scss */
+/* line 614, ../compass/sass/layout.scss */
 #cart_block #cart-buttons {
   text-align: center;
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 551, ../compass/sass/layout.scss */
+/* line 620, ../compass/sass/layout.scss */
 #cart_block .cart-prices-block span {
   float: left;
   display: block;
 }
-/* line 554, ../compass/sass/layout.scss */
+/* line 623, ../compass/sass/layout.scss */
 #cart_block .cart-prices-block span.price {
   float: right;
+}
+
+/* line 632, ../compass/sass/layout.scss */
+.formular #Send.submit {
+  padding: 10px 20px;
 }
 
 /* SASS Document */
@@ -753,13 +843,14 @@ nav#tmcategories li:first-child {
 		3.2 - Catalogue
 		3.3 - Product
 		3.4 - Authentication
+		3.5 - Error
 	4 - FOOTER
 	5 - RIGHT
 		5.1 - Cart
 ---------------------------------------------- */
 /* !COLORS */
 /* !MIXINS  */
-/* line 35, ../compass/sass/colors.scss */
+/* line 36, ../compass/sass/colors.scss */
 a {
   -webkit-transition: color 0.25s ease-in;
   -moz-transition: color 0.25s ease-in;
@@ -769,14 +860,14 @@ a {
 
 /* ------------------------------------------ */
 /* !1 - BODY */
-/* line 47, ../compass/sass/colors.scss */
+/* line 48, ../compass/sass/colors.scss */
 body {
   background: url("../img/oranges/fons-paper.png") repeat 0px 0px white;
   color: #444444;
 }
 
 /* !1.1 - Home */
-/* line 52, ../compass/sass/colors.scss */
+/* line 53, ../compass/sass/colors.scss */
 body#index {
   background-image: url("../img/oranges/fons-home.jpg"), url("../img/oranges/fons-paper.png");
   -webkit-background-size: 100%, 100px 100px;
@@ -786,37 +877,37 @@ body#index {
   background-repeat: no-repeat, repeat;
   background-position: center center, 0px 0px;
 }
-/* line 57, ../compass/sass/colors.scss */
+/* line 58, ../compass/sass/colors.scss */
 body#index #header {
   background: none;
 }
 
 /* ------------------------------------------ */
 /* !2 - HEADER */
-/* line 64, ../compass/sass/colors.scss */
+/* line 65, ../compass/sass/colors.scss */
 #header {
   background: url("../img/oranges/fons-header_01.png") left top no-repeat, url("../img/oranges/fons-header_03.png") right top no-repeat;
 }
 
 /* !2.1 - Menú Principal */
-/* line 68, ../compass/sass/colors.scss */
+/* line 69, ../compass/sass/colors.scss */
 nav#tmcategories {
   background-color: #978100;
 }
-/* line 70, ../compass/sass/colors.scss */
+/* line 71, ../compass/sass/colors.scss */
 nav#tmcategories a {
   text-decoration: none;
   color: #ead200;
 }
-/* line 73, ../compass/sass/colors.scss */
+/* line 74, ../compass/sass/colors.scss */
 nav#tmcategories a:hover {
   color: white;
 }
-/* line 77, ../compass/sass/colors.scss */
+/* line 78, ../compass/sass/colors.scss */
 nav#tmcategories .current {
   position: relative;
 }
-/* line 79, ../compass/sass/colors.scss */
+/* line 80, ../compass/sass/colors.scss */
 nav#tmcategories .current:before {
   content: "\003c";
   position: absolute;
@@ -829,88 +920,88 @@ nav#tmcategories .current:before {
   margin-left: -13px;
   text-indent: -9999em;
 }
-/* line 89, ../compass/sass/colors.scss */
+/* line 90, ../compass/sass/colors.scss */
 nav#tmcategories .current a {
   color: white;
 }
 
 /* !2.2 - User */
-/* line 97, ../compass/sass/colors.scss */
+/* line 98, ../compass/sass/colors.scss */
 .headerTop #header_user li {
   border-left: 1px solid #444444;
 }
-/* line 99, ../compass/sass/colors.scss */
+/* line 100, ../compass/sass/colors.scss */
 .headerTop #header_user li:first-child {
   border-left: 0px;
 }
-/* line 103, ../compass/sass/colors.scss */
+/* line 104, ../compass/sass/colors.scss */
 .headerTop #header_user a {
   color: #978100;
   text-decoration: none;
 }
-/* line 106, ../compass/sass/colors.scss */
+/* line 107, ../compass/sass/colors.scss */
 .headerTop #header_user a:hover {
   color: #444444;
 }
 
 /* !2.3 - Carret */
-/* line 113, ../compass/sass/colors.scss */
+/* line 114, ../compass/sass/colors.scss */
 #shopping_cart {
   background: url("../img/oranges/icones.png") no-repeat -382px top transparent;
 }
-/* line 115, ../compass/sass/colors.scss */
+/* line 116, ../compass/sass/colors.scss */
 #shopping_cart a {
   color: #978100;
   text-decoration: none;
 }
-/* line 118, ../compass/sass/colors.scss */
+/* line 119, ../compass/sass/colors.scss */
 #shopping_cart a:hover {
   color: #444444;
 }
 
 /* !2.4 - Search */
-/* line 125, ../compass/sass/colors.scss */
+/* line 126, ../compass/sass/colors.scss */
 #search_block_top form {
   background-color: white;
   border: 1px solid #cccccc;
 }
-/* line 128, ../compass/sass/colors.scss */
+/* line 129, ../compass/sass/colors.scss */
 #search_block_top form #search_query_top {
   border: none;
   background-color: white;
   color: #444444;
 }
-/* line 133, ../compass/sass/colors.scss */
+/* line 134, ../compass/sass/colors.scss */
 #search_block_top form .button {
   background: url(../img/oranges/icones.png) no-repeat left top white;
 }
 
 /* !2.5 - Languages */
-/* line 139, ../compass/sass/colors.scss */
+/* line 140, ../compass/sass/colors.scss */
 #tmlanguages {
   color: #444444;
 }
-/* line 141, ../compass/sass/colors.scss */
+/* line 142, ../compass/sass/colors.scss */
 #tmlanguages li {
   opacity: 1 !important;
 }
-/* line 144, ../compass/sass/colors.scss */
+/* line 145, ../compass/sass/colors.scss */
 #tmlanguages a {
   color: #978100;
 }
-/* line 146, ../compass/sass/colors.scss */
+/* line 147, ../compass/sass/colors.scss */
 #tmlanguages a:hover {
   color: #444444;
 }
 
 /* ------------------------------------------ */
 /* !3 - CONTENTAREA */
-/* line 155, ../compass/sass/colors.scss */
+/* line 156, ../compass/sass/colors.scss */
 .cms4 #page {
   background: url("../img/oranges/fons-fum_02.jpg") no-repeat left bottom transparent;
 }
 
-/* line 160, ../compass/sass/colors.scss */
+/* line 161, ../compass/sass/colors.scss */
 .cms2 #page {
   background-image: url("../img/oranges/fons-fum_04.jpg"), url("../img/oranges/fons-fum_03.jpg");
   background-repeat: no-repeat;
@@ -918,7 +1009,7 @@ nav#tmcategories .current a {
   background-color: transparent;
 }
 
-/* line 168, ../compass/sass/colors.scss */
+/* line 169, ../compass/sass/colors.scss */
 .cms11 #page {
   background-image: url("../img/oranges/fons-fum_06.jpg"), url("../img/oranges/fons-fum_07.jpg");
   background-repeat: no-repeat;
@@ -926,59 +1017,59 @@ nav#tmcategories .current a {
   background-color: transparent;
 }
 
-/* line 176, ../compass/sass/colors.scss */
+/* line 177, ../compass/sass/colors.scss */
 .cms9 #page {
   background: url("../img/oranges/fons-barritas.jpg") no-repeat center bottom transparent;
 }
 
-/* line 181, ../compass/sass/colors.scss */
+/* line 182, ../compass/sass/colors.scss */
 #page h1, #page h2, #page h5, #page h6 {
   color: #978100;
 }
-/* line 184, ../compass/sass/colors.scss */
+/* line 185, ../compass/sass/colors.scss */
 #page .rte {
   color: #444444;
 }
-/* line 189, ../compass/sass/colors.scss */
+/* line 190, ../compass/sass/colors.scss */
 #page .rte ul {
   list-style-type: circle;
 }
-/* line 192, ../compass/sass/colors.scss */
+/* line 193, ../compass/sass/colors.scss */
 #page .rte ol {
   list-style-type: decimal;
 }
-/* line 195, ../compass/sass/colors.scss */
+/* line 196, ../compass/sass/colors.scss */
 #page .rte a {
   color: #978100;
 }
-/* line 197, ../compass/sass/colors.scss */
+/* line 198, ../compass/sass/colors.scss */
 #page .rte a:hover {
   color: #444444;
 }
 
-/* line 205, ../compass/sass/colors.scss */
+/* line 206, ../compass/sass/colors.scss */
 #order #page {
   background: url("../img/oranges/fons-fum_10.jpg") no-repeat left bottom transparent;
 }
 
 /* !3.1 - breadcrumbs */
-/* line 211, ../compass/sass/colors.scss */
+/* line 212, ../compass/sass/colors.scss */
 .breadcrumb {
   color: #444444;
 }
-/* line 213, ../compass/sass/colors.scss */
+/* line 214, ../compass/sass/colors.scss */
 .breadcrumb a {
   text-decoration: none;
   color: #978100;
 }
-/* line 216, ../compass/sass/colors.scss */
+/* line 217, ../compass/sass/colors.scss */
 .breadcrumb a:hover {
   color: #444444;
   text-decoration: underline;
 }
 
 /* !3.2 - Catalogue */
-/* line 224, ../compass/sass/colors.scss */
+/* line 225, ../compass/sass/colors.scss */
 #category #page {
   background-image: url("../img/oranges/fons-fum_01.jpg"), url("../img/oranges/fons-fum_08.jpg"), url("../img/oranges/fons-fum_10.jpg");
   -webkit-background-size: auto, 100%, auto;
@@ -988,122 +1079,105 @@ nav#tmcategories .current a {
   background-repeat: no-repeat;
   background-position: left 250px, center center, left bottom;
   background-color: transparent;
+  			/*
+  @include breakpoint (iphone) {
+  				@include background-image (url('../img/oranges/fons-fum_01.jpg'), url('../img/oranges/fons-fum_10.jpg'));
+  				@include background-size (auto, auto);
+  				background-repeat: no-repeat;
+  				background-position: left 250px, left bottom;
+  				background-color: transparent;
+  			}
+  */
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 224, ../compass/sass/colors.scss */
-  #category #page {
-    background-image: url("../img/oranges/fons-fum_01.jpg"), url("../img/oranges/fons-fum_10.jpg");
-    -webkit-background-size: auto, auto;
-    -moz-background-size: auto, auto;
-    -o-background-size: auto, auto;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-position: left 250px, left bottom;
-    background-color: transparent;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 224, ../compass/sass/colors.scss */
-  #category #page {
-    background-image: url("../img/oranges/fons-fum_01.jpg"), url("../img/oranges/fons-fum_10.jpg");
-    -webkit-background-size: auto, auto;
-    -moz-background-size: auto, auto;
-    -o-background-size: auto, auto;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-position: left 250px, left bottom;
-    background-color: transparent;
-  }
-}
-/* line 239, ../compass/sass/colors.scss */
+/* line 242, ../compass/sass/colors.scss */
 #category .catIntro {
   background: url("../img/oranges/barritas.jpg") no-repeat center top transparent;
 }
-/* line 242, ../compass/sass/colors.scss */
+/* line 245, ../compass/sass/colors.scss */
 #category .btComparar {
   background: transparent;
   border: 0;
   cursor: pointer;
 }
-/* line 247, ../compass/sass/colors.scss */
+/* line 250, ../compass/sass/colors.scss */
 #category .productsSortForm {
   border-bottom: 1px solid #c2c2c2;
 }
-/* line 249, ../compass/sass/colors.scss */
+/* line 252, ../compass/sass/colors.scss */
 #category .productsSortForm label {
   color: #444444;
 }
-/* line 254, ../compass/sass/colors.scss */
+/* line 257, ../compass/sass/colors.scss */
 #category .product_view li {
   opacity: .4;
   cursor: pointer;
 }
-/* line 257, ../compass/sass/colors.scss */
+/* line 260, ../compass/sass/colors.scss */
 #category .product_view li.current {
   opacity: 1;
 }
-/* line 260, ../compass/sass/colors.scss */
+/* line 263, ../compass/sass/colors.scss */
 #category .product_view li#product_view_grid {
   background: url("../img/oranges/icones.png") no-repeat -31px 0px transparent;
 }
-/* line 263, ../compass/sass/colors.scss */
+/* line 266, ../compass/sass/colors.scss */
 #category .product_view li#product_view_list {
   background: url("../img/oranges/icones.png") no-repeat -66px 0px transparent;
 }
 
-/* line 272, ../compass/sass/colors.scss */
+/* line 275, ../compass/sass/colors.scss */
 #product_list li .product_img_link {
   -webkit-box-shadow: 3px 3px 20px #999999;
   -moz-box-shadow: 3px 3px 20px #999999;
   box-shadow: 3px 3px 20px #999999;
   border: 1px solid #b3b3b3;
-  background-color: white;
+  background-color: transparent;
 }
-/* line 277, ../compass/sass/colors.scss */
+/* line 280, ../compass/sass/colors.scss */
 #product_list li h3 {
   color: #444444;
 }
-/* line 279, ../compass/sass/colors.scss */
+/* line 282, ../compass/sass/colors.scss */
 #product_list li h3 a {
   color: #444444;
   text-decoration: none;
 }
-/* line 282, ../compass/sass/colors.scss */
+/* line 285, ../compass/sass/colors.scss */
 #product_list li h3 a:hover {
   color: #444444;
 }
-/* line 287, ../compass/sass/colors.scss */
+/* line 290, ../compass/sass/colors.scss */
 #product_list li .availability {
   color: green;
 }
-/* line 290, ../compass/sass/colors.scss */
+/* line 293, ../compass/sass/colors.scss */
 #product_list li .price {
   color: #978100;
 }
-/* line 293, ../compass/sass/colors.scss */
+/* line 296, ../compass/sass/colors.scss */
 #product_list li .ajax_add_to_cart_button {
   text-decoration: none;
   color: #ead200;
   background-color: #978100;
 }
-/* line 297, ../compass/sass/colors.scss */
+/* line 300, ../compass/sass/colors.scss */
 #product_list li .ajax_add_to_cart_button:hover {
   -webkit-transition: background-color 0.25s ease-out;
   -moz-transition: background-color 0.25s ease-out;
   -o-transition: background-color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
   color: white;
-  background-color: #444444;
+  background-color: #caad00;
 }
 
 /* !3.3 - Product */
-/* line 308, ../compass/sass/colors.scss */
+/* line 311, ../compass/sass/colors.scss */
 #product #columns {
   background: url("../img/oranges/barritas.jpg") no-repeat center top transparent;
 }
 
 /* !3.4 - Authentication */
-/* line 314, ../compass/sass/colors.scss */
+/* line 317, ../compass/sass/colors.scss */
 #authentication #page {
   background-image: url("../img/oranges/shiva.jpg"), url("../img/oranges/fons-fum_04.jpg");
   -webkit-background-size: auto;
@@ -1114,97 +1188,140 @@ nav#tmcategories .current a {
   background-position: 10% 250px, right bottom;
   background-color: transparent;
 }
-/* line 321, ../compass/sass/colors.scss */
+/* line 324, ../compass/sass/colors.scss */
 #authentication #login_form, #authentication #account-creation_form {
   background-color: #b4b4b4;
   background-color: rgba(180, 180, 180, 0.5);
   color: #444444;
 }
-/* line 325, ../compass/sass/colors.scss */
+/* line 328, ../compass/sass/colors.scss */
 #authentication #login_form input, #authentication #account-creation_form input {
   background-color: white;
   border: 1px solid #cccccc;
 }
-/* line 330, ../compass/sass/colors.scss */
+/* line 333, ../compass/sass/colors.scss */
 #authentication #login_form input#SubmitLogin, #authentication #login_form input#submitAccount, #authentication #account-creation_form input#SubmitLogin, #authentication #account-creation_form input#submitAccount {
   color: #444444;
   background-color: transparent;
   cursor: pointer;
   border: 0;
 }
-/* line 335, ../compass/sass/colors.scss */
+/* line 338, ../compass/sass/colors.scss */
 #authentication #login_form input#SubmitLogin:hover, #authentication #login_form input#submitAccount:hover, #authentication #account-creation_form input#SubmitLogin:hover, #authentication #account-creation_form input#submitAccount:hover {
   color: #444444;
 }
-/* line 340, ../compass/sass/colors.scss */
+/* line 343, ../compass/sass/colors.scss */
 #authentication .lost_password a {
   color: #FF0000;
 }
-/* line 342, ../compass/sass/colors.scss */
+/* line 345, ../compass/sass/colors.scss */
 #authentication .lost_password a:hover {
   color: #444444;
 }
-/* line 347, ../compass/sass/colors.scss */
+/* line 350, ../compass/sass/colors.scss */
 #authentication #create-account_form .submit input {
   color: #978100;
   background-color: transparent;
   border: 0;
   cursor: pointer;
 }
-/* line 352, ../compass/sass/colors.scss */
+/* line 355, ../compass/sass/colors.scss */
 #authentication #create-account_form .submit input:hover {
   color: #444444;
 }
-/* line 356, ../compass/sass/colors.scss */
+/* line 359, ../compass/sass/colors.scss */
 #authentication #create-account_form #email_create {
   background-color: white;
   border: 1px solid #cccccc;
   padding: 3px;
   width: 250px;
 }
-/* line 364, ../compass/sass/colors.scss */
+/* line 367, ../compass/sass/colors.scss */
 #authentication .required sup {
   color: #ff0000;
 }
 
+/* !3.5 - Error */
+/* line 374, ../compass/sass/colors.scss */
+#module-servired-pago_error .pago_error {
+  background-color: #978100;
+  color: #ead200;
+  cursor: pointer;
+}
+/* line 378, ../compass/sass/colors.scss */
+#module-servired-pago_error .pago_error:hover {
+  color: white;
+}
+
+/* line 384, ../compass/sass/colors.scss */
+#order-confirmation #center_column a {
+  background-color: #978100;
+  color: #ead200;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+/* line 390, ../compass/sass/colors.scss */
+#order-confirmation #center_column a:hover {
+  color: white;
+}
+/* line 393, ../compass/sass/colors.scss */
+#order-confirmation #center_column a img {
+  display: none;
+}
+
+/* line 398, ../compass/sass/colors.scss */
+#order-confirmation #center_column a.volverPedidos:hover {
+  background-color: #caad00;
+}
+
 /* ------------------------------------------ */
 /* !4 - FOOTER */
-/* line 374, ../compass/sass/colors.scss */
+/* line 406, ../compass/sass/colors.scss */
 #footer #footer_links li {
   border-left: 1px solid #978100;
 }
-/* line 376, ../compass/sass/colors.scss */
+/* line 408, ../compass/sass/colors.scss */
 #footer #footer_links li:first-child {
   border-left: 0;
 }
-/* line 380, ../compass/sass/colors.scss */
+/* line 412, ../compass/sass/colors.scss */
 #footer #footer_links a {
   color: #978100;
   text-decoration: none;
 }
-/* line 383, ../compass/sass/colors.scss */
+/* line 415, ../compass/sass/colors.scss */
 #footer #footer_links a:hover {
   color: #444444;
 }
-/* line 389, ../compass/sass/colors.scss */
+/* line 421, ../compass/sass/colors.scss */
 #footer .extraLinks a {
   color: #978100;
   text-decoration: none;
 }
-/* line 392, ../compass/sass/colors.scss */
+/* line 424, ../compass/sass/colors.scss */
 #footer .extraLinks a:hover {
   color: #444444;
+}
+
+/* line 430, ../compass/sass/colors.scss */
+div#tmslider ul li:hover {
+  background-color: #caad00;
+}
+/* line 432, ../compass/sass/colors.scss */
+div#tmslider ul li:hover a {
+  color: white;
 }
 
 /* ------------------------------------------ */
 /* !5 - RIGHT */
 /* !5.1 - Cart */
-/* line 402, ../compass/sass/colors.scss */
+/* line 440, ../compass/sass/colors.scss */
 #cart_block {
   background-color: #978100;
   position: relative;
 }
-/* line 405, ../compass/sass/colors.scss */
+/* line 443, ../compass/sass/colors.scss */
 #cart_block:after {
   content: "\003c";
   display: block;
@@ -1217,56 +1334,56 @@ nav#tmcategories .current a {
   top: 50%;
   background: url("../img/oranges/icones.png") no-repeat -390px -189px transparent;
 }
-/* line 415, ../compass/sass/colors.scss */
+/* line 453, ../compass/sass/colors.scss */
 #cart_block h4 {
   color: white;
   border-bottom: 1px solid #b9ab5d;
 }
-/* line 418, ../compass/sass/colors.scss */
+/* line 456, ../compass/sass/colors.scss */
 #cart_block h4 a {
   color: white;
   text-decoration: none;
 }
-/* line 423, ../compass/sass/colors.scss */
+/* line 461, ../compass/sass/colors.scss */
 #cart_block .block_content, #cart_block a {
   color: #444444;
 }
-/* line 426, ../compass/sass/colors.scss */
+/* line 464, ../compass/sass/colors.scss */
 #cart_block #cart_block_summary {
   margin-bottom: 1em;
 }
-/* line 430, ../compass/sass/colors.scss */
+/* line 468, ../compass/sass/colors.scss */
 #cart_block .products .price {
   float: right;
   display: block;
 }
-/* line 435, ../compass/sass/colors.scss */
+/* line 473, ../compass/sass/colors.scss */
 #cart_block .ajax_cart_total, #cart_block .price {
   color: white;
 }
-/* line 438, ../compass/sass/colors.scss */
+/* line 476, ../compass/sass/colors.scss */
 #cart_block #cart-buttons {
   border-top: 1px solid #b9ab5d;
   color: white;
 }
-/* line 441, ../compass/sass/colors.scss */
+/* line 479, ../compass/sass/colors.scss */
 #cart_block #cart-buttons a {
   color: #f0f0f0;
   text-decoration: none;
 }
-/* line 444, ../compass/sass/colors.scss */
+/* line 482, ../compass/sass/colors.scss */
 #cart_block #cart-buttons a:hover {
-  color: #ead200;
+  color: #caad00;
 }
-/* line 449, ../compass/sass/colors.scss */
+/* line 487, ../compass/sass/colors.scss */
 #cart_block .btTransport, #cart_block .btTransport .price, #cart_block .btTotal, #cart_block .btTotal .price {
   color: #ead200;
 }
-/* line 452, ../compass/sass/colors.scss */
+/* line 490, ../compass/sass/colors.scss */
 #cart_block dt {
   position: relative;
 }
-/* line 455, ../compass/sass/colors.scss */
+/* line 493, ../compass/sass/colors.scss */
 #cart_block .remove_link a {
   color: red;
   display: block;
@@ -1278,9 +1395,26 @@ nav#tmcategories .current a {
   background: url("../img/oranges/icones.png") no-repeat 0px -40px transparent;
   cursor: pointer;
 }
-/* line 468, ../compass/sass/colors.scss */
+/* line 506, ../compass/sass/colors.scss */
 #cart_block #cart-price-precisions {
   color: white;
+}
+
+/* line 511, ../compass/sass/colors.scss */
+.formular #Send.submit {
+  -webkit-transition: color 0.25s ease-in, background-color 0.25s ease-in;
+  -moz-transition: color 0.25s ease-in, background-color 0.25s ease-in;
+  -o-transition: color 0.25s ease-in, background-color 0.25s ease-in;
+  transition: color 0.25s ease-in, background-color 0.25s ease-in;
+  background-color: #F0F0F0;
+  font-weight: bold;
+  color: #444444;
+  border: 0;
+  cursor: pointer;
+}
+/* line 518, ../compass/sass/colors.scss */
+.formular #Send.submit:hover {
+  color: #978100;
 }
 
 /* SASS Document */
@@ -1299,6 +1433,7 @@ nav#tmcategories .current a {
 		3.2 - Catalogue
 		3.3 - Product
 		3.4 - Authentication
+		3.5 - Error
 	4 - FOOTER
 	5 - RIGHT
 		5.1 - Cart
@@ -1329,23 +1464,83 @@ nav#tmcategories .current a {
 
 /* !VARIABLES */
 /* !MIXINS */
+/* line 71, ../compass/sass/fonts.scss */
+#cms.cms3 {
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+/* line 73, ../compass/sass/fonts.scss */
+#cms.cms3 h1 {
+  font-weight: normal;
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  color: #978100;
+}
+/* line 77, ../compass/sass/fonts.scss */
+#cms.cms3 h2 {
+  font-weight: normal;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+/* line 80, ../compass/sass/fonts.scss */
+#cms.cms3 h3 {
+  font-weight: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+/* line 83, ../compass/sass/fonts.scss */
+#cms.cms3 h4 {
+  font-weight: bold;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+/* line 86, ../compass/sass/fonts.scss */
+#cms.cms3 h1, #cms.cms3 h2, #cms.cms3 h3, #cms.cms3 h4 {
+  margin-bottom: 1em;
+}
+/* line 89, ../compass/sass/fonts.scss */
+#cms.cms3 p {
+  margin-bottom: .5em;
+}
+
 /* ------------------------------------------ */
 /* !1 - BODY */
-/* line 74, ../compass/sass/fonts.scss */
+/* line 96, ../compass/sass/fonts.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 77, ../compass/sass/fonts.scss */
+/* line 99, ../compass/sass/fonts.scss */
 body {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+}
+
+/* line 103, ../compass/sass/fonts.scss */
+.bold {
+  font-family: 'quicksandbold';
 }
 
 /* !1.1 - Home */
 /* ------------------------------------------ */
 /* !2 - HEADER */
 /* !2.1 - Menú Principal */
-/* line 87, ../compass/sass/fonts.scss */
+/* line 112, ../compass/sass/fonts.scss */
 nav#tmcategories {
   font-weight: normal;
   font-size: 15px;
@@ -1356,7 +1551,7 @@ nav#tmcategories {
 }
 
 /* !2.2 - User */
-/* line 92, ../compass/sass/fonts.scss */
+/* line 117, ../compass/sass/fonts.scss */
 .headerTop #header_user {
   font-weight: normal;
   font-size: 11px;
@@ -1367,13 +1562,22 @@ nav#tmcategories {
 }
 
 /* !2.3 - Carret */
-/* line 98, ../compass/sass/fonts.scss */
+/* line 122, ../compass/sass/fonts.scss */
+#shopping_cart {
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+/* line 124, ../compass/sass/fonts.scss */
 #shopping_cart strong {
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
 
 /* !2.4 - Search */
-/* line 104, ../compass/sass/fonts.scss */
+/* line 130, ../compass/sass/fonts.scss */
 #search_block_top input {
   font-weight: normal;
   font-size: 12px;
@@ -1383,13 +1587,13 @@ nav#tmcategories {
   font-style: normal;
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 108, ../compass/sass/fonts.scss */
+/* line 134, ../compass/sass/fonts.scss */
 #search_block_top .button {
   text-indent: -999em;
 }
 
 /* !2.5 - Languages */
-/* line 113, ../compass/sass/fonts.scss */
+/* line 139, ../compass/sass/fonts.scss */
 #tmlanguages {
   font-weight: normal;
   font-size: 12px;
@@ -1399,14 +1603,14 @@ nav#tmcategories {
   font-style: normal;
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 116, ../compass/sass/fonts.scss */
+/* line 142, ../compass/sass/fonts.scss */
 #tmlanguages .selected_language {
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
 
 /* ------------------------------------------ */
 /* !3 - CONTENTAREA */
-/* line 124, ../compass/sass/fonts.scss */
+/* line 150, ../compass/sass/fonts.scss */
 #page h1 {
   font-weight: normal;
   font-size: 30px;
@@ -1415,7 +1619,7 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 127, ../compass/sass/fonts.scss */
+/* line 153, ../compass/sass/fonts.scss */
 #page h2 {
   font-weight: normal;
   font-size: 27px;
@@ -1424,7 +1628,7 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 130, ../compass/sass/fonts.scss */
+/* line 156, ../compass/sass/fonts.scss */
 #page .rte {
   font-weight: normal;
   font-size: 15px;
@@ -1433,23 +1637,23 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 132, ../compass/sass/fonts.scss */
+/* line 158, ../compass/sass/fonts.scss */
 #page .rte p, #page .rte ol, #page .rte ul {
   text-align: justify;
 }
-/* line 135, ../compass/sass/fonts.scss */
+/* line 161, ../compass/sass/fonts.scss */
 #page .rte p.bigImage {
   text-align: center;
 }
-/* line 138, ../compass/sass/fonts.scss */
+/* line 164, ../compass/sass/fonts.scss */
 #page .rte strong {
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 141, ../compass/sass/fonts.scss */
+/* line 167, ../compass/sass/fonts.scss */
 #page .rte em {
   font-family: "quicksandlight", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 145, ../compass/sass/fonts.scss */
+/* line 171, ../compass/sass/fonts.scss */
 #page h5 {
   font-weight: normal;
   font-size: 15px;
@@ -1460,7 +1664,7 @@ nav#tmcategories {
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
   text-transform: uppercase;
 }
-/* line 150, ../compass/sass/fonts.scss */
+/* line 176, ../compass/sass/fonts.scss */
 #page h6 {
   font-weight: normal;
   font-size: 15px;
@@ -1471,7 +1675,7 @@ nav#tmcategories {
 }
 
 /* !3.1 - breadcrumbs */
-/* line 155, ../compass/sass/fonts.scss */
+/* line 181, ../compass/sass/fonts.scss */
 .breadcrumb {
   font-weight: normal;
   font-size: 12px;
@@ -1480,13 +1684,13 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 157, ../compass/sass/fonts.scss */
+/* line 183, ../compass/sass/fonts.scss */
 .breadcrumb .navigation_page {
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
 
 /* !3.2 - Catalogue */
-/* line 162, ../compass/sass/fonts.scss */
+/* line 188, ../compass/sass/fonts.scss */
 .cat_desc {
   font-weight: normal;
   font-size: 16px;
@@ -1496,7 +1700,7 @@ nav#tmcategories {
   font-style: normal;
 }
 
-/* line 166, ../compass/sass/fonts.scss */
+/* line 192, ../compass/sass/fonts.scss */
 .productsSortForm label {
   font-weight: normal;
   font-size: 16px;
@@ -1506,7 +1710,7 @@ nav#tmcategories {
   font-style: normal;
 }
 
-/* line 170, ../compass/sass/fonts.scss */
+/* line 196, ../compass/sass/fonts.scss */
 .btComparar {
   font-weight: normal;
   font-size: 16px;
@@ -1516,7 +1720,7 @@ nav#tmcategories {
   font-style: normal;
 }
 
-/* line 174, ../compass/sass/fonts.scss */
+/* line 200, ../compass/sass/fonts.scss */
 #product_list h3 {
   font-weight: normal;
   font-size: 16px;
@@ -1525,7 +1729,7 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 177, ../compass/sass/fonts.scss */
+/* line 203, ../compass/sass/fonts.scss */
 #product_list .availability, #product_list .compare {
   font-weight: normal;
   font-size: 11px;
@@ -1535,7 +1739,7 @@ nav#tmcategories {
   font-style: normal;
   text-transform: uppercase;
 }
-/* line 181, ../compass/sass/fonts.scss */
+/* line 207, ../compass/sass/fonts.scss */
 #product_list .price {
   font-weight: normal;
   font-size: 14px;
@@ -1545,7 +1749,7 @@ nav#tmcategories {
   font-style: normal;
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 185, ../compass/sass/fonts.scss */
+/* line 211, ../compass/sass/fonts.scss */
 #product_list .ajax_add_to_cart_button {
   font-weight: normal;
   font-size: 13px;
@@ -1557,7 +1761,7 @@ nav#tmcategories {
 
 /* !3.3 - Product */
 /* !3.4 - Authentication */
-/* line 195, ../compass/sass/fonts.scss */
+/* line 221, ../compass/sass/fonts.scss */
 #authentication #login_form h3, #authentication #account-creation_form h3 {
   font-weight: normal;
   font-size: 15px;
@@ -1567,7 +1771,7 @@ nav#tmcategories {
   font-style: normal;
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 199, ../compass/sass/fonts.scss */
+/* line 225, ../compass/sass/fonts.scss */
 #authentication #login_form label, #authentication #login_form .lost_password, #authentication #login_form input, #authentication #login_form span, #authentication #account-creation_form label, #authentication #account-creation_form .lost_password, #authentication #account-creation_form input, #authentication #account-creation_form span {
   font-weight: normal;
   font-size: 13px;
@@ -1576,11 +1780,11 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 202, ../compass/sass/fonts.scss */
+/* line 228, ../compass/sass/fonts.scss */
 #authentication #login_form input, #authentication #account-creation_form input {
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 205, ../compass/sass/fonts.scss */
+/* line 231, ../compass/sass/fonts.scss */
 #authentication #login_form #SubmitLogin, #authentication #login_form #submitAccount, #authentication #account-creation_form #SubmitLogin, #authentication #account-creation_form #submitAccount {
   font-weight: normal;
   font-size: 15px;
@@ -1590,7 +1794,7 @@ nav#tmcategories {
   font-style: normal;
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 210, ../compass/sass/fonts.scss */
+/* line 236, ../compass/sass/fonts.scss */
 #authentication #create-account_form {
   font-weight: normal;
   font-size: 13px;
@@ -1599,7 +1803,7 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 212, ../compass/sass/fonts.scss */
+/* line 238, ../compass/sass/fonts.scss */
 #authentication #create-account_form .submit input {
   font-weight: normal;
   font-size: 20px;
@@ -1608,14 +1812,53 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 217, ../compass/sass/fonts.scss */
+/* line 243, ../compass/sass/fonts.scss */
 #authentication .required sup {
   font-weight: bold;
 }
 
+/* !3.5 - Error */
+/* line 250, ../compass/sass/fonts.scss */
+#module-servired-pago_error .cms {
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+/* line 252, ../compass/sass/fonts.scss */
+#module-servired-pago_error .cms ul {
+  list-style-type: disc;
+}
+/* line 256, ../compass/sass/fonts.scss */
+#module-servired-pago_error .pago_error {
+  text-decoration: none;
+}
+
+/* line 260, ../compass/sass/fonts.scss */
+#order-confirmation, #p404 #center_column, .bankWire {
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+
+/* line 264, ../compass/sass/fonts.scss */
+#p404 #center_column h3 {
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+
 /* ------------------------------------------ */
 /* !4 - FOOTER */
-/* line 226, ../compass/sass/fonts.scss */
+/* line 271, ../compass/sass/fonts.scss */
 #footer #footer_links, #footer .extraLinks {
   font-weight: normal;
   font-size: 13px;
@@ -1628,7 +1871,7 @@ nav#tmcategories {
 /* ------------------------------------------ */
 /* !5 - RIGHT */
 /* !5.1 - Cart */
-/* line 235, ../compass/sass/fonts.scss */
+/* line 280, ../compass/sass/fonts.scss */
 #cart_block h4 {
   font-weight: normal;
   font-size: 25px;
@@ -1637,7 +1880,7 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 238, ../compass/sass/fonts.scss */
+/* line 283, ../compass/sass/fonts.scss */
 #cart_block .block_content {
   font-weight: normal;
   font-size: 13px;
@@ -1646,7 +1889,7 @@ nav#tmcategories {
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 241, ../compass/sass/fonts.scss */
+/* line 286, ../compass/sass/fonts.scss */
 #cart_block .cart_block_list {
   font-weight: normal;
   font-size: 13px;
@@ -1656,15 +1899,25 @@ nav#tmcategories {
   font-style: normal;
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 245, ../compass/sass/fonts.scss */
+/* line 290, ../compass/sass/fonts.scss */
 #cart_block .btTotal, #cart_block .remove_link {
   font-family: "quicksandbold", Arial, "Helvetica Neue", sans-serif;
 }
-/* line 248, ../compass/sass/fonts.scss */
+/* line 293, ../compass/sass/fonts.scss */
 #cart_block #button_order_cart {
   font-weight: normal;
   font-size: 20px;
   font-size: 2rem;
+  line-height: 1.2em;
+  font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+
+/* line 297, ../compass/sass/fonts.scss */
+.formular #Send.submit {
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.2em;
   font-family: "quicksandregular", Arial, "Helvetica Neue", sans-serif;
   font-style: normal;

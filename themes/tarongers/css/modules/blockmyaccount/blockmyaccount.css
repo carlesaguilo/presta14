@@ -23,3 +23,6 @@ div.myaccount .block_content {
 	/*background: #f6dce8 url('../../../img/block_bg_myaccount.jpg') repeat-x bottom left; border-left: 1px solid #f6dce8; border-right: 1px solid #f6dce8*/
 }
 .account_input { margin-left: 0; width: 150px }
+
+#module-plblog-frontent-list-post .breadcrumb, #module-plblog-frontent-list-post .myaccount,
+#module-plblog-frontent-list-post #cart_block, #module-plblog-frontent-list-post #tmslider { display:none; }

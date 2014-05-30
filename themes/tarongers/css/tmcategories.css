@@ -1,0 +1,15 @@
+/* tmcategories.tpl */
+#cat li ul.sub {
+	background: #978100;
+    height: 65px;
+    padding: 14px 0 0;
+    position: absolute;
+    top: 25px;
+    width: 150px;
+}
+#cat ul.sub li { position: relative; padding-bottom: 10px; }
+#cat li.subcat a, #cat li.no_current a {
+    color: #EAD200;
+    text-decoration: none;
+}
+#cat li.subcat a:hover, #cat li.current_sub a,  #cat li.no_current a:hover { color: #fff; }

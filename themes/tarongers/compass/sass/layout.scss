@@ -14,6 +14,7 @@
 		3.2 - Catalogue
 		3.3 - Product
 		3.4 - Authentication
+		3.5 - Error
 	4 - FOOTER
 	5 - RIGHT
 		5.1 - Cart
@@ -487,6 +488,74 @@
 			}
 		}
 	}
+/* !3.5 - Error */
+	#module-servired-pago_error {
+		#columns {
+			@extend .clearfix;
+		}
+		#center_column {
+			float: left;
+			width: 60%;
+			margin-bottom: 100px;
+			img {
+				max-width: 100%;
+			}
+			ul {
+				margin-left: 3em;
+			}
+			li {
+				padding-left: .5em;
+			}
+			p, ul {
+				margin-bottom: 1em
+			}
+		}
+		div.myaccount {
+			margin-top: 22px;
+		}
+		.pago_error {
+			float: right;
+			display: block;
+			text-align: center;
+			padding: 10px 20px;
+		}
+	}
+	#order-confirmation {
+		#center_column {
+			float: left;
+			width: 60%;
+			margin-bottom: 200px; margin-top: 22px;
+			img {
+				width: 100%;
+			}
+		}
+	 	.pago a, a.volverPedidos {
+	 		@include inline-block;
+	 		padding: 10px 20px;
+	 		margin-left: 20px;
+	 	}
+	 	
+	}
+	#p404 {
+		#center_column {
+			float: left;
+			width: 60%;
+			padding-top: 22px; padding-bottom: 122px;
+		}
+		#right_column {
+			display: none;
+		}
+		h3 {
+			margin-top: 1em;
+		}
+		.myaccount {
+			margin-top: 22px;
+		}
+	}
+	.bankWire {
+		float: left;
+		width: 60%;
+	}
 
 /* ------------------------------------------ */
 /* !4 - FOOTER */
@@ -559,4 +628,7 @@
 	}
 	#columns .cart_navigation {
 		@extend .clearfix;
+	}
+.formular #Send.submit {
+	padding: 10px 20px;
 	}

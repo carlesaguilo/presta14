@@ -1,3 +1,4 @@
+{if $logged}
 <div id="tmslider">
 <ul>
 	{counter name=tmslider_counter start=0 skip=1 print=false}
@@ -9,3 +10,4 @@
 	{/foreach}
 </ul>
 </div>
+{/if}

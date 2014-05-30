@@ -47,17 +47,18 @@
 	<div class="block-cms">
 		<h1><a href="{if $category->id eq 1}{$base_dir}{else}{$link->getCategoryLink($category->id, $category->link_rewrite)}{/if}">{$category->name|escape:'htmlall':'UTF-8'}</a></h1>
 		{if isset($sub_category) & !empty($sub_category)}	
-			<h4>{l s='List of sub categories in '}{$category->name}{l s=':'}</h4>
+			<!--<h4>{l s='List of sub categories in '}{$category->name}{l s=':'}</h4>-->
 			<ul class="bullet">
 				{foreach from=$sub_category item=subcategory}
 					<li>
-						<a href="{$link->getCMSCategoryLink($subcategory.id_cms_category, $subcategory.link_rewrite)|escape:'htmlall':'UTF-8'}">{$subcategory.name|escape:'htmlall':'UTF-8'}</a>
+						<!--<a href="{$link->getCMSCategoryLink($subcategory.id_cms_category, $subcategory.link_rewrite)|escape:'htmlall':'UTF-8'}">{$subcategory.name|escape:'htmlall':'UTF-8'}</a>-->
+                        {$subcategory.name|escape:'htmlall':'UTF-8'}
 					</li>
 				{/foreach}
 			</ul>
 		{/if}
 		{if isset($cms_pages) & !empty($cms_pages)}
-		<h4>{l s='List of pages in'}&nbsp;{$category->name}{l s=':'}</h4>
+		<!--<h4>{l s='List of pages in'}&nbsp;{$category->name}{l s=':'}</h4>-->
 			<ul class="bullet">
 				{foreach from=$cms_pages item=cmspages}
 					<li>

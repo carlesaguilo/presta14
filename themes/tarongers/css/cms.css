@@ -8,3 +8,49 @@
 
 #admin-action-cms input.exclusive { float:right }
 
+.cms7 #page {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/oranges/fons-fum_06.jpg"), url("../img/oranges/fons-fum_07.jpg");
+    background-position: left 250px, right bottom;
+    background-repeat: no-repeat;
+}
+.cms7 img { padding-right: 10px; vertical-align: middle; }
+
+.cms7 #page .col3 { text-align: center; }
+.cms7 #page .col3  p { margin-bottom: 5em; }
+
+/* cms tipo bloc */
+.cms #page {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/oranges/fons-fum_04.jpg"), url("../img/oranges/fons-fum_03.jpg");
+    background-position: left 500px, right 250px;
+    background-repeat: no-repeat;
+}
+
+#page .block-cms {
+	font-family: inherit;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+	color: inherit;
+}
+#page .block-cms h1 { padding-top: 70px; }
+#page .block-cms h1 a {
+	text-decoration: none;
+	 color: #978100;
+	font-family: inherit;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+#page .block-cms ul.bullet li { padding: 10px; }
+#page .block-cms ul.bullet li a {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2em;
+	color: #978100; text-decoration:none;
+}
+#page .block-cms ul.bullet li a:hover { color: #444; } 
